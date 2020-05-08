@@ -1,9 +1,9 @@
 Features...?
 
-1.Att söka:
-Efter film, skådespelare, regisör etc?
++ Att söka:
+Film, skådespelare, regisör etc?
 
-2.Är footern som den ska på startsidan, fungerar länkarna rätt:
++ Är footern som den ska på startsidan, fungerar länkarna rätt:
 document.querySelector('div.imdb-footer__links')
 
 <img>Facebook, Instagram, Twitch, Twitter, Youtube
@@ -20,8 +20,8 @@ Interest-Based Ads
 <img>logga
 © 1990-2020 by IMDb.com, Inc.
 
-3.Fungerar menyn, går länkarna till sidor som verkar är 
++ Fungerar menyn, går länkarna till sidor som är rätt
 class="ipc-icon ipc-icon--menu"
 
-4. Är det rätt födelsedags visningar på
++ Är det rätt födelsedagsvisningar på
 https://www.imdb.com/search/name/?birth_monthday=05-08&ref_=hm_brn_sm
