@@ -5,6 +5,8 @@ Efter film, skådespelare, regisör
 
 
 2.Är footern som den ska på start sidan:
+document.querySelector('div.imdb-footer__links')
+
 <img>Facebook, Instagram, Twitch, Twitter, Youtube
 Get the IMDb App
 Help
