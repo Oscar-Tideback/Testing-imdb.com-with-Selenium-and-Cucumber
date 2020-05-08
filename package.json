@@ -1,0 +1,14 @@
+{
+  "name": "cucumber-template",
+  "version": "1.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node ./node_modules/selenium-cucumber-js/index.js -b phantomjs && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-cucumber-js": "^1.7.0"
+  }
+}

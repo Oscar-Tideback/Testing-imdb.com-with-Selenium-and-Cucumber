@@ -1,0 +1,4 @@
+node_modules
+step-definitions/credentials.json
+.DS_Store
+
