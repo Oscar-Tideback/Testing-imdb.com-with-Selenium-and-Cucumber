@@ -1,4 +1,4 @@
-Feature: See the page to the top 5 actors born on the 4th of July
+Feature: See the page to the top 5 actors born on current day
   As a user I want to see the page of the top 5 actors that are born on the
   4th of July when clicked.
 

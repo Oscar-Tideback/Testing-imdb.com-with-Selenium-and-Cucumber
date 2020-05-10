@@ -1,6 +1,6 @@
-Feature: The headline links in Top News should display when clicked
+Feature: Top News links should show the ingress of the article
   As a user I want to click on the top news headline links and
-  see the prelude
+  see the ingress to the article
 
   Scenario Outline: Test article headlines in Topnews
     Given that I am on the IMBd Celebrity news link page

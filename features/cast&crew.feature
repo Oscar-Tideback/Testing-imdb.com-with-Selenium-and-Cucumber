@@ -1,5 +1,5 @@
 Feature: Can I as a contributor add Cast&Crew information to Suits
-  As a contributor want to be able to add data to the Cast&Crew section
+  As a contributor I want to be able to add data to the Cast&Crew section
   of Suits.
 
   Scenario Outline: Add data to Suits Cast&Crew section
