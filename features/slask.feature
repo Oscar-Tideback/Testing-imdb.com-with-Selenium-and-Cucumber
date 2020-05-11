@@ -20,3 +20,6 @@ Feature: Loggin to Internet move database and change password for my account
 
 document.querySelector("a[href='/registration/signin?ref=nv_generic_lgin']")
 $("a[href='/registration/signin?ref=nv_generic_lgin']")
+
+document.querySelector("div[aria-label=add to watchlist]");
+https://www.imdb.com/user/ur118073436/watchlist?ref_=nv_usr_wl

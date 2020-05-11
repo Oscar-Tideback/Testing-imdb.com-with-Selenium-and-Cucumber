@@ -1,1 +1,89 @@
-[]
+[
+  {
+    "description": "  As a contributor I want to be able to add data to the Cast&Crew section\n  of Suits.",
+    "elements": [
+      {
+        "id": "can-i-as-a-contributor-add-cast&crew-information-to-suits;add-data-to-suits-cast&crew-section",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Add data to Suits Cast&Crew section",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that I am on the Suits page",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that I have clicked the Edit button",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that I haved clicked on the Add Value 1 and the continue button",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I add data in Value 2 and click check these updates",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click the button Submit these updates",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the data I have submitted in Value 2 should be sent",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 14071642741
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "can-i-as-a-contributor-add-cast&crew-information-to-suits",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Can I as a contributor add Cast&Crew information to Suits",
+    "tags": [],
+    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/cast-crew.feature"
+  }
+]
