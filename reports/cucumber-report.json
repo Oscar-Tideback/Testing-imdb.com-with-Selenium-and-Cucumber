@@ -1,17 +1,34 @@
 [
   {
-    "description": "  As a contributor I want to be able to add data to the Cast&Crew section\n  of Suits.",
     "elements": [
       {
-        "id": "can-i-as-a-contributor-add-cast&crew-information-to-suits;add-data-to-suits-cast&crew-section",
+        "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages",
         "keyword": "Scenario",
-        "line": 15,
-        "name": "Add data to Suits Cast&Crew section",
+        "line": 3,
+        "name": "Cross check our date of birth with the celebertys everipedia pages",
         "steps": [
           {
             "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am on the Suits page",
+            "keyword": "When ",
+            "name": "I browse to Birth Month Day of todays",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the first 5 names should be saved to a list",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "if the list contains white space replace that with _",
             "result": {
               "status": "undefined"
             },
@@ -20,7 +37,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "that I have clicked the Edit button",
+            "name": "add \"https://everipedia.org/wiki/lang_en/\" before the name",
             "result": {
               "status": "undefined"
             },
@@ -29,7 +46,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "that I haved clicked on the Add Value 1 and the continue button",
+            "name": "browse to that page",
             "result": {
               "status": "undefined"
             },
@@ -37,8 +54,8 @@
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "name": "I add data in Value 2 and click check these updates",
+            "keyword": "And ",
+            "name": "find birthday on that page and check if it is today",
             "result": {
               "status": "undefined"
             },
@@ -46,28 +63,10 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "name": "I click the button Submit these updates",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "the data I have submitted in Value 2 should be sent",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11
-          },
-          {
-            "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 14071642741
+              "duration": 12894300041
             },
             "hidden": true,
             "match": {
@@ -79,11 +78,11 @@
         "type": "scenario"
       }
     ],
-    "id": "can-i-as-a-contributor-add-cast&crew-information-to-suits",
+    "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today",
     "keyword": "Feature",
     "line": 1,
-    "name": "Can I as a contributor add Cast&Crew information to Suits",
+    "name": "Check if todays 5 first birthdays are the same as on everipedia in celeb - Born today",
     "tags": [],
-    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/cast-crew.feature"
+    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/check-birthday.feature"
   }
 ]

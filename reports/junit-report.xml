@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" tests="6" failures="0" skipped="6">
+    <testsuite name="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" tests="6" failures="0" skipped="6">
         <properties>
-            <property name="URI" value="/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/cast-crew.feature">
+            <property name="URI" value="/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/check-birthday.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the Suits page" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+        <testcase name="When I browse to Birth Month Day of todays" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="And that I have clicked the Edit button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+        <testcase name="Then the first 5 names should be saved to a list" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="And that I haved clicked on the Add Value 1 and the continue button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+        <testcase name="And if the list contains white space replace that with _" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="When I add data in Value 2 and click check these updates" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+        <testcase name="And add &quot;https://everipedia.org/wiki/lang_en/&quot; before the name" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="And I click the button Submit these updates" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+        <testcase name="And browse to that page" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="Then the data I have submitted in Value 2 should be sent" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+        <testcase name="And find birthday on that page and check if it is today" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages">
             <skipped message="">
             </skipped>
         </testcase>
