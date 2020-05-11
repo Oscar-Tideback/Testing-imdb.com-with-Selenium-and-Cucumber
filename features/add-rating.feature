@@ -1,6 +1,6 @@
 Feature:As a user I would like to be able to add rating to random film so I can get my opinion heard
 
-  Scenario: When I have signed in I would lik to add rating on objects
+  Scenario: When I have signed in I would like to add rating on objects
     Given that I have signed in to the page
     Then click the first move in "What to watch"
     And get name of movie
