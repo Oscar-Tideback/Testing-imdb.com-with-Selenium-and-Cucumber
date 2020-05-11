@@ -1,5 +1,9 @@
 Features...?
 
++ Add and remove form watchlist
+
++ Add and remove rating  
+
 + Att söka:
 Film, skådespelare, regisör etc?
 
