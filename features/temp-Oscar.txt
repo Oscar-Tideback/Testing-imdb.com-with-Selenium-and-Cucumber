@@ -32,4 +32,7 @@ https://www.imdb.com/search/name/?birth_monthday=05-08&ref_=hm_brn_sm
 
       """<a class="" title="Click to rate: 7" rel="nofollow"><span>7</span></a>
 https://www.imdb.com/user/ur118073436/ratings?ref_=nv_usr_rt_4
-<span class="ipl-rating-star__rating">7</span>"""
+<span class="ipl-rating-star__rating">7</span>
+
+"""
+

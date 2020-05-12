@@ -2,24 +2,28 @@
   {
     "elements": [
       {
-        "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages",
+        "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Cross check our date of birth with the celebertys everipedia pages",
+        "name": "When I have signed in I would lik to add rating on objects",
         "steps": [
           {
             "arguments": [],
-            "keyword": "When ",
-            "name": "I browse to Birth Month Day of todays",
+            "keyword": "Given ",
+            "name": "that I have signed in to the page",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 485168
             },
-            "line": 4
+            "line": 4,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-rating.js:6"
+            }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "the first 5 names should be saved to a list",
+            "name": "Click add to watchlist on the first move on page",
             "result": {
               "status": "undefined"
             },
@@ -28,7 +32,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "if the list contains white space replace that with _",
+            "name": "save that movie name",
             "result": {
               "status": "undefined"
             },
@@ -37,7 +41,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "add \"https://everipedia.org/wiki/lang_en/\" before the name",
+            "name": "browse to my watchlist",
             "result": {
               "status": "undefined"
             },
@@ -46,7 +50,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "browse to that page",
+            "name": "the same movie should be present",
             "result": {
               "status": "undefined"
             },
@@ -54,19 +58,10 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "name": "find birthday on that page and check if it is today",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9
-          },
-          {
-            "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 12894300041
+              "duration": 14711016486
             },
             "hidden": true,
             "match": {
@@ -78,11 +73,11 @@
         "type": "scenario"
       }
     ],
-    "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today",
+    "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later",
     "keyword": "Feature",
     "line": 1,
-    "name": "Check if todays 5 first birthdays are the same as on everipedia in celeb - Born today",
+    "name": "As a user I would like to be able to add random film to my watchlist so I can save them for later",
     "tags": [],
-    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/check-birthday.feature"
+    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist.feature"
   }
 ]
