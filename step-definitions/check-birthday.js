@@ -42,7 +42,9 @@ module.exports = function () {
       let str2 = str.slice(5, str.length);
       if (today.getMonth() < 9)
         rightDate = str2.slice(1, str2.length);
-      expect(ourDate).to.be.equal(rightDate);
+      expect(ourDate,
+        'Our date for this celebrity should be'
+      ).to.be.equal(rightDate);
     }
   });
 
