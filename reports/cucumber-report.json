@@ -13,11 +13,11 @@
             "name": "I browse to Birth Month Day of todays",
             "result": {
               "status": "passed",
-              "duration": 11319873419
+              "duration": 16271452455
             },
             "line": 4,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:8"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:11"
             }
           },
           {
@@ -26,11 +26,11 @@
             "name": "the first 5 names should be saved to a list",
             "result": {
               "status": "passed",
-              "duration": 51255680
+              "duration": 24785183
             },
             "line": 5,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:12"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:15"
             }
           },
           {
@@ -39,11 +39,11 @@
             "name": "if the list contains white space replace that with _",
             "result": {
               "status": "passed",
-              "duration": 184356
+              "duration": 86225067
             },
             "line": 6,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:20"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:18"
             }
           },
           {
@@ -52,11 +52,11 @@
             "name": "add \"https://en.wikipedia.org/wiki/\" before the name",
             "result": {
               "status": "passed",
-              "duration": 287438
+              "duration": 2295543
             },
             "line": 7,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:23"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:27"
             }
           },
           {
@@ -65,11 +65,11 @@
             "name": "browse to that page",
             "result": {
               "status": "passed",
-              "duration": 2021317783
+              "duration": 2710680
             },
             "line": 8,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:27"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:33"
             }
           },
           {
@@ -78,11 +78,11 @@
             "name": "find birthday on that page and check if it is today",
             "result": {
               "status": "passed",
-              "duration": 51058440
+              "duration": 10650151088
             },
             "line": 9,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:31"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:40"
             }
           },
           {
@@ -90,7 +90,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3144624465
+              "duration": 2395302856
             },
             "hidden": true,
             "match": {

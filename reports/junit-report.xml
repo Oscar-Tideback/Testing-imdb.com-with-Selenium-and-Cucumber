@@ -5,17 +5,17 @@
             <property name="URI" value="/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/check-birthday.feature">
             </property>
         </properties>
-        <testcase name="When I browse to Birth Month Day of todays" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="11.319873419">
+        <testcase name="When I browse to Birth Month Day of todays" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="16.271452455">
         </testcase>
-        <testcase name="Then the first 5 names should be saved to a list" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.05125568">
+        <testcase name="Then the first 5 names should be saved to a list" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.024785183">
         </testcase>
-        <testcase name="And if the list contains white space replace that with _" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.000184356">
+        <testcase name="And if the list contains white space replace that with _" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.086225067">
         </testcase>
-        <testcase name="And add &quot;https://en.wikipedia.org/wiki/&quot; before the name" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.000287438">
+        <testcase name="And add &quot;https://en.wikipedia.org/wiki/&quot; before the name" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.002295543">
         </testcase>
-        <testcase name="And browse to that page" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="2.021317783">
+        <testcase name="And browse to that page" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.00271068">
         </testcase>
-        <testcase name="And find birthday on that page and check if it is today" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.05105844">
+        <testcase name="And find birthday on that page and check if it is today" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="10.650151088">
         </testcase>
     </testsuite>
 </testsuites>

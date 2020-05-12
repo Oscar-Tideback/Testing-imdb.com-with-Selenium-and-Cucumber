@@ -2,7 +2,10 @@ let { $, sleep } = require('./funcs');
 
 module.exports = function () {
   let names = [];
-  let name, text, wikipedia, rightDate, ourDate;
+  let wikipedia = [];
+  let wikiBday = [];
+  let texts = [];
+  let name, rightDate, ourDate;
 
   //Scenario: Cross-check our date of birth with the celebertys wikipedia pages
   this.When(/^I browse to Birth Month Day of todays$/, async function () {
@@ -11,33 +14,40 @@ module.exports = function () {
   });
   this.Then(/^the first (\d+) names should be saved to a list$/, async function (value5) {
     names = await $("h3.lister-item-header > a");
-    name = await names[0].getText();
-    console.log(await names[0].getText());
-
   });
-  this.Then(/^if the list contains white space replace that with _$/, function () {
-    text = name.replace(" ", "_");
+  this.Then(/^if the list contains white space replace that with _$/, async function () {
+    for (let i = 0; i < 5; i++) {
+      name = await names[i].getText();
+      let str = name.replace(" ", "_");
+      names[i] = str;
+      console.log(names[i]);
+    }
+    //text = name.replace(" ", "_");
   });
   this.Then(/^add "([^"]*)" before the name$/, async function (wikipediaUrl) {
-    wikipedia = await wikipediaUrl.concat(text);
+    for (let i = 0; i < 5; i++) {
+      wikipedia[i] = await wikipediaUrl.concat(names[i]);
+    }
     console.log(wikipedia);
   });
   this.Then(/^browse to that page$/, async function () {
-    await helpers.loadPage(wikipedia);
-    await sleep(1000);
+    //We will browse page in next step
   });
   this.Then(/^find birthday on that page and check if it is today$/, async function () {
     let today = new Date();
     ourDate = today.getMonth() + 01;
     ourDate += "-";
     ourDate += today.getDate();
-    birthday = await $(".bday");
-    let str = await birthday.getAttribute("textContent");
-    let str2 = str.slice(5, str.length);
-    if (today.getMonth() < 9)
-      rightDate = str2.slice(1, str2.length);
-    //console.log(str + ' ' + ourDate);
-    expect(ourDate).to.be.equal(rightDate);
+    for (let i = 0; i < 5; i++) {
+      await helpers.loadPage(wikipedia[i]);
+      wikiBday[i] = await $(".bday");
+      let str = await wikiBday[i].getAttribute("textContent");
+      await sleep(1000);
+      let str2 = str.slice(5, str.length);
+      if (today.getMonth() < 9)
+        rightDate = str2.slice(1, str2.length);
+      expect(ourDate).to.be.equal(rightDate);
+    }
   });
 
 }
