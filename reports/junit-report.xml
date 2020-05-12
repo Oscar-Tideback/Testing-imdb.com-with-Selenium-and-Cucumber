@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
+<<<<<<< HEAD
     <testsuite name="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" tests="5" failures="0" skipped="0">
+=======
+    <testsuite name="i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar." tests="3" failures="0" skipped="0">
+>>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
         <properties>
-            <property name="URI" value="/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist.feature">
+            <property name="URI" value="C:\Users\Jonas Höglund\Desktop\IJJO\features\help-center-bar.feature">
             </property>
         </properties>
+<<<<<<< HEAD
         <testcase name="When I have signed in to the page" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="24.219374935">
         </testcase>
         <testcase name="Then click add to watchlist on the first move on page" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="1.148655898">
@@ -14,6 +19,13 @@
         <testcase name="And browse to my watchlist" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="3.454753737">
         </testcase>
         <testcase name="And the same movie should be present" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="0.167201775">
+=======
+        <testcase name="Given that i have clicked on the menu and chosen Help center" classname="i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar." time="6.3150983">
+        </testcase>
+        <testcase name="When I type &quot;ratings&quot; in the help center bar" classname="i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar." time="3.058501601">
+        </testcase>
+        <testcase name="Then I should get related topics concerning ratings" classname="i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar." time="0.0002788">
+>>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
         </testcase>
     </testsuite>
 </testsuites>

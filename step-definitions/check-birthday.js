@@ -1,4 +1,7 @@
-let { $, sleep } = require('./funcs');
+let {
+  $,
+  sleep
+} = require('./funcs');
 
 module.exports = function () {
   let names = [];
