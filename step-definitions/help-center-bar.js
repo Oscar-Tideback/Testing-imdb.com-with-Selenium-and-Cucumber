@@ -23,7 +23,7 @@ module.exports = function () {
 
 
 
-  this.When(/^I type "([^"]*)" in the help center bar$/, function (search) {
+  this.When(/^I type "([^"]*)" in the help center bar$/, async function (search) {
     await searchFieldHelp.sendKeys(search)
     await sleep(3000)
   });

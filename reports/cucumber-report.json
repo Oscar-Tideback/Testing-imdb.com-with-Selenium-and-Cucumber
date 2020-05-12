@@ -1,71 +1,62 @@
 [
   {
+    "description": "  As a user i want to see topics related to ratings when I search for ratings.",
     "elements": [
       {
-        "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects",
+        "id": "i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar.",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "When I have signed in I would lik to add rating on objects",
+        "line": 4,
+        "name": "Search for ratings in help center bar.",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that I have signed in to the page",
+            "name": "that i have clicked on the menu and chosen Help center",
             "result": {
               "status": "passed",
-              "duration": 485168
+              "duration": 6315098300
             },
-            "line": 4,
+            "line": 5,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-rating.js:6"
+              "location": "Höglund\\Desktop\\IJJO\\step-definitions\\help-center-bar.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I type \"ratings\" in the help center bar",
+            "result": {
+              "status": "passed",
+              "duration": 3058501601
+            },
+            "line": 6,
+            "match": {
+              "location": "Höglund\\Desktop\\IJJO\\step-definitions\\help-center-bar.js:26"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "Click add to watchlist on the first move on page",
+            "name": "I should get related topics concerning ratings",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 278800
             },
-            "line": 5
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "save that movie name",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 6
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "browse to my watchlist",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the same movie should be present",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8
+            "line": 7,
+            "match": {
+              "location": "Höglund\\Desktop\\IJJO\\step-definitions\\help-center-bar.js:33"
+            }
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 14711016486
+              "duration": 1469090400
             },
             "hidden": true,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+              "location": "Höglund\\Desktop\\IJJO\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -73,11 +64,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later",
+    "id": "i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.",
     "keyword": "Feature",
     "line": 1,
-    "name": "As a user I would like to be able to add random film to my watchlist so I can save them for later",
+    "name": "I want to see if the help center search bar works when I search for ratings.",
     "tags": [],
-    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist.feature"
+    "uri": "C:\\Users\\Jonas Höglund\\Desktop\\IJJO\\features\\help-center-bar.feature"
   }
 ]
