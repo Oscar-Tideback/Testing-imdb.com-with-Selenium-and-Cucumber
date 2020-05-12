@@ -23,9 +23,9 @@ module.exports = function () {
 
 
 
-  this.When(/^I type "([^"]*)" in the help center bar$/, function (arg1, callback) {
-    // Write code here that turns the phrase above into concrete actions
-    callback(null, 'pending');
+  this.When(/^I type "([^"]*)" in the help center bar$/, function (search) {
+    await searchFieldHelp.sendKeys(search)
+    await sleep(3000)
   });
 
 
