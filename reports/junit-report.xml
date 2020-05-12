@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects" tests="5" failures="0" skipped="4">
+    <testsuite name="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" tests="5" failures="0" skipped="0">
         <properties>
             <property name="URI" value="/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist.feature">
             </property>
         </properties>
-        <testcase name="Given that I have signed in to the page" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects" time="0.000485168">
+        <testcase name="When I have signed in to the page" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="24.219374935">
         </testcase>
-        <testcase name="Then Click add to watchlist on the first move on page" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects">
-            <skipped message="">
-            </skipped>
+        <testcase name="Then click add to watchlist on the first move on page" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="1.148655898">
         </testcase>
-        <testcase name="And save that movie name" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects">
-            <skipped message="">
-            </skipped>
+        <testcase name="And save that movie name" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="0.163892387">
         </testcase>
-        <testcase name="And browse to my watchlist" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects">
-            <skipped message="">
-            </skipped>
+        <testcase name="And browse to my watchlist" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="3.454753737">
         </testcase>
-        <testcase name="And the same movie should be present" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects">
-            <skipped message="">
-            </skipped>
+        <testcase name="And the same movie should be present" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="0.167201775">
         </testcase>
     </testsuite>
 </testsuites>

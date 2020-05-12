@@ -2,66 +2,82 @@
   {
     "elements": [
       {
-        "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects",
+        "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist",
         "keyword": "Scenario",
         "line": 3,
-        "name": "When I have signed in I would lik to add rating on objects",
+        "name": "When I have signed in, I would like to add tom my watchlist",
         "steps": [
           {
             "arguments": [],
-            "keyword": "Given ",
-            "name": "that I have signed in to the page",
+            "keyword": "When ",
+            "name": "I have signed in to the page",
             "result": {
               "status": "passed",
-              "duration": 485168
+              "duration": 24219374935
             },
             "line": 4,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-rating.js:6"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:9"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "Click add to watchlist on the first move on page",
+            "name": "click add to watchlist on the first move on page",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 1148655898
             },
-            "line": 5
+            "line": 5,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:16"
+            }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "name": "save that movie name",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 163892387
             },
-            "line": 6
+            "line": 6,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:23"
+            }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "name": "browse to my watchlist",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 3454753737
             },
-            "line": 7
+            "line": 7,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:28"
+            }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "name": "the same movie should be present",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 167201775
             },
-            "line": 8
+            "line": 8,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:31"
+            }
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 14711016486
+              "duration": 3649374533
             },
             "hidden": true,
             "match": {
