@@ -4,7 +4,6 @@ module.exports = function () {
   let names = [];
   let wikipedia = [];
   let wikiBday = [];
-  let texts = [];
   let name, rightDate, ourDate;
 
   //Scenario: Cross-check our date of birth with the celebertys wikipedia pages
@@ -20,15 +19,12 @@ module.exports = function () {
       name = await names[i].getText();
       let str = name.replace(" ", "_");
       names[i] = str;
-      console.log(names[i]);
     }
-    //text = name.replace(" ", "_");
   });
   this.Then(/^add "([^"]*)" before the name$/, async function (wikipediaUrl) {
     for (let i = 0; i < 5; i++) {
       wikipedia[i] = await wikipediaUrl.concat(names[i]);
     }
-    console.log(wikipedia);
   });
   this.Then(/^browse to that page$/, async function () {
     //We will browse page in next step
