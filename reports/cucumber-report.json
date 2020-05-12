@@ -2,95 +2,66 @@
   {
     "elements": [
       {
-        "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages",
+        "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Cross-check our date of birth with the celebertys wikipedia pages",
+        "name": "When I have signed in I would lik to add rating on objects",
         "steps": [
           {
             "arguments": [],
-            "keyword": "When ",
-            "name": "I browse to Birth Month Day of todays",
+            "keyword": "Given ",
+            "name": "that I have signed in to the page",
             "result": {
               "status": "passed",
-              "duration": 12187989478
+              "duration": 485168
             },
             "line": 4,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:10"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-rating.js:6"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "the first 5 names should be saved to a list",
+            "name": "Click add to watchlist on the first move on page",
             "result": {
-              "status": "passed",
-              "duration": 22422705
+              "status": "undefined"
             },
-            "line": 5,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:14"
-            }
+            "line": 5
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "if the list contains white space replace that with _",
+            "name": "save that movie name",
             "result": {
-              "status": "passed",
-              "duration": 64881795
+              "status": "undefined"
             },
-            "line": 6,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:17"
-            }
+            "line": 6
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "add \"https://en.wikipedia.org/wiki/\" before the name",
+            "name": "browse to my watchlist",
             "result": {
-              "status": "passed",
-              "duration": 288108
+              "status": "undefined"
             },
-            "line": 7,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:24"
-            }
+            "line": 7
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "browse to that page",
+            "name": "the same movie should be present",
             "result": {
-              "status": "passed",
-              "duration": 1312340
+              "status": "undefined"
             },
-            "line": 8,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:29"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "find birthday on that page and check if it is today",
-            "result": {
-              "status": "passed",
-              "duration": 10302663574
-            },
-            "line": 9,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:32"
-            }
+            "line": 8
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3021139080
+              "duration": 14711016486
             },
             "hidden": true,
             "match": {
@@ -102,11 +73,11 @@
         "type": "scenario"
       }
     ],
-    "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today",
+    "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later",
     "keyword": "Feature",
     "line": 1,
-    "name": "Check if todays 5 first birthdays are the same as on wikipedia in celeb - Born today",
+    "name": "As a user I would like to be able to add random film to my watchlist so I can save them for later",
     "tags": [],
-    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/check-birthday.feature"
+    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist.feature"
   }
 ]
