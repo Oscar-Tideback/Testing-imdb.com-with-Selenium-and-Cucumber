@@ -32,4 +32,11 @@ https://www.imdb.com/search/name/?birth_monthday=05-08&ref_=hm_brn_sm
 
       """<a class="" title="Click to rate: 7" rel="nofollow"><span>7</span></a>
 https://www.imdb.com/user/ur118073436/ratings?ref_=nv_usr_rt_4
-<span class="ipl-rating-star__rating">7</span>"""
+<span class="ipl-rating-star__rating">7</span>
+
+const {username, password} = require('./credentials.json');
+
+
+<a class="ipc-button ipc-button--single-padding ipc-button--default-height ipc-button--core-baseAlt ipc-button--theme-baseAlt ipc-button--on-textPrimary ipc-text-button imdb-header__signin-text" tabindex="0" href="/registration/signin?ref=nv_generic_lgin"><div class="ipc-button__text">Sign In</div></a>
+"""
+

@@ -1,7 +1,9 @@
 [
   {
+    "description": "  As a user i want to see topics related to ratings when I search for ratings.",
     "elements": [
       {
+<<<<<<< HEAD
         "id": "as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.;open-menu.",
         "keyword": "Scenario",
         "line": 3,
@@ -11,31 +13,72 @@
             "arguments": [],
             "keyword": "Given ",
             "name": "that I am on the IMDB site.",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4
-          },
+=======
+<<<<<<< HEAD
+        "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "When I have signed in, I would like to add tom my watchlist",
+        "steps": [
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click on the Menu button.",
+            "name": "I have signed in to the page",
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 24219374935
+=======
+        "id": "i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar.",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Search for ratings in help center bar.",
+        "steps": [
+          {
+            "arguments": [],
+<<<<<<< HEAD
+            "keyword": "When ",
+            "name": "I click on the Menu button.",
+=======
+            "keyword": "Given ",
+            "name": "that i have clicked on the menu and chosen Help center",
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
+            "result": {
+              "status": "passed",
+              "duration": 6315098300
+>>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
             },
-            "line": 5
+            "line": 5,
+            "match": {
+<<<<<<< HEAD
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:9"
+=======
+              "location": "Höglund\\Desktop\\IJJO\\step-definitions\\help-center-bar.js:15"
+>>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
+            }
           },
           {
             "arguments": [],
+<<<<<<< HEAD
             "keyword": "Then ",
             "name": "I would like to see the menu of what IMDB has to offer.",
+=======
+<<<<<<< HEAD
+            "keyword": "Then ",
+            "name": "click add to watchlist on the first move on page",
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 1148655898
             },
-            "line": 6
+            "line": 5,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:16"
+            }
           },
           {
             "arguments": [],
+<<<<<<< HEAD
             "keyword": "After ",
             "result": {
               "status": "passed",
@@ -60,39 +103,107 @@
             "arguments": [],
             "keyword": "Given ",
             "name": "that I am on the IMDB site.",
+=======
+            "keyword": "And ",
+            "name": "save that movie name",
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 163892387
             },
+<<<<<<< HEAD
             "line": 9
           },
           {
             "arguments": [],
             "keyword": "When ",
             "name": "I click on the text ”Most popular TV shows”.",
+=======
+            "line": 6,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "browse to my watchlist",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 3454753737
             },
+            "line": 7,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:28"
+=======
+            "keyword": "When ",
+            "name": "I type \"ratings\" in the help center bar",
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
+            "result": {
+              "status": "passed",
+              "duration": 3058501601
+            },
+<<<<<<< HEAD
             "line": 10
+=======
+            "line": 6,
+            "match": {
+              "location": "Höglund\\Desktop\\IJJO\\step-definitions\\help-center-bar.js:26"
+>>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
+            }
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
           },
           {
             "arguments": [],
             "keyword": "Then ",
+<<<<<<< HEAD
             "name": "I should see a list of the Most popular TV shows.",
+=======
+            "name": "I should get related topics concerning ratings",
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
             "result": {
-              "status": "undefined"
+              "status": "passed",
+<<<<<<< HEAD
+              "duration": 167201775
             },
+<<<<<<< HEAD
             "line": 11
+=======
+            "line": 8,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:31"
+=======
+              "duration": 278800
+            },
+            "line": 7,
+            "match": {
+              "location": "Höglund\\Desktop\\IJJO\\step-definitions\\help-center-bar.js:33"
+>>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
+            }
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
+<<<<<<< HEAD
               "duration": 5722837200
             },
             "hidden": true,
             "match": {
               "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+=======
+<<<<<<< HEAD
+              "duration": 3649374533
+=======
+              "duration": 1469090400
+>>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
+            },
+            "hidden": true,
+            "match": {
+              "location": "Höglund\\Desktop\\IJJO\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
             }
           }
         ],
@@ -100,11 +211,20 @@
         "type": "scenario"
       }
     ],
+<<<<<<< HEAD
     "id": "as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.",
     "keyword": "Feature",
     "line": 1,
     "name": "As an user I want to view the most popular tv shows so that I can see what tv shows are popular.",
     "tags": [],
     "uri": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\features\\most-popular-tv-shows.feature"
+=======
+    "id": "i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "I want to see if the help center search bar works when I search for ratings.",
+    "tags": [],
+    "uri": "C:\\Users\\Jonas Höglund\\Desktop\\IJJO\\features\\help-center-bar.feature"
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
   }
 ]

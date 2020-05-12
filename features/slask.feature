@@ -23,3 +23,19 @@ $("a[href='/registration/signin?ref=nv_generic_lgin']")
 
 document.querySelector("div[aria-label=add to watchlist]");
 https://www.imdb.com/user/ur118073436/watchlist?ref_=nv_usr_wl
+
+document.querySelectorAll("span[class='lister-item-index unbold text-primary']");
+<span class="lister-item-index unbold text-primary">1. </span>
+
+document.querySelector("class[lister-item-index unbold text-primary']");
+
+class="lister-item-index unbold text-primary"
+
+document.querySelectorAll("h3.lister-item-header > a");
+
+document.querySelector(".lister-list > a");
+<div class=​"lister-list">​<div class=​"lister-item mode-detail">​<div class=​"lister-item-image">​…​</div>​<div class=​"lister-item-content">​<h3 class=​"lister-item-header">​<span class=​"lister-item-index unbold text-primary">​1. ​</span>​<a href=​"/​name/​nm6024635">​ Shira Haas
+​</a>​</h3>​<p class=​"text-muted text-small">​…​</p>​"
+Actress "<span class=​"ghost">​|​</span>​<a href=​"/​title/​tt6723102/​">​ Broken Mirrors
+​</a>​</p>​<p>​…​</p>​</div>​</div>​<div class=​"lister-item mode-detail">​<div class=​"lister-item-image">​…​</div>​<div class=​"lister-item-content">​<h3 class=​"lister-item-header">​<span class=​"lister-item-index unbold text-primary">​2. ​</span>​<a href=​"/​name/​nm0013037">​ Shohreh Aghdashloo
+​</a>​</h3>​<p class=​"text-muted text-small">​…​</p>​<p>​…​</p>​</div>​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​<div class=​"lister-item mode-detail">​…​</div>​</div>​
