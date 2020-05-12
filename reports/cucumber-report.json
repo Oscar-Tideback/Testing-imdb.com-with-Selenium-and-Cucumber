@@ -2,10 +2,10 @@
   {
     "elements": [
       {
-        "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages",
+        "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Cross-check our date of birth with the celebertys everipedia pages",
+        "name": "Cross-check our date of birth with the celebertys wikipedia pages",
         "steps": [
           {
             "arguments": [],
@@ -13,11 +13,11 @@
             "name": "I browse to Birth Month Day of todays",
             "result": {
               "status": "passed",
-              "duration": 16271452455
+              "duration": 12187989478
             },
             "line": 4,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:11"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:10"
             }
           },
           {
@@ -26,11 +26,11 @@
             "name": "the first 5 names should be saved to a list",
             "result": {
               "status": "passed",
-              "duration": 24785183
+              "duration": 22422705
             },
             "line": 5,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:15"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:14"
             }
           },
           {
@@ -39,11 +39,11 @@
             "name": "if the list contains white space replace that with _",
             "result": {
               "status": "passed",
-              "duration": 86225067
+              "duration": 64881795
             },
             "line": 6,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:18"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:17"
             }
           },
           {
@@ -52,11 +52,11 @@
             "name": "add \"https://en.wikipedia.org/wiki/\" before the name",
             "result": {
               "status": "passed",
-              "duration": 2295543
+              "duration": 288108
             },
             "line": 7,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:27"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:24"
             }
           },
           {
@@ -65,11 +65,11 @@
             "name": "browse to that page",
             "result": {
               "status": "passed",
-              "duration": 2710680
+              "duration": 1312340
             },
             "line": 8,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:33"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:29"
             }
           },
           {
@@ -78,11 +78,11 @@
             "name": "find birthday on that page and check if it is today",
             "result": {
               "status": "passed",
-              "duration": 10650151088
+              "duration": 10302663574
             },
             "line": 9,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:40"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:32"
             }
           },
           {
@@ -90,7 +90,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2395302856
+              "duration": 3021139080
             },
             "hidden": true,
             "match": {
@@ -102,10 +102,10 @@
         "type": "scenario"
       }
     ],
-    "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today",
+    "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today",
     "keyword": "Feature",
     "line": 1,
-    "name": "Check if todays 5 first birthdays are the same as on everipedia in celeb - Born today",
+    "name": "Check if todays 5 first birthdays are the same as on wikipedia in celeb - Born today",
     "tags": [],
     "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/check-birthday.feature"
   }

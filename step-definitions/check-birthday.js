@@ -31,7 +31,7 @@ module.exports = function () {
   });
   this.Then(/^find birthday on that page and check if it is today$/, async function () {
     let today = new Date();
-    ourDate = today.getMonth() + 01;
+    ourDate = today.getMonth() + 1;
     ourDate += "-";
     ourDate += today.getDate();
     for (let i = 0; i < 5; i++) {
@@ -40,7 +40,7 @@ module.exports = function () {
       let str = await wikiBday[i].getAttribute("textContent");
       await sleep(1000);
       let str2 = str.slice(5, str.length);
-      if (today.getMonth() < 9)
+      if (today.getMonth() < 9)//This might be wrong
         rightDate = str2.slice(1, str2.length);
       expect(ourDate,
         'Our date for this celebrity should be'
