@@ -2,15 +2,15 @@
   {
     "elements": [
       {
-        "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages",
+        "id": "as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.;open-menu.",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Cross check our date of birth with the celebertys everipedia pages",
+        "name": "Open menu.",
         "steps": [
           {
             "arguments": [],
-            "keyword": "When ",
-            "name": "I browse to Birth Month Day of todays",
+            "keyword": "Given ",
+            "name": "that I am on the IMDB site.",
             "result": {
               "status": "undefined"
             },
@@ -18,8 +18,8 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "name": "the first 5 names should be saved to a list",
+            "keyword": "When ",
+            "name": "I click on the Menu button.",
             "result": {
               "status": "undefined"
             },
@@ -27,8 +27,8 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "name": "if the list contains white space replace that with _",
+            "keyword": "Then ",
+            "name": "I would like to see the menu of what IMDB has to offer.",
             "result": {
               "status": "undefined"
             },
@@ -36,26 +36,30 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "name": "add \"https://everipedia.org/wiki/lang_en/\" before the name",
+            "keyword": "After ",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 6090489800
             },
-            "line": 7
-          },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.;view-a-list-of-the-most-popular-shows.",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "View a list of the Most popular shows.",
+        "steps": [
           {
             "arguments": [],
-            "keyword": "And ",
-            "name": "browse to that page",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "find birthday on that page and check if it is today",
+            "keyword": "Given ",
+            "name": "that I am on the IMDB site.",
             "result": {
               "status": "undefined"
             },
@@ -63,14 +67,32 @@
           },
           {
             "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the text ”Most popular TV shows”.",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see a list of the Most popular TV shows.",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11
+          },
+          {
+            "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 12894300041
+              "duration": 5722837200
             },
             "hidden": true,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -78,11 +100,11 @@
         "type": "scenario"
       }
     ],
-    "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today",
+    "id": "as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.",
     "keyword": "Feature",
     "line": 1,
-    "name": "Check if todays 5 first birthdays are the same as on everipedia in celeb - Born today",
+    "name": "As an user I want to view the most popular tv shows so that I can see what tv shows are popular.",
     "tags": [],
-    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/check-birthday.feature"
+    "uri": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\features\\most-popular-tv-shows.feature"
   }
 ]
