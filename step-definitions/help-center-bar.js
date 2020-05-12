@@ -23,9 +23,9 @@ module.exports = function () {
 
 
 
-  this.When(/^I type ratings in the help center bar$/, function () {
+  this.When(/^I type "([^"]*)" in the help center bar$/, function (arg1, callback) {
     // Write code here that turns the phrase above into concrete actions
-
+    callback(null, 'pending');
   });
 
 
