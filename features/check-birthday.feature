@@ -4,6 +4,6 @@ Feature:Check if todays 5 first birthdays are the same as on everipedia in celeb
     When I browse to Birth Month Day of todays
     Then the first 5 names should be saved to a list
     And if the list contains white space replace that with _
-    And add "https://everipedia.org/wiki/lang_en/" before the name
+    And add "https://en.wikipedia.org/wiki/" before the name
     And browse to that page
     And find birthday on that page and check if it is today

@@ -5,68 +5,92 @@
         "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Cross check our date of birth with the celebertys everipedia pages",
+        "name": "Cross-check our date of birth with the celebertys everipedia pages",
         "steps": [
           {
             "arguments": [],
             "keyword": "When ",
             "name": "I browse to Birth Month Day of todays",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 11319873419
             },
-            "line": 4
+            "line": 4,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:8"
+            }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "name": "the first 5 names should be saved to a list",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 51255680
             },
-            "line": 5
+            "line": 5,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:12"
+            }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "name": "if the list contains white space replace that with _",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 184356
             },
-            "line": 6
+            "line": 6,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:20"
+            }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "add \"https://everipedia.org/wiki/lang_en/\" before the name",
+            "name": "add \"https://en.wikipedia.org/wiki/\" before the name",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 287438
             },
-            "line": 7
+            "line": 7,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:23"
+            }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "name": "browse to that page",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 2021317783
             },
-            "line": 8
+            "line": 8,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:27"
+            }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "name": "find birthday on that page and check if it is today",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 51058440
             },
-            "line": 9
+            "line": 9,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:31"
+            }
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 12894300041
+              "duration": 3144624465
             },
             "hidden": true,
             "match": {
