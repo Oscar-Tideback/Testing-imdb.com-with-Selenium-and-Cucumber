@@ -37,7 +37,7 @@ module.exports = function () {
     ourDate += today.getDate();
     for (let i = 0; i < numberOfCeleb; i++) {
       await helpers.loadPage(wikipediaCeleb[i]);
-      wikiBday[i] = await $(".bday");//This should have try n catch due to inconsistencies of .bday class on wikipedia tag see https://en.wikipedia.org/wiki/Clare_Bowen
+      wikiBday[i] = await $(".bday");
       await sleep(1000);
       let str = await wikiBday[i].getAttribute("textContent");
       let str2 = str.slice(5, str.length);
