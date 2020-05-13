@@ -39,7 +39,6 @@ module.exports = function () {
       let text = await result.getText()
       console.log(text);
       assert.include(text.toLowerCase(), searchString.toLowerCase(), 'odes not contain');
-
     }
 
   });
