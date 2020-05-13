@@ -1,4 +1,7 @@
-let { $, sleep } = require('./funcs');
+let {
+  $,
+  sleep
+} = require('./funcs');
 
 module.exports = function () {
   let names = [];
@@ -41,7 +44,7 @@ module.exports = function () {
       await sleep(1000);
       let str = await wikiBday[i].getAttribute("textContent");
       let str2 = str.slice(5, str.length);
-      if (today.getMonth() < 9)//This might be wrong, should it be 10?
+      if (today.getMonth() < 9) //This might be wrong, should it be 10?
         rightDate = str2.slice(1, str2.length);
       expect(ourDate,
         'Our birthday date for ' + names[i] +
