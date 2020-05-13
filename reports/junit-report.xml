@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" tests="6" failures="0" skipped="6">
+    <testsuite name="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" tests="6" failures="1" skipped="4">
         <properties>
             <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/cast-crew.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the Suits page" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that I am on the Suits page" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="10.769251118">
         </testcase>
-        <testcase name="And that I have clicked the Edit button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
-            <skipped message="">
-            </skipped>
+        <testcase name="And that I have clicked the Edit button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="0.030919496">
+            <failure message="NoSuchElementError: Unable to locate element: a.button-box">NoSuchElementError: Unable to locate element: a.button-box
+    at Object.throwDecodedError (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/error.js:497:15)
+    at parseHttpResponse (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/http.js:519:13)
+    at /Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.findElement(By(css selector, a.button-box))
+    at thenableWebDriverProxy.schedule (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+    at thenableWebDriverProxy.findElement (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/webdriver.js:1014:17)
+    at createWorld.&lt;anonymous&gt; (/Users/jasminkasravi/Desktop/untitled folder/IJJO/step-definitions/cast-crew.js:14:26)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+From: Task: WebElement.getText()
+    at thenableWebDriverProxy.schedule (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+    at WebElementPromise.schedule_ (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/webdriver.js:2015:25)
+    at WebElementPromise.getText (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/webdriver.js:2281:17)
+    at createWorld.&lt;anonymous&gt; (/Users/jasminkasravi/Desktop/untitled folder/IJJO/step-definitions/cast-crew.js:14:62)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</failure>
         </testcase>
         <testcase name="And that I haved chosen wanted Cast in Cast&amp;Crew and clicked on the continue button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
             <skipped message="">

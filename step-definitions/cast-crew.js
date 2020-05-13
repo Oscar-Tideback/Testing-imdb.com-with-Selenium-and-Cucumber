@@ -2,20 +2,21 @@ let { $, sleep } = require('./funcs');
 const { username, password } = require('./credentials.json');
 module.exports = function () {
 
+  let text3;
 
-
-  this.Given(/^that I am on the Suits page$/, async function (callback) {
+  this.Given(/^that I am on the Suits page$/, async function () {
     await helpers.loadPage('https://www.imdb.com/title/tt1632701/?ref_=nv_sr_srsg_0');
     await sleep(1000);
   });
 
 
-  this.Given(/^that I have clicked the Edit button$/, function () {
-    // Write code here that turns the phrase above into concrete actions
-    callback(null, 'pending');
+  this.Given(/^that I have clicked the Edit button$/, async function () {
+    text3 = await driver.findElement(By.css('')).getText();
+    await driver.findElement(By.css('')).click();
+    await sleep(4000);
   });
 
-  this.Given(/^that I haved chosen wanted Cast in Cast&Crew and clicked on the continue button$/, function (callback) {
+  /*this.Given(/^that I haved chosen wanted Cast in Cast&Crew and clicked on the continue button$/, function (callback) {
     // Write code here that turns the phrase above into concrete actions
     callback(null, 'pending');
   });
@@ -36,5 +37,5 @@ module.exports = function () {
     // Write code here that turns the phrase above into concrete actions
     callback(null, 'pending');
   });
-
+*/
 }
