@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar." tests="3" failures="0" skipped="0">
+    <testsuite name="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" tests="6" failures="1" skipped="4">
         <properties>
-            <property name="URI" value="C:\Users\Jonas Höglund\Desktop\IJJO\features\help-center-bar.feature">
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/cast-crew.feature">
             </property>
         </properties>
-        <testcase name="Given that i have clicked on the menu and chosen Help center" classname="i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar." time="6.3150983">
+        <testcase name="Given that I am on the Suits page" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="10.769251118">
         </testcase>
-        <testcase name="When I type &quot;ratings&quot; in the help center bar" classname="i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar." time="3.058501601">
+        <testcase name="And that I have clicked the Edit button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="0.030919496">
+            <failure message="NoSuchElementError: Unable to locate element: a.button-box">NoSuchElementError: Unable to locate element: a.button-box
+    at Object.throwDecodedError (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/error.js:497:15)
+    at parseHttpResponse (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/http.js:519:13)
+    at /Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.findElement(By(css selector, a.button-box))
+    at thenableWebDriverProxy.schedule (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+    at thenableWebDriverProxy.findElement (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/webdriver.js:1014:17)
+    at createWorld.&lt;anonymous&gt; (/Users/jasminkasravi/Desktop/untitled folder/IJJO/step-definitions/cast-crew.js:14:26)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+From: Task: WebElement.getText()
+    at thenableWebDriverProxy.schedule (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+    at WebElementPromise.schedule_ (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/webdriver.js:2015:25)
+    at WebElementPromise.getText (/Users/jasminkasravi/Desktop/untitled folder/IJJO/node_modules/selenium-webdriver/lib/webdriver.js:2281:17)
+    at createWorld.&lt;anonymous&gt; (/Users/jasminkasravi/Desktop/untitled folder/IJJO/step-definitions/cast-crew.js:14:62)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</failure>
         </testcase>
-        <testcase name="Then I should get related topics concerning ratings" classname="i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar." time="0.0002788">
+        <testcase name="And that I haved chosen wanted Cast in Cast&amp;Crew and clicked on the continue button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When I add data in Gabriel Macht,Episode Errors and Omissions (#1.2),Harvey Specter and click button check these updates" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And I click the button Submit these updates" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then the data I have submitted in Gabriel Macht, Episode Errors and Omissions (#1.2), Harvey Specter should be sent" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+            <skipped message="">
+            </skipped>
         </testcase>
     </testsuite>
 </testsuites>
