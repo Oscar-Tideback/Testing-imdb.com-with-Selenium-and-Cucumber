@@ -16,6 +16,7 @@ module.exports = function () {
   });
   this.Then(/^the first (\d+) names should be saved to a list$/, async function (value5) {
     names = await $("h3.lister-item-header > a");
+
   });
   this.Then(/^if the list contains white space replace that with _$/, async function () {
     for (let i = 0; i < 5; i++) {
