@@ -1,73 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<<<<<<< HEAD
-    <testsuite name="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" tests="6" failures="0" skipped="0">
-=======
-<<<<<<< HEAD
-    <testsuite name="as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.;open-menu." tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:\Users\LadyQuinn\Desktop\testporjekt\IJJO\features\most-popular-tv-shows.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the IMDB site." classname="as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.;open-menu.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click on the Menu button." classname="as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.;open-menu.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then I would like to see the menu of what IMDB has to offer." classname="as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.;open-menu.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.;view-a-list-of-the-most-popular-shows." tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:\Users\LadyQuinn\Desktop\testporjekt\IJJO\features\most-popular-tv-shows.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the IMDB site." classname="as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.;view-a-list-of-the-most-popular-shows.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click on the text ”Most popular TV shows”." classname="as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.;view-a-list-of-the-most-popular-shows.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then I should see a list of the Most popular TV shows." classname="as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.;view-a-list-of-the-most-popular-shows.">
-            <skipped message="">
-            </skipped>
-=======
-<<<<<<< HEAD
     <testsuite name="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" tests="5" failures="0" skipped="0">
-=======
-    <testsuite name="i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar." tests="3" failures="0" skipped="0">
->>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
->>>>>>> 8c724126cdf6b3613e62ee44cd9099b28641222f
         <properties>
-            <property name="URI" value="/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/check-birthday.feature">
+            <property name="URI" value="/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist.feature">
             </property>
         </properties>
-        <testcase name="When I browse to Birth Month Day of todays" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" time="16.839010286">
+        <testcase name="When I have signed in to the page" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="17.65973075">
         </testcase>
-        <testcase name="Then the first 5 names should be saved to a list" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" time="0.027428556">
+        <testcase name="Then click add to watchlist on the first move on page" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="3.812443438">
         </testcase>
-        <testcase name="And if the list contains white space replace that with _" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" time="0.13926346">
+        <testcase name="And save that movie name" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="0.042043946">
         </testcase>
-        <testcase name="And add &quot;https://en.wikipedia.org/wiki/&quot; before the name" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" time="0.000295932">
+        <testcase name="And browse to my watchlist" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="2.304444523">
         </testcase>
-        <testcase name="And browse to that page" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" time="0.00161893">
-        </testcase>
-<<<<<<< HEAD
-        <testcase name="And find birthday on that page and check if it is today" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" time="11.255890161">
-=======
-        <testcase name="When I type &quot;ratings&quot; in the help center bar" classname="i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar." time="3.058501601">
-        </testcase>
-        <testcase name="Then I should get related topics concerning ratings" classname="i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar." time="0.0002788">
->>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
->>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
->>>>>>> 8c724126cdf6b3613e62ee44cd9099b28641222f
+        <testcase name="And the same movie should be present" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist" time="0.211839769">
         </testcase>
     </testsuite>
 </testsuites>
