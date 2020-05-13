@@ -2,7 +2,23 @@
   {
     "elements": [
       {
+<<<<<<< HEAD
         "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages",
+=======
+<<<<<<< HEAD
+        "id": "as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.;open-menu.",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Open menu.",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that I am on the IMDB site.",
+=======
+<<<<<<< HEAD
+        "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist",
+>>>>>>> 8c724126cdf6b3613e62ee44cd9099b28641222f
         "keyword": "Scenario",
         "line": 3,
         "name": "Cross-check our date of birth with the celebertys wikipedia pages",
@@ -10,10 +26,37 @@
           {
             "arguments": [],
             "keyword": "When ",
+<<<<<<< HEAD
             "name": "I browse to Birth Month Day of todays",
             "result": {
               "status": "passed",
               "duration": 16839010286
+=======
+            "name": "I have signed in to the page",
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
+            "result": {
+              "status": "passed",
+              "duration": 24219374935
+=======
+        "id": "i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar.",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Search for ratings in help center bar.",
+        "steps": [
+          {
+            "arguments": [],
+<<<<<<< HEAD
+            "keyword": "When ",
+            "name": "I click on the Menu button.",
+=======
+            "keyword": "Given ",
+            "name": "that i have clicked on the menu and chosen Help center",
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
+            "result": {
+              "status": "passed",
+              "duration": 6315098300
+>>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
+>>>>>>> 8c724126cdf6b3613e62ee44cd9099b28641222f
             },
             "line": 4,
             "match": {
@@ -23,7 +66,16 @@
           {
             "arguments": [],
             "keyword": "Then ",
+<<<<<<< HEAD
             "name": "the first 5 names should be saved to a list",
+=======
+            "name": "I would like to see the menu of what IMDB has to offer.",
+=======
+<<<<<<< HEAD
+            "keyword": "Then ",
+            "name": "click add to watchlist on the first move on page",
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
+>>>>>>> 8c724126cdf6b3613e62ee44cd9099b28641222f
             "result": {
               "status": "passed",
               "duration": 27428556
@@ -35,12 +87,51 @@
           },
           {
             "arguments": [],
+<<<<<<< HEAD
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 6090489800
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.;view-a-list-of-the-most-popular-shows.",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "View a list of the Most popular shows.",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that I am on the IMDB site.",
+=======
             "keyword": "And ",
+<<<<<<< HEAD
             "name": "if the list contains white space replace that with _",
+=======
+            "name": "save that movie name",
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
+>>>>>>> 8c724126cdf6b3613e62ee44cd9099b28641222f
             "result": {
               "status": "passed",
               "duration": 139263460
             },
+<<<<<<< HEAD
+            "line": 9
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the text ”Most popular TV shows”.",
+=======
             "line": 6,
             "match": {
               "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:18"
@@ -56,6 +147,7 @@
             },
             "line": 7,
             "match": {
+<<<<<<< HEAD
               "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:25"
             }
           },
@@ -63,38 +155,96 @@
             "arguments": [],
             "keyword": "And ",
             "name": "browse to that page",
+=======
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:28"
+=======
+            "keyword": "When ",
+            "name": "I type \"ratings\" in the help center bar",
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
+>>>>>>> 8c724126cdf6b3613e62ee44cd9099b28641222f
             "result": {
               "status": "passed",
               "duration": 1618930
             },
+<<<<<<< HEAD
             "line": 8,
+=======
+<<<<<<< HEAD
+            "line": 10
+=======
+            "line": 6,
+>>>>>>> 8c724126cdf6b3613e62ee44cd9099b28641222f
             "match": {
               "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:30"
             }
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
           },
           {
             "arguments": [],
+<<<<<<< HEAD
             "keyword": "And ",
             "name": "find birthday on that page and check if it is today",
+=======
+            "keyword": "Then ",
+<<<<<<< HEAD
+            "name": "I should see a list of the Most popular TV shows.",
+=======
+            "name": "I should get related topics concerning ratings",
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
+>>>>>>> 8c724126cdf6b3613e62ee44cd9099b28641222f
             "result": {
               "status": "passed",
               "duration": 11255890161
             },
+<<<<<<< HEAD
             "line": 9,
+=======
+<<<<<<< HEAD
+            "line": 11
+=======
+            "line": 8,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:31"
+=======
+              "duration": 278800
+            },
+            "line": 7,
+>>>>>>> 8c724126cdf6b3613e62ee44cd9099b28641222f
             "match": {
               "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:33"
             }
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
+<<<<<<< HEAD
               "duration": 4181414650
             },
             "hidden": true,
             "match": {
               "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+=======
+<<<<<<< HEAD
+              "duration": 5722837200
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+=======
+<<<<<<< HEAD
+              "duration": 3649374533
+=======
+              "duration": 1469090400
+>>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
+            },
+            "hidden": true,
+            "match": {
+              "location": "Höglund\\Desktop\\IJJO\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
+>>>>>>> 8c724126cdf6b3613e62ee44cd9099b28641222f
             }
           }
         ],
@@ -102,11 +252,28 @@
         "type": "scenario"
       }
     ],
+<<<<<<< HEAD
     "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today",
+=======
+<<<<<<< HEAD
+    "id": "as-an-user-i-want-to-view-the-most-popular-tv-shows-so-that-i-can-see-what-tv-shows-are-popular.",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "As an user I want to view the most popular tv shows so that I can see what tv shows are popular.",
+    "tags": [],
+    "uri": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\features\\most-popular-tv-shows.feature"
+=======
+    "id": "i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.",
+>>>>>>> 8c724126cdf6b3613e62ee44cd9099b28641222f
     "keyword": "Feature",
     "line": 1,
     "name": "Check if todays 5 first birthdays are the same as on wikipedia in celeb - Born today",
     "tags": [],
+<<<<<<< HEAD
     "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/check-birthday.feature"
+=======
+    "uri": "C:\\Users\\Jonas Höglund\\Desktop\\IJJO\\features\\help-center-bar.feature"
+>>>>>>> 73d72f8a61bb77e6e5becff8d4e7873a71e09f57
+>>>>>>> 8c724126cdf6b3613e62ee44cd9099b28641222f
   }
 ]
