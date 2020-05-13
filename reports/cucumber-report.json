@@ -1,115 +1,88 @@
 [
   {
-    "description": "  As a user i want to see topics related to ratings when I search for ratings.",
     "elements": [
       {
-<<<<<<< HEAD
-        "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist",
+        "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages",
         "keyword": "Scenario",
         "line": 3,
-        "name": "When I have signed in, I would like to add tom my watchlist",
+        "name": "Cross-check our date of birth with the celebertys wikipedia pages",
         "steps": [
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I have signed in to the page",
+            "name": "I browse to Birth Month Day of todays",
             "result": {
               "status": "passed",
-              "duration": 24219374935
-=======
-        "id": "i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.;search-for-ratings-in-help-center-bar.",
-        "keyword": "Scenario",
-        "line": 4,
-        "name": "Search for ratings in help center bar.",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that i have clicked on the menu and chosen Help center",
-            "result": {
-              "status": "passed",
-              "duration": 6315098300
->>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
+              "duration": 16839010286
             },
-            "line": 5,
+            "line": 4,
             "match": {
-<<<<<<< HEAD
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:9"
-=======
-              "location": "Höglund\\Desktop\\IJJO\\step-definitions\\help-center-bar.js:15"
->>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:10"
             }
           },
           {
             "arguments": [],
-<<<<<<< HEAD
             "keyword": "Then ",
-            "name": "click add to watchlist on the first move on page",
+            "name": "the first 5 names should be saved to a list",
             "result": {
               "status": "passed",
-              "duration": 1148655898
+              "duration": 27428556
             },
             "line": 5,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:16"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:14"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "save that movie name",
+            "name": "if the list contains white space replace that with _",
             "result": {
               "status": "passed",
-              "duration": 163892387
+              "duration": 139263460
             },
             "line": 6,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:23"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:18"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "browse to my watchlist",
+            "name": "add \"https://en.wikipedia.org/wiki/\" before the name",
             "result": {
               "status": "passed",
-              "duration": 3454753737
+              "duration": 295932
             },
             "line": 7,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:28"
-=======
-            "keyword": "When ",
-            "name": "I type \"ratings\" in the help center bar",
-            "result": {
-              "status": "passed",
-              "duration": 3058501601
-            },
-            "line": 6,
-            "match": {
-              "location": "Höglund\\Desktop\\IJJO\\step-definitions\\help-center-bar.js:26"
->>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:25"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "name": "I should get related topics concerning ratings",
+            "keyword": "And ",
+            "name": "browse to that page",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 167201775
+              "duration": 1618930
             },
             "line": 8,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:31"
-=======
-              "duration": 278800
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:30"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "find birthday on that page and check if it is today",
+            "result": {
+              "status": "passed",
+              "duration": 11255890161
             },
-            "line": 7,
+            "line": 9,
             "match": {
-              "location": "Höglund\\Desktop\\IJJO\\step-definitions\\help-center-bar.js:33"
->>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/check-birthday.js:33"
             }
           },
           {
@@ -117,15 +90,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 3649374533
-=======
-              "duration": 1469090400
->>>>>>> 9497e7645c337ca79faf661861caab6c9c1852d1
+              "duration": 4181414650
             },
             "hidden": true,
             "match": {
-              "location": "Höglund\\Desktop\\IJJO\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
             }
           }
         ],
@@ -133,11 +102,11 @@
         "type": "scenario"
       }
     ],
-    "id": "i-want-to-see-if-the-help-center-search-bar-works-when-i-search-for-ratings.",
+    "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today",
     "keyword": "Feature",
     "line": 1,
-    "name": "I want to see if the help center search bar works when I search for ratings.",
+    "name": "Check if todays 5 first birthdays are the same as on wikipedia in celeb - Born today",
     "tags": [],
-    "uri": "C:\\Users\\Jonas Höglund\\Desktop\\IJJO\\features\\help-center-bar.feature"
+    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/check-birthday.feature"
   }
 ]
