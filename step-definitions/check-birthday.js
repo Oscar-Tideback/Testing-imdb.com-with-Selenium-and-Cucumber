@@ -4,7 +4,7 @@ module.exports = function () {
   let names = [];
   let wikipediaCeleb = [];
   let wikiBday = [];
-  let name, rightDate, ourDate, numberOfCelebMax50;
+  let name, rightDate, ourDate, numberOfCeleb;
 
   //Scenario: Cross-check our date of birth with the celebertys wikipedia pages
   this.When(/^I browse to Birth Month Day of todays$/, async function () {
