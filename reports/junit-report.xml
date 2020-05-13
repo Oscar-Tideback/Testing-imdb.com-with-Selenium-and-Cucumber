@@ -1,83 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" tests="3" failures="0" skipped="2">
+    <testsuite name="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" tests="6" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature">
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/check-birthday.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the IMBd Celebrity news link page" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="9.9253696">
+        <testcase name="When I browse to Birth Month Day of todays" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" time="9.893481232">
         </testcase>
-        <testcase name="When I click on each &lt;headline&gt; that are shown in the top news section" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
-            <skipped message="">
-            </skipped>
+        <testcase name="Then the first 5 names should be saved to a list" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" time="0.031569697">
         </testcase>
-        <testcase name="Then the page should display the articles ingress" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
-            <skipped message="">
-            </skipped>
+        <testcase name="And if the list contains white space replace that with _" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" time="0.077332738">
         </testcase>
-    </testsuite>
-    <testsuite name="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" tests="3" failures="0" skipped="2">
-        <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the IMBd Celebrity news link page" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="7.219877344">
+        <testcase name="And add &quot;https://en.wikipedia.org/wiki/&quot; before the name" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" time="0.00022003">
         </testcase>
-        <testcase name="When I click on each &lt;headline&gt; that are shown in the top news section" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
-            <skipped message="">
-            </skipped>
+        <testcase name="And browse to that page" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" time="0.000187276">
         </testcase>
-        <testcase name="Then the page should display the articles ingress" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" tests="3" failures="0" skipped="2">
-        <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the IMBd Celebrity news link page" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="7.347421314">
-        </testcase>
-        <testcase name="When I click on each &lt;headline&gt; that are shown in the top news section" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then the page should display the articles ingress" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" tests="3" failures="0" skipped="2">
-        <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the IMBd Celebrity news link page" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="8.411858218">
-        </testcase>
-        <testcase name="When I click on each &lt;headline&gt; that are shown in the top news section" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then the page should display the articles ingress" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" tests="3" failures="0" skipped="2">
-        <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the IMBd Celebrity news link page" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="7.002756738">
-        </testcase>
-        <testcase name="When I click on each &lt;headline&gt; that are shown in the top news section" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then the page should display the articles ingress" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
-            <skipped message="">
-            </skipped>
+        <testcase name="And find birthday on that page and check if it is today" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages" time="9.460457865">
         </testcase>
     </testsuite>
 </testsuites>

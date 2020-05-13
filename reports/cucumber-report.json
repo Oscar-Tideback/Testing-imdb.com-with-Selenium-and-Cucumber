@@ -1,262 +1,96 @@
 [
   {
-    "description": "  As a user I want to click on the top news headline links and\n  see the ingress to the article",
     "elements": [
       {
-        "id": "top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news",
+        "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-wikipedia-pages",
         "keyword": "Scenario",
-        "line": 13,
-        "name": "Test article headlines in Top News",
+        "line": 3,
+        "name": "Cross-check our date of birth with the celebertys wikipedia pages",
         "steps": [
           {
             "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am on the IMBd Celebrity news link page",
+            "keyword": "When ",
+            "name": "I browse to Birth Month Day of todays",
             "result": {
               "status": "passed",
-              "duration": 9925369600
+              "duration": 9893481232
             },
-            "line": 6,
+            "line": 4,
             "match": {
-              "location": "folder/IJJO/step-definitions/article-top-news.js:5"
+              "location": "folder/IJJO/step-definitions/check-birthday.js:10"
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "name": "I click on each <headline> that are shown in the top news section",
+            "keyword": "Then ",
+            "name": "the first 5 names should be saved to a list",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 31569697
             },
-            "line": 7
+            "line": 5,
+            "match": {
+              "location": "folder/IJJO/step-definitions/check-birthday.js:14"
+            }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "name": "the page should display the articles ingress",
+            "keyword": "And ",
+            "name": "if the list contains white space replace that with _",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 77332738
             },
-            "line": 8
+            "line": 6,
+            "match": {
+              "location": "folder/IJJO/step-definitions/check-birthday.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "add \"https://en.wikipedia.org/wiki/\" before the name",
+            "result": {
+              "status": "passed",
+              "duration": 220030
+            },
+            "line": 7,
+            "match": {
+              "location": "folder/IJJO/step-definitions/check-birthday.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "browse to that page",
+            "result": {
+              "status": "passed",
+              "duration": 187276
+            },
+            "line": 8,
+            "match": {
+              "location": "folder/IJJO/step-definitions/check-birthday.js:30"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "find birthday on that page and check if it is today",
+            "result": {
+              "status": "passed",
+              "duration": 9460457865
+            },
+            "line": 9,
+            "match": {
+              "location": "folder/IJJO/step-definitions/check-birthday.js:33"
+            }
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3965330740
-            },
-            "hidden": true,
-            "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Test article headlines in Top News",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am on the IMBd Celebrity news link page",
-            "result": {
-              "status": "passed",
-              "duration": 7219877344
-            },
-            "line": 6,
-            "match": {
-              "location": "folder/IJJO/step-definitions/article-top-news.js:5"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on each <headline> that are shown in the top news section",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "the page should display the articles ingress",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 2858480228
-            },
-            "hidden": true,
-            "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Test article headlines in Top News",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am on the IMBd Celebrity news link page",
-            "result": {
-              "status": "passed",
-              "duration": 7347421314
-            },
-            "line": 6,
-            "match": {
-              "location": "folder/IJJO/step-definitions/article-top-news.js:5"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on each <headline> that are shown in the top news section",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "the page should display the articles ingress",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 1830908666
-            },
-            "hidden": true,
-            "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "Test article headlines in Top News",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am on the IMBd Celebrity news link page",
-            "result": {
-              "status": "passed",
-              "duration": 8411858218
-            },
-            "line": 6,
-            "match": {
-              "location": "folder/IJJO/step-definitions/article-top-news.js:5"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on each <headline> that are shown in the top news section",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "the page should display the articles ingress",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 3889859679
-            },
-            "hidden": true,
-            "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Test article headlines in Top News",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am on the IMBd Celebrity news link page",
-            "result": {
-              "status": "passed",
-              "duration": 7002756738
-            },
-            "line": 6,
-            "match": {
-              "location": "folder/IJJO/step-definitions/article-top-news.js:5"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on each <headline> that are shown in the top news section",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "the page should display the articles ingress",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 1945176396
+              "duration": 2097161227
             },
             "hidden": true,
             "match": {
@@ -268,11 +102,11 @@
         "type": "scenario"
       }
     ],
-    "id": "top-news-links-should-show-the-ingress-of-the-article",
+    "id": "check-if-todays-5-first-birthdays-are-the-same-as-on-wikipedia-in-celeb---born-today",
     "keyword": "Feature",
     "line": 1,
-    "name": "Top News links should show the ingress of the article",
+    "name": "Check if todays 5 first birthdays are the same as on wikipedia in celeb - Born today",
     "tags": [],
-    "uri": "/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature"
+    "uri": "/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/check-birthday.feature"
   }
 ]
