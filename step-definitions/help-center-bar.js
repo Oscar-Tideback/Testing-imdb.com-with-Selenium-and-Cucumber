@@ -38,11 +38,8 @@ module.exports = function () {
     for (let result of results) {
       let text = await result.getText()
       console.log(text);
+      assert.include(text.toLowerCase(), searchString.toLowerCase(), 'odes not contain');
 
-      if (text.toLowerCase().includes(searchString.toLowerCase())) {
-        assert.include(text.toLowerCase(), searchString.toLowerCase(), 'search result contains search value');
-
-      }
     }
 
   });
