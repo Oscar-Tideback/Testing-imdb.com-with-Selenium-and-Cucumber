@@ -8,7 +8,9 @@ module.exports = function () {
   });
 
   this.When(/^When I click on each <headline> that are shown in the top news section$/, async function () {
-
+    let button = await $('https://www.imdb.com/news/ni62884442?ref_=nwc_sb_nwc_li')
+    button.click()
+    await sleep(4000)
   });
 
 

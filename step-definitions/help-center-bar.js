@@ -23,33 +23,30 @@ module.exports = function () {
 
 
 
-  this.When(/^I type "([^"]*)" in the help center bar$/, function (search) {
+  this.When(/^I type "([^"]*)" in the help center bar \+ ENTER$/, async function (search) {
     await searchFieldHelp.sendKeys(search)
+    await searchFieldHelp.sendKeys(selenium.Key.ENTER);
     await sleep(3000)
-  });
-
-
-
-  this.Then(/^I should get related topics concerning ratings$/, function () {
-    // Write code here that turns the phrase above into concrete actions
-
+    //See test below :)
   });
 
 
 
 
+  this.Then(/^I should get related topics concerning "([^"]*)"$/, async function (search) {
+    let results = await $('h3')
+    let found = false
+    for (let result of results) {
+      console.log('text', await result.getText())
+      let text = await result.getText()
+      if (text.toLowerCase().includes(search.toLowerCase())) {
+        found = true
+        break
+      }
+    }
+    assert(found, 'expected to find ' + search)
 
-
-
-
-
-
-
-
-
-
-
-
+  });
 
 
 }

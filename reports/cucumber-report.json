@@ -1,47 +1,30 @@
 [
   {
+    "description": "  As a user I want to click on the top news headline links and\n  see the ingress to the article",
     "elements": [
       {
-        "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects",
+        "id": "top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "When I have signed in I would lik to add rating on objects",
+        "line": 13,
+        "name": "Test article headlines in Top News",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that I have signed in to the page",
+            "name": "that I am on the IMBd Celebrity news link page",
             "result": {
               "status": "passed",
-              "duration": 485168
+              "duration": 9925369600
             },
-            "line": 4,
+            "line": 6,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-rating.js:6"
+              "location": "folder/IJJO/step-definitions/article-top-news.js:5"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "name": "Click add to watchlist on the first move on page",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 5
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "save that movie name",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 6
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "browse to my watchlist",
+            "keyword": "When ",
+            "name": "I click on each <headline> that are shown in the top news section",
             "result": {
               "status": "undefined"
             },
@@ -49,8 +32,8 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "name": "the same movie should be present",
+            "keyword": "Then ",
+            "name": "the page should display the articles ingress",
             "result": {
               "status": "undefined"
             },
@@ -61,11 +44,223 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 14711016486
+              "duration": 3965330740
             },
             "hidden": true,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Test article headlines in Top News",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that I am on the IMBd Celebrity news link page",
+            "result": {
+              "status": "passed",
+              "duration": 7219877344
+            },
+            "line": 6,
+            "match": {
+              "location": "folder/IJJO/step-definitions/article-top-news.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on each <headline> that are shown in the top news section",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the page should display the articles ingress",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 2858480228
+            },
+            "hidden": true,
+            "match": {
+              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Test article headlines in Top News",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that I am on the IMBd Celebrity news link page",
+            "result": {
+              "status": "passed",
+              "duration": 7347421314
+            },
+            "line": 6,
+            "match": {
+              "location": "folder/IJJO/step-definitions/article-top-news.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on each <headline> that are shown in the top news section",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the page should display the articles ingress",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 1830908666
+            },
+            "hidden": true,
+            "match": {
+              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Test article headlines in Top News",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that I am on the IMBd Celebrity news link page",
+            "result": {
+              "status": "passed",
+              "duration": 8411858218
+            },
+            "line": 6,
+            "match": {
+              "location": "folder/IJJO/step-definitions/article-top-news.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on each <headline> that are shown in the top news section",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the page should display the articles ingress",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 3889859679
+            },
+            "hidden": true,
+            "match": {
+              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Test article headlines in Top News",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that I am on the IMBd Celebrity news link page",
+            "result": {
+              "status": "passed",
+              "duration": 7002756738
+            },
+            "line": 6,
+            "match": {
+              "location": "folder/IJJO/step-definitions/article-top-news.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on each <headline> that are shown in the top news section",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the page should display the articles ingress",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 1945176396
+            },
+            "hidden": true,
+            "match": {
+              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
             }
           }
         ],
@@ -73,11 +268,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later",
+    "id": "top-news-links-should-show-the-ingress-of-the-article",
     "keyword": "Feature",
     "line": 1,
-    "name": "As a user I would like to be able to add random film to my watchlist so I can save them for later",
+    "name": "Top News links should show the ingress of the article",
     "tags": [],
-    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist.feature"
+    "uri": "/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature"
   }
 ]

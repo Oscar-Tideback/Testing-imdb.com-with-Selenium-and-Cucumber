@@ -1,25 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects" tests="5" failures="0" skipped="4">
+    <testsuite name="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" tests="3" failures="0" skipped="2">
         <properties>
-            <property name="URI" value="/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist.feature">
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature">
             </property>
         </properties>
-        <testcase name="Given that I have signed in to the page" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects" time="0.000485168">
+        <testcase name="Given that I am on the IMBd Celebrity news link page" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="9.9253696">
         </testcase>
-        <testcase name="Then Click add to watchlist on the first move on page" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects">
+        <testcase name="When I click on each &lt;headline&gt; that are shown in the top news section" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="And save that movie name" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects">
+        <testcase name="Then the page should display the articles ingress" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="And browse to my watchlist" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects">
+    </testsuite>
+    <testsuite name="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" tests="3" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am on the IMBd Celebrity news link page" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="7.219877344">
+        </testcase>
+        <testcase name="When I click on each &lt;headline&gt; that are shown in the top news section" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="And the same movie should be present" classname="as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in-i-would-lik-to-add-rating-on-objects">
+        <testcase name="Then the page should display the articles ingress" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" tests="3" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am on the IMBd Celebrity news link page" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="7.347421314">
+        </testcase>
+        <testcase name="When I click on each &lt;headline&gt; that are shown in the top news section" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then the page should display the articles ingress" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" tests="3" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am on the IMBd Celebrity news link page" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="8.411858218">
+        </testcase>
+        <testcase name="When I click on each &lt;headline&gt; that are shown in the top news section" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then the page should display the articles ingress" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" tests="3" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am on the IMBd Celebrity news link page" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="7.002756738">
+        </testcase>
+        <testcase name="When I click on each &lt;headline&gt; that are shown in the top news section" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then the page should display the articles ingress" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news">
             <skipped message="">
             </skipped>
         </testcase>
