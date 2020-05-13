@@ -1,15 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" tests="3" failures="0" skipped="0">
+    <testsuite name="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" tests="2" failures="0" skipped="2">
         <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature">
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/search-celebrity-birthday.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the IMBd Celebrity news link page" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="9.592924658">
+        <testcase name="Given that I am at the Birth Month Day of August 5th" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite">
+            <skipped message="">
+            </skipped>
         </testcase>
-        <testcase name="When I click on each &lt;headline&gt; that are shown in the top news section" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="6.508823106">
+        <testcase name="Then I should be taken to the Janet McTeer page when I click on it." classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite">
+            <skipped message="">
+            </skipped>
         </testcase>
-        <testcase name="Then the page should display the articles ingress" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="0.062262181">
+    </testsuite>
+    <testsuite name="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" tests="2" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/search-celebrity-birthday.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am at the Birth Month Day of August 5th" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then I should be taken to the Mark Strong page when I click on it." classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" tests="2" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/search-celebrity-birthday.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am at the Birth Month Day of August 5th" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then I should be taken to the Jesse Williams page when I click on it." classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" tests="2" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/search-celebrity-birthday.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am at the Birth Month Day of August 5th" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then I should be taken to the Stephanie Szostak page when I click on it." classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" tests="2" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/search-celebrity-birthday.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am at the Birth Month Day of August 5th" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then I should be taken to the James Gunn page when I click on it." classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite">
+            <skipped message="">
+            </skipped>
         </testcase>
     </testsuite>
 </testsuites>
