@@ -22,15 +22,12 @@ module.exports = function () {
   });
 
 
-
   this.When(/^I type "([^"]*)" in the help center bar \+ ENTER$/, async function (search) {
     await searchFieldHelp.sendKeys(search)
     await searchFieldHelp.sendKeys(selenium.Key.ENTER);
     await sleep(3000)
     //See test below :)
   });
-
-
 
 
   this.Then(/^I should get related topics concerning "([^"]*)"$/, async function (search) {

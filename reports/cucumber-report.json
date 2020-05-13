@@ -1,87 +1,77 @@
 [
   {
+    "description": "  As a contributor I want to be able to add data to the Cast&Crew section\n  of Suits.",
     "elements": [
       {
-        "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-have-signed-in,-i-would-like-to-add-tom-my-watchlist",
+        "id": "can-i-as-a-contributor-add-cast&crew-information-to-suits;add-data-to-suits-cast&crew-section",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "When I have signed in, I would like to add tom my watchlist",
+        "line": 16,
+        "name": "Add data to Suits Cast&Crew section",
         "steps": [
           {
             "arguments": [],
-            "keyword": "When ",
-            "name": "I have signed in to the page",
+            "keyword": "Given ",
+            "name": "that I am on the Suits page",
             "result": {
-              "status": "passed",
-              "duration": 17659730750
+              "status": "undefined"
             },
-            "line": 4,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:9"
-            }
+            "line": 6
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that I have clicked the Edit button",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that I haved chosen wanted Cast in Cast&Crew and clicked on the continue button",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I add data in Gabriel Macht,Episode Errors and Omissions (#1.2),Harvey Specter and click button check these updates",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click the button Submit these updates",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "click add to watchlist on the first move on page",
+            "name": "the data I have submitted in Gabriel Macht, Episode Errors and Omissions (#1.2), Harvey Specter should be sent",
             "result": {
-              "status": "passed",
-              "duration": 3812443438
+              "status": "undefined"
             },
-            "line": 5,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:16"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "save that movie name",
-            "result": {
-              "status": "passed",
-              "duration": 42043946
-            },
-            "line": 6,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:22"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "browse to my watchlist",
-            "result": {
-              "status": "passed",
-              "duration": 2304444523
-            },
-            "line": 7,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:26"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the same movie should be present",
-            "result": {
-              "status": "passed",
-              "duration": 211839769
-            },
-            "line": 8,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist.js:29"
-            }
+            "line": 11
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2255920547
+              "duration": 7448929899
             },
             "hidden": true,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
             }
           }
         ],
@@ -89,11 +79,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later",
+    "id": "can-i-as-a-contributor-add-cast&crew-information-to-suits",
     "keyword": "Feature",
     "line": 1,
-    "name": "As a user I would like to be able to add random film to my watchlist so I can save them for later",
+    "name": "Can I as a contributor add Cast&Crew information to Suits",
     "tags": [],
-    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist.feature"
+    "uri": "/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/cast-crew.feature"
   }
 ]
