@@ -1,5 +1,14 @@
-let { $, sleep } = require('./funcs');
-const { username, password } = require('./credentials.json');
+let {
+  $,
+  sleep
+} = require('./funcs');
+
+const {
+  username,
+  password
+} = require('./credentials.json');
+
+
 module.exports = function () {
 
 
@@ -11,17 +20,22 @@ module.exports = function () {
 
 
   this.Given(/^that I have clicked the Edit button$/, async function () {
-    let button = await $('a.button-box')
-    button.click()
-    await sleep(4000)
+    let editButton = await $('.btn.primary.large');
+    //assert(searchButton, 'Could not find the search button');
+    await editButton.click();
+    await sleep(4000);
   });
 
-  /*this.Given(/^that I haved chosen wanted Cast in Cast&Crew and clicked on the continue button$/, function (callback) {
+  this.Given(/^that I haved chosen wanted Cast in Cast&Crew and clicked on the continue button$/, async function () {
     // Write code here that turns the phrase above into concrete actions
-    callback(null, 'pending');
+    let editButton = await $('.btn.primary');
+    //assert(searchButton, 'Could not find the search button');
+    await editButton.click();
+    await sleep(4000);
+
   });
 
-  this.When(/^I add data in Gabriel Macht,Episode Errors and Omissions \(\#(\d+)\.(\d+)\),Harvey Specter and click button check these updates$/, function (arg1, arg2, callback) {
+  /*this.When(/^I add data in Gabriel Macht,Episode Errors and Omissions \(\#(\d+)\.(\d+)\),Harvey Specter and click button check these updates$/, function (arg1, arg2, callback) {
     // Write code here that turns the phrase above into concrete actions
     callback(null, 'pending');
   });
