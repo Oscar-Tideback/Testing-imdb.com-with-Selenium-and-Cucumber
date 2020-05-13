@@ -11,7 +11,7 @@ module.exports = function () {
 
 
   this.Given(/^that I have clicked the Edit button$/, async function () {
-    let button = await $('')
+    let button = await $('a.button-box')
     button.click()
     await sleep(4000)
   });
