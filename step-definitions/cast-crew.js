@@ -2,7 +2,7 @@ let { $, sleep } = require('./funcs');
 const { username, password } = require('./credentials.json');
 module.exports = function () {
 
-  let text3;
+
 
   this.Given(/^that I am on the Suits page$/, async function () {
     await helpers.loadPage('https://www.imdb.com/title/tt1632701/?ref_=nv_sr_srsg_0');
@@ -11,9 +11,9 @@ module.exports = function () {
 
 
   this.Given(/^that I have clicked the Edit button$/, async function () {
-    text3 = await driver.findElement(By.css('')).getText();
-    await driver.findElement(By.css('')).click();
-    await sleep(4000);
+    let button = await $('')
+    button.click()
+    await sleep(4000)
   });
 
   /*this.Given(/^that I haved chosen wanted Cast in Cast&Crew and clicked on the continue button$/, function (callback) {
