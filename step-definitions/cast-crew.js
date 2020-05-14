@@ -27,7 +27,6 @@ module.exports = function () {
   });
 
   this.Given(/^that I haved chosen wanted Cast in Cast&Crew and clicked on the continue button$/, async function () {
-    // Write code here that turns the phrase above into concrete actions
     let editButton = await $('.btn.primary');
     //assert(searchButton, 'Could not find the search button');
     await editButton.click();

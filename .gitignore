@@ -1,7 +1,9 @@
 node_modules
 credentials.json
 .DS_Store
-reports
+reports/junit-report.xml
+reports/cucumber-report.json
+reports/cucumber-report.html
 features/temp-Oscar.html
 features/temp-Oscar.txt
 
