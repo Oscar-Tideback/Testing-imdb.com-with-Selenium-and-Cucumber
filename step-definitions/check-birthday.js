@@ -9,7 +9,7 @@ module.exports = function () {
   //Scenario: Cross-check our date of birth with the celebertys wikipedia pages
   this.When(/^I browse to Birth Month Day of todays$/, async function () {
     await helpers.loadPage('https://www.imdb.com/feature/bornondate/?ref_=nv_cel_brn');
-    await sleep(1000);
+    await sleep(0);
   });
 
   this.Then(/^the first (\d+) names should be saved to a list$/, async function (value) {
