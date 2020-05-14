@@ -4,12 +4,12 @@ Feature: See the page to the top 5 actors born on August 5th
 
   Scenario Outline: Test celebrity home pages from birthdaysite
     Given that I am on the Birth Month Day of August 5th
-    Then I should be taken to the 'Janet McTeer' page when I click on it.
+    Then I should be taken to the <actors> page when I click on it.
 
     Examples:
-//| actors            |
-//| Janet McTeer      |
-//| Mark Strong       |
-//| Jesse Williams    |
-//| Stephanie Szostak |
-//| James Gunn        |
+      | actors       |
+      | Janet McTeer |
+      | Mark Strong  |
+#| Jesse Williams    |
+#| Stephanie Szostak |
+#| James Gunn        |

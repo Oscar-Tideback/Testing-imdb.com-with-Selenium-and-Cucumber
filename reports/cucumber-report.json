@@ -11,27 +11,35 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that I am at the Birth Month Day of August 5th",
+            "name": "that I am on the Birth Month Day of August 5th",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 7562318807
             },
-            "line": 6
+            "line": 6,
+            "match": {
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:6"
+            }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "name": "I should be taken to the Janet McTeer page when I click on it.",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 223986
             },
-            "line": 7
+            "line": 7,
+            "match": {
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:13"
+            }
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 6230443055
+              "duration": 2073840160
             },
             "hidden": true,
             "match": {
@@ -51,147 +59,34 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that I am at the Birth Month Day of August 5th",
+            "name": "that I am on the Birth Month Day of August 5th",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 7531969920
             },
-            "line": 6
+            "line": 6,
+            "match": {
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:6"
+            }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "name": "I should be taken to the Mark Strong page when I click on it.",
             "result": {
-              "status": "undefined"
+              "status": "pending"
             },
-            "line": 7
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 5989611345
-            },
-            "hidden": true,
+            "line": 7,
             "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:30"
             }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "Test celebrity home pages from birthdaysite",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am at the Birth Month Day of August 5th",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 6
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should be taken to the Jesse Williams page when I click on it.",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 5343721664
-            },
-            "hidden": true,
-            "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Test celebrity home pages from birthdaysite",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am at the Birth Month Day of August 5th",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 6
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should be taken to the Stephanie Szostak page when I click on it.",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 5481976985
-            },
-            "hidden": true,
-            "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Test celebrity home pages from birthdaysite",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am at the Birth Month Day of August 5th",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 6
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should be taken to the James Gunn page when I click on it.",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 5418181536
+              "duration": 2032008753
             },
             "hidden": true,
             "match": {
