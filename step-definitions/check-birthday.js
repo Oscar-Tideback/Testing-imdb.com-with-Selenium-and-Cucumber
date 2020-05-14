@@ -1,7 +1,4 @@
-let {
-  $,
-  sleep
-} = require('./funcs');
+let { $, sleep } = require('./funcs');
 
 module.exports = function () {
   let names = [];
@@ -14,30 +11,40 @@ module.exports = function () {
     await helpers.loadPage('https://www.imdb.com/feature/bornondate/?ref_=nv_cel_brn');
     await sleep(1000);
   });
+
   this.Then(/^the first (\d+) names should be saved to a list$/, async function (value) {
     names = await $("h3.lister-item-header > a");
+    expect(names,
+      'There is no celebrity in the list today'
+    ).to.not.be.empty;
     numberOfCeleb = value;
   });
+
   this.Then(/^if the list contains white space replace that with _$/, async function () {
+    names.slice(0, numberOfCeleb);//Reduce the list of names, just cleaning the list
     for (let i = 0; i < numberOfCeleb; i++) {
       name = await names[i].getText();
       let str = name.replace(" ", "_");
       names[i] = str;
     }
   });
+
   this.Then(/^add "([^"]*)" before the name$/, async function (wikipediaUrl) {
     for (let i = 0; i < numberOfCeleb; i++) {
       wikipediaCeleb[i] = await wikipediaUrl.concat(names[i]);
     }
   });
+
   this.Then(/^browse to that page$/, async function () {
     //We will browse page in next step
   });
+
   this.Then(/^find birthday on that page and check if it is today$/, async function () {
     let today = new Date();
     ourDate = today.getMonth() + 1;
     ourDate += "-";
     ourDate += today.getDate();
+
     for (let i = 0; i < numberOfCeleb; i++) {
       await helpers.loadPage(wikipediaCeleb[i]);
       wikiBday[i] = await $(".bday");
@@ -46,6 +53,7 @@ module.exports = function () {
       let str2 = str.slice(5, str.length);
       if (today.getMonth() < 9) //This might be wrong, should it be 10?
         rightDate = str2.slice(1, str2.length);
+
       expect(ourDate,
         'Our birthday date for ' + names[i] +
         ' on todays page is wrong it should be ' + rightDate
