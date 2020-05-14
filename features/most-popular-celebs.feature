@@ -4,14 +4,15 @@ Feature: See the pages of the top 5 popular celebs when you click on their links
 
   Scenario Outline: Test Top 5 Popular Celebs
     Given that I am on the Most Popular Celebs Page
-    When I click on one of Top 5 Celeb links
-    Then I should be taken to the <actor> Page
+    When I click on one of the top five Celeb links
+    Then I should be taken to the <actor> homepage
 
     Examples:
-      | actor               |
-      | Golshifteh Farahani |
-      | Irrfan Khan         |
-      | Julia Garner        |
-      | Ana de Armas        |
-      | Alexander Dreymon   |
+      | actor                 |
+      | ranked most popular   |
+      | ranked second popular |
+      | ranked third popular  |
+      | ranked forth popular  |
+      | ranked fifth popular  |
+
 

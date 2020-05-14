@@ -1,5 +1,11 @@
-let { $, sleep } = require('./funcs');
-const { username, password } = require('./credentials.json');
+let {
+  $,
+  sleep
+} = require('./funcs');
+const {
+  username,
+  password
+} = require('./credentials.json');
 module.exports = function () {
 
   let text;
@@ -12,6 +18,7 @@ module.exports = function () {
   this.When(/^I click on each <headline> that are shown in the top news section$/, async function () {
     //let button = await $('a.compact-news-item__title');
     text = await driver.findElement(By.css('a.compact-news-item__title')).getText();
+
     //await button.click();
     await driver.findElement(By.css('a.compact-news-item__title')).click();
     await sleep(4000);
@@ -33,19 +40,3 @@ module.exports = function () {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
