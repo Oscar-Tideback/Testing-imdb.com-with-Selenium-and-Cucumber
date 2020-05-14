@@ -8,7 +8,7 @@ module.exports = function () {
 
   this.Given(/^that I am on the Best Picture\-winning site$/, async function () {
     await helpers.loadPage('https://www.imdb.com/search/title/?count=100&groups=oscar_best_picture_winners&sort=year%2Cdesc&ref_=nv_ch_osc');
-    await sleep(2000);
+    await sleep(3000);
   });
 
   this.Then(/^I should see Best Picture\-winner and their rating\.$/, async function () {
