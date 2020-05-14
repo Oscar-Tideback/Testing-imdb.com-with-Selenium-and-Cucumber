@@ -1,8 +1,8 @@
+const { username, password } = require('./credentials.json');
 let { $, sleep } = require('./funcs');
 
 module.exports = function () {
 
-  const { username, password } = require('./credentials.json');
   let movieName;
 
   //Scenario: When I have signed in, I would like to add tom my watchlist
@@ -35,9 +35,6 @@ module.exports = function () {
     expect(movieNameResult,
       'The move is not in the watchlist'
     ).to.equal(movieName);
-    // expect(await driver.findElement(By.linkText(movieName)),// This is not right
-    //   'The move is not in the watchlist'
-    // ).to.exist;
   });
 
 }

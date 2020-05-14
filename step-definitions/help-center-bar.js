@@ -13,7 +13,7 @@ module.exports = function () {
   let searchFieldHelp;
   let results = [];
   let counter = 0;//This is not used
-
+  //No senario description
   this.Given(/^that i have clicked on the menu and chosen Help center$/, async function () {
     // Write code here that turns the phrase above into concrete actions // This text should not be here
     await helpers.loadPage('https://help.imdb.com');

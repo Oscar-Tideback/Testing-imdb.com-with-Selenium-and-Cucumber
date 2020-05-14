@@ -1,8 +1,8 @@
+const { username, password } = require('./credentials.json');
 let { $, sleep } = require('./funcs');
 
 module.exports = function () {
 
-  const { username, password } = require('./credentials.json');
   let movieName;
 
   //Scenario: When I have signed in I would lik to add rating on objects
@@ -55,4 +55,5 @@ module.exports = function () {
       'The rating of the movie is not right'
     ).to.equal(rating7);
   });
+
 }
