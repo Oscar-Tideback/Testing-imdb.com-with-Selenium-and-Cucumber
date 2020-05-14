@@ -30,10 +30,6 @@ module.exports = function () {
   });
 
   this.Then(/^click (\d+) rating for that move$/, async function (rating7) {
-    let ratingButton = await $('.star-rating-button').isExisting();
-    expect(ratingButton,
-      'Rating button was not found'
-    ).to.be.true;
     await driver.findElement(By.css('.star-rating-button')).click();
     await driver.findElement(By.css('.star-rating-stars a[title="Click to rate: ' + rating7 + '"]')).click();
   });
