@@ -22,4 +22,5 @@ module.exports = function () {
       expect(text).to.include(text2); //No error message
     }); //An extra return not needed and a gazillion return found after
 
-  }
+  })
+}
