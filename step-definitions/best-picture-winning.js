@@ -1,7 +1,13 @@
-let { $, sleep } = require('./funcs');
-const { username, password } = require('./credentials.json');
+let {
+  $,
+  sleep
+} = require('./funcs');
+const {
+  username,
+  password
+} = require('./credentials.json');
 
-let results;
+let results, winners;
 let winnerList = [];
 
 module.exports = function () {
@@ -15,9 +21,23 @@ module.exports = function () {
     //check that we've found the results in a list
     results = await $('.lister.list.detail.sub-list');
     assert(results, 'Could not find any results');
-    let winner = await $('#text');
 
-    console.log(winner);
+    winnerList = await $('.lister-item-header a');
+
+    for (let prop of winnerList) {
+
+      let string = await prop.getText();
+      console.log(string);
+
+    }
+
+
+    /*for (let prop of winners) {
+
+      let string = prop.getText();
+      console.log(string);
+
+    }*/
 
     /*winnerList = await $('h3.lister-item-header');
 
