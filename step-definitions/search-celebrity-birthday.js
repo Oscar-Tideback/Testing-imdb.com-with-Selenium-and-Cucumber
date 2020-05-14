@@ -18,7 +18,6 @@ module.exports = function () {
     await link.click();
   });
 
-
   this.Then(/^I should be taken to a page about the actor "([^"]*)"$/, async function (actor) {
     // wait for an element we know exists on actor pages but not on list pages
     await driver.wait(until.elementLocated(By.css('.name-overview-widget')));
