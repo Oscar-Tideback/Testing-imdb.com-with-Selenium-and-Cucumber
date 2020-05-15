@@ -48,7 +48,7 @@ module.exports = function () {
     for (let i = 0; i < numberOfCeleb; i++) {
       await helpers.loadPage(wikipediaCeleb[i]);
       wikiBday[i] = await $(".bday");
-      await sleep(0000);
+      await driver.wait(until.elementLocated(By.id('footer-copyrightico')), 10000);
       if (!(wikiBday[i]) === null) {//Check if wiki is missing birthday
         let str = await wikiBday[i].getAttribute("textContent");
         let str2 = str.slice(5, str.length);
