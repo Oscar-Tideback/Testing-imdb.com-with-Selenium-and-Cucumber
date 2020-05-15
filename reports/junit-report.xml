@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" tests="6" failures="0" skipped="0">
+    <testsuite name="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" tests="8" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/check-birthday.feature">
+            <property name="URI" value="/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist2.feature">
             </property>
         </properties>
-        <testcase name="When I browse to Birth Month Day of todays" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="11.150064186">
+        <testcase name="Given There are no movies in my watchlist and I have a random film" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="9.869557255">
         </testcase>
-        <testcase name="Then the first 5 names should be saved to a list" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.058771224">
+        <testcase name="When I have signed in to the page" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="9.453001164">
         </testcase>
-        <testcase name="And if the list contains white space replace that with _" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.075670014">
+        <testcase name="Then I search IMDb for my random film and save the title" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="0.06537272">
         </testcase>
-        <testcase name="And add &quot;https://en.wikipedia.org/wiki/&quot; before the name" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.000227986">
+        <testcase name="And I click on my search result" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="5.18126266">
         </testcase>
-        <testcase name="And browse to that page" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.000168979">
+        <testcase name="And save that movie title" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="0.120934134">
         </testcase>
-        <testcase name="And find birthday on that page and check if it is today" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="3.638042081">
+        <testcase name="And add it to my watchlist" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="0.276932717">
+        </testcase>
+        <testcase name="And browse to my watchlist page" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="2.814737528">
+        </testcase>
+        <testcase name="And the same movie title should be present" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="0.607242429">
         </testcase>
     </testsuite>
 </testsuites>
