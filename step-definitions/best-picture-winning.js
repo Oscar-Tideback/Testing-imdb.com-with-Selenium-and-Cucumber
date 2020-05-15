@@ -3,8 +3,9 @@ let { $, sleep } = require('./funcs');
 const { username, password } = require('./credentials.json');
 
 let clickRated, results;
-let linkList, winnerList, ratingList = [];
-let win, rate;
+let linkList = [];
+let ratingList = [];
+let rate;
 
 module.exports = function () {
   //Scenario: Top ratedd picture winners
