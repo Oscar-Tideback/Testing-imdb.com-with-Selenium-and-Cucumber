@@ -24,14 +24,14 @@ module.exports = function () {
     names.slice(0, numberOfCeleb);//Reduce the list of names, just cleaning the list
     for (let i = 0; i < numberOfCeleb; i++) {
       name = await names[i].getText();
-      let str = name.replace(" ", "_");
+      let str = name.replace(" ", "_");//Finding " " between forename and lastname and replaces it with "_"
       names[i] = str;
     }
   });
 
   this.Then(/^add "([^"]*)" before the name$/, async function (wikipediaUrl) {
     for (let i = 0; i < numberOfCeleb; i++) {
-      wikipediaCeleb[i] = await wikipediaUrl.concat(names[i]);
+      wikipediaCeleb[i] = await wikipediaUrl.concat(names[i]);//Adding names with "_" to wiki url
     }
   });
 
@@ -43,21 +43,23 @@ module.exports = function () {
     let today = new Date();
     ourDate = today.getMonth() + 1;
     ourDate += "-";
-    ourDate += today.getDate();
+    ourDate += today.getDate();// Made string with todays date in format 01-13
 
     for (let i = 0; i < numberOfCeleb; i++) {
       await helpers.loadPage(wikipediaCeleb[i]);
       wikiBday[i] = await $(".bday");
       await sleep(0000);
-      let str = await wikiBday[i].getAttribute("textContent");
-      let str2 = str.slice(5, str.length);
-      if (today.getMonth() < 9) //This might be wrong, should it be 10?
-        rightDate = str2.slice(1, str2.length);
+      if (!(wikiBday[i]) === null) {//Check if wiki is missing birthday
+        let str = await wikiBday[i].getAttribute("textContent");
+        let str2 = str.slice(5, str.length);
+        if (today.getMonth() < 9) //This might be wrong, should it be 10?// Removes a 0 if month is 01-09 so 1-9
+          rightDate = str2.slice(1, str2.length);
 
-      expect(ourDate,
-        'Our birthday date for ' + names[i] +
-        ' on todays page is wrong it should be ' + rightDate
-      ).to.be.equal(rightDate);
+        expect(ourDate,
+          'Our birthday date for ' + names[i] +
+          ' on todays page is wrong it should be ' + rightDate
+        ).to.be.equal(rightDate);
+      }
     }
   });
 
