@@ -55,40 +55,26 @@ module.exports = function () {
     assert(results, 'Could not find any results');
 
     //step 6: 
-
     winnerList = await $('.lister-item-content');
     ratingList = await $('.inline-block.ratings-imdb-rating');
 
+    //element 1 ska kolla om den har element 2 
+
+    let listLenght = ratingList.length;
+
+    assert.equal(listLenght, 50, 'missing object on site');
+
     for (let i = 0; i < winnerList.length; i++) {
 
-      win = winnerList[i];
+      rate = ratingList[i];
 
-      let winString = await win.getText();
+      let rateString = await rate.getText();
 
-      for (let prop of ratingList) {
+      console.log(rateString);
 
-        let string = await prop.getText();
-
-        console.log(string);
-
-      }
-      console.log(winString);
-      // console.log(rateString);
+      assert.notEqual(rateString, '0,0', 'top winner is not rated');
 
     }
-
-
-
-    //assert.include(winnerListText, ratingListText, 'top rated best-picture winners has no rating');
-
-
-
-
-
-    //assert.include(winnerList, rating, 'top rated best-picture winners has no rating');
-
-
-
 
   });
 
