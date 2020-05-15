@@ -11,7 +11,7 @@ Feature: Top News links should show the ingress of the article
     Examples:
       | Headline  |
       | Headline1 |
-      | Headline2 |
-      | Headline3 |
-      | Headline4 |
-      | Headline5 |
+# | Headline2 |
+# | Headline3 |
+# | Headline4 |
+# | Headline5 |
