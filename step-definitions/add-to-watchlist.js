@@ -15,9 +15,10 @@ module.exports = function () {
   });
 
   this.Then(/^click add to watchlist on the first move on page$/, async function () {
+    driver.executeScript("window.scrollBy(0,1000)", "");
+    await driver.wait(until.elementLocated(By.css('.fan-picks')), 10000);
     await driver.wait(until.elementLocated(By.css('.ipc-poster-card .ipc-watchlist-ribbon')), 10000);
-    let toClick = await driver.findElement(By.css('.ipc-poster-card .ipc-watchlist-ribbon'));
-    await toClick.click();
+    await driver.findElement(By.css('.ipc-poster-card .ipc-watchlist-ribbon[aria-label="add to watchlist"]')).click();
     await driver.wait(until.elementLocated(By.css('.ipc-poster-card .ipc-watchlist-ribbon[aria-label="remove from watchlist"]')), 10000);
   });
 
