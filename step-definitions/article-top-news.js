@@ -10,17 +10,14 @@ module.exports = function () {
   });
 
   this.When(/^I click on each <headline> that are shown in the top news section$/, async function () {
-    //let button = await $('a.compact-news-item__title');//Not to be pressent live
     text = await driver.findElement(By.css('a.compact-news-item__title')).getText();
-    //await button.click();//Not to be pressent live
     await driver.findElement(By.css('a.compact-news-item__title')).click();
     await sleep(0);
   });
 
   this.Then(/^the page should display the articles ingress$/, async function () {
     let text2 = await driver.findElement(By.css('h2.news-article__title')).getText();
-    console.log(text2); //Not to be pressent live
     expect(text).to.include(text2); //No error message
-  }); //An extra return not needed and a gazillion return found after
+  });
 
 }

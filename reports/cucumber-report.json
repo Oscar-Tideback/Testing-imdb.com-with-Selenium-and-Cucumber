@@ -1,143 +1,50 @@
 [
   {
-<<<<<<< HEAD
-    "description": "  As a user to see the top most popular celebs and see their pages when I can click\n  on them.",
+    "description": "  As a user I want to click on the top news headline links and\n  see the ingress to the article",
     "elements": [
       {
-        "id": "see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs",
-        "keyword": "Scenario",
-        "line": 12,
-        "name": "Test Top 5 Popular Celebs",
-=======
-    "elements": [
-      {
-        "id": "as-an-user-i-want-to-search-for-a-movie-called-\"how-to-lose-a-guy-in-10-days\";search-by-a-keyword",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Search by a keyword",
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-<<<<<<< HEAD
-            "name": "that I am on the Most Popular Celebs Page",
-            "result": {
-              "status": "passed",
-              "duration": 12099574386
-            },
-            "line": 6,
-            "match": {
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:9"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on one of the top five Celeb links",
-            "result": {
-              "status": "passed",
-              "duration": 121884200
-            },
-            "line": 7,
-            "match": {
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:14"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should be taken to the ranked most popular homepage",
-            "result": {
-              "status": "passed",
-              "duration": 5182426685
-            },
-            "line": 8,
-            "match": {
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 2184270538
-            },
-            "hidden": true,
-            "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs",
+        "id": "top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news",
         "keyword": "Scenario",
         "line": 13,
-        "name": "Test Top 5 Popular Celebs",
+        "name": "Test article headlines in Top News",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that I am on the Most Popular Celebs Page",
+            "name": "that I am on the IMBd Celebrity news link page",
             "result": {
               "status": "passed",
-              "duration": 10110583990
+              "duration": 6731996649
             },
             "line": 6,
             "match": {
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:9"
-=======
-            "name": "that I am on the IMDB site",
-            "result": {
-              "status": "passed",
-              "duration": 6658573600
-            },
-            "line": 4,
-            "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:8"
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
+              "location": "folder/IJJO/step-definitions/article-top-news.js:7"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-<<<<<<< HEAD
-            "name": "I click on one of the top five Celeb links",
+            "name": "I click on each <headline> that are shown in the top news section",
             "result": {
               "status": "passed",
-              "duration": 103553951
-=======
-            "name": "I enter the search text \"How to lose a guy in 10 Days\"",
-            "result": {
-              "status": "passed",
-              "duration": 15598900
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
+              "duration": 2323775402
             },
-            "line": 5,
+            "line": 7,
             "match": {
-<<<<<<< HEAD
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:14"
-=======
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:13"
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
+              "location": "folder/IJJO/step-definitions/article-top-news.js:12"
             }
           },
           {
             "arguments": [],
-<<<<<<< HEAD
             "keyword": "Then ",
-            "name": "I should be taken to the ranked second popular homepage",
+            "name": "the page should display the articles ingress",
             "result": {
               "status": "passed",
-              "duration": 3545721180
+              "duration": 118097551
             },
             "line": 8,
             "match": {
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:37"
+              "location": "folder/IJJO/step-definitions/article-top-news.js:18"
             }
           },
           {
@@ -145,264 +52,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3070871286
+              "duration": 2233809722
             },
             "hidden": true,
             "match": {
               "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Test Top 5 Popular Celebs",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am on the Most Popular Celebs Page",
-            "result": {
-              "status": "passed",
-              "duration": 10028767598
-            },
-            "line": 6,
-            "match": {
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:9"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on one of the top five Celeb links",
-            "result": {
-              "status": "passed",
-              "duration": 97166684
-            },
-            "line": 7,
-            "match": {
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:14"
-=======
-            "keyword": "And ",
-            "name": "I click on the search button",
-            "result": {
-              "status": "passed",
-              "duration": 2822584399
-            },
-            "line": 6,
-            "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:20"
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-<<<<<<< HEAD
-            "name": "I should be taken to the ranked third popular homepage",
-            "result": {
-              "status": "passed",
-              "duration": 7977027287
-            },
-            "line": 8,
-            "match": {
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:46"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 3021332302
-            },
-            "hidden": true,
-            "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Test Top 5 Popular Celebs",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am on the Most Popular Celebs Page",
-            "result": {
-              "status": "passed",
-              "duration": 9935333899
-            },
-            "line": 6,
-            "match": {
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:9"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on one of the top five Celeb links",
-            "result": {
-              "status": "passed",
-              "duration": 99955860
-            },
-            "line": 7,
-            "match": {
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:14"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should be taken to the ranked forth popular homepage",
-            "result": {
-              "status": "passed",
-              "duration": 6531518840
-            },
-            "line": 8,
-            "match": {
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:55"
-=======
-            "name": "the first search result should contain the word \"How to Lose a Guy in 10 Days\"",
-            "result": {
-              "status": "passed",
-              "duration": 50323201
-            },
-            "line": 7,
-            "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:26"
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 2075702910
-=======
-              "duration": 988676100
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-<<<<<<< HEAD
-        "id": "see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "Test Top 5 Popular Celebs",
-=======
-        "id": "as-an-user-i-want-to-search-for-a-movie-called-\"how-to-lose-a-guy-in-10-days\";when-a-keyword-is-entered-in-the-search-field",
-        "keyword": "Scenario",
-        "line": 9,
-        "name": "When a keyword is entered in the search field",
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-<<<<<<< HEAD
-            "name": "that I am on the Most Popular Celebs Page",
-            "result": {
-              "status": "passed",
-              "duration": 9722134697
-=======
-            "name": "that I am on the IMDB site",
-            "result": {
-              "status": "passed",
-              "duration": 6701288500
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
-            },
-            "line": 10,
-            "match": {
-<<<<<<< HEAD
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:9"
-=======
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:8"
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-<<<<<<< HEAD
-            "name": "I click on one of the top five Celeb links",
-            "result": {
-              "status": "passed",
-              "duration": 101545846
-=======
-            "name": "I enter the search text \"How to lose a guy in 10 Days\" + ENTER",
-            "result": {
-              "status": "passed",
-              "duration": 136604300
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
-            },
-            "line": 11,
-            "match": {
-<<<<<<< HEAD
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:14"
-=======
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:40"
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-<<<<<<< HEAD
-            "name": "I should be taken to the ranked fifth popular homepage",
-            "result": {
-              "status": "passed",
-              "duration": 7892447697
-=======
-            "name": "the first search result should contain the word \"How to Lose a Guy in 10 Days\"",
-            "result": {
-              "status": "passed",
-              "duration": 661671000
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
-            },
-            "line": 12,
-            "match": {
-<<<<<<< HEAD
-              "location": "folder/IJJO/step-definitions/most-popular-celebs.js:64"
-=======
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:26"
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 3251878755
-=======
-              "duration": 1235766000
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -410,20 +64,11 @@
         "type": "scenario"
       }
     ],
-<<<<<<< HEAD
-    "id": "see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links",
+    "id": "top-news-links-should-show-the-ingress-of-the-article",
     "keyword": "Feature",
     "line": 1,
-    "name": "See the pages of the top 5 popular celebs when you click on their links",
+    "name": "Top News links should show the ingress of the article",
     "tags": [],
-    "uri": "/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/most-popular-celebs.feature"
-=======
-    "id": "as-an-user-i-want-to-search-for-a-movie-called-\"how-to-lose-a-guy-in-10-days\"",
-    "keyword": "Feature",
-    "line": 1,
-    "name": "As an user I want to search for a movie called \"How to lose a guy in 10 days\"",
-    "tags": [],
-    "uri": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\features\\search-movie.feature"
->>>>>>> d28dc29ebac0cab01700588cb654718df33ab8ca
+    "uri": "/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature"
   }
 ]

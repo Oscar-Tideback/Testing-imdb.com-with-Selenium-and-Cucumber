@@ -1,63 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" tests="3" failures="0" skipped="0">
+    <testsuite name="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/most-popular-celebs.feature">
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/article-top-news.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the Most Popular Celebs Page" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="12.099574386">
+        <testcase name="Given that I am on the IMBd Celebrity news link page" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="6.731996649">
         </testcase>
-        <testcase name="When I click on one of the top five Celeb links" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="0.1218842">
+        <testcase name="When I click on each &lt;headline&gt; that are shown in the top news section" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="2.323775402">
         </testcase>
-        <testcase name="Then I should be taken to the ranked most popular homepage" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="5.182426685">
-        </testcase>
-    </testsuite>
-    <testsuite name="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" tests="3" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/most-popular-celebs.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the Most Popular Celebs Page" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="10.11058399">
-        </testcase>
-        <testcase name="When I click on one of the top five Celeb links" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="0.103553951">
-        </testcase>
-        <testcase name="Then I should be taken to the ranked second popular homepage" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="3.54572118">
-        </testcase>
-    </testsuite>
-    <testsuite name="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" tests="3" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/most-popular-celebs.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the Most Popular Celebs Page" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="10.028767598">
-        </testcase>
-        <testcase name="When I click on one of the top five Celeb links" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="0.097166684">
-        </testcase>
-        <testcase name="Then I should be taken to the ranked third popular homepage" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="7.977027287">
-        </testcase>
-    </testsuite>
-    <testsuite name="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" tests="3" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/most-popular-celebs.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the Most Popular Celebs Page" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="9.935333899">
-        </testcase>
-        <testcase name="When I click on one of the top five Celeb links" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="0.09995586">
-        </testcase>
-        <testcase name="Then I should be taken to the ranked forth popular homepage" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="6.53151884">
-        </testcase>
-    </testsuite>
-    <testsuite name="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" tests="3" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/most-popular-celebs.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the Most Popular Celebs Page" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="9.722134697">
-        </testcase>
-        <testcase name="When I click on one of the top five Celeb links" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="0.101545846">
-        </testcase>
-        <testcase name="Then I should be taken to the ranked fifth popular homepage" classname="see-the-pages-of-the-top-5-popular-celebs-when-you-click-on-their-links;test-top-5-popular-celebs" time="7.892447697">
+        <testcase name="Then the page should display the articles ingress" classname="top-news-links-should-show-the-ingress-of-the-article;test-article-headlines-in-top-news" time="0.118097551">
         </testcase>
     </testsuite>
 </testsuites>
