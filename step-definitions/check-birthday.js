@@ -1,4 +1,7 @@
-let { $, sleep } = require('./funcs');
+let {
+  $,
+  sleep
+} = require('./funcs');
 
 module.exports = function () {
   let names = [];
@@ -22,7 +25,7 @@ module.exports = function () {
   });
 
   this.Then(/^if the list contains white space replace that with _$/, async function () {
-    names.slice(0, numberOfCeleb);//Reduce the list of names, just cleaning the list
+    names.slice(0, numberOfCeleb); //Reduce the list of names, just cleaning the list
     for (let i = 0; i < numberOfCeleb; i++) {
       name = await names[i].getText();
       let str = name.replace(" ", "_");//Finding " " between forename and lastname and replaces it with "_"
