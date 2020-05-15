@@ -1,4 +1,4 @@
-Feature:2 As a user I would like to be able to add random film to my watchlist so I can save them for later
+Feature:As a user I would like to be able to add random film to my watchlist so I can save them for later
 
   Scenario:When I would like to add i random film to whatchlist
     Given There are no movies in my watchlist and I have a random film
