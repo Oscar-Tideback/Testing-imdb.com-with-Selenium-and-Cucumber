@@ -1,9 +1,15 @@
-const { username, password } = require('./credentials.json');
-let { $, sleep } = require('./funcs');
+const {
+  username,
+  password
+} = require('./credentials.json');
+let {
+  $,
+  sleep
+} = require('./funcs');
 
 module.exports = function () {
 
-  let sleepTime = 1000;
+  let sleepTime = 0;
 
   let movieName;
 
@@ -19,7 +25,7 @@ module.exports = function () {
 
   this.Then(/^click the first move in "([^"]*)"$/, async function (headingMovies2Watch) {
     movieName = await driver.findElement(By.css('.ipc-poster-card__title')).getText();
-    await driver.wait(until.elementLocated(By.css('.ipc-poster-card__title')));
+    await driver.wait(until.elementLocated(By.css('.ipc-poster-card__title')), 10000);
     await driver.wait(until.elementLocated(By.css('.ipc-poster-card')), 10000);
     let toClick = await driver.findElement(By.css('.ipc-poster-card'));
     expect(toClick,
@@ -34,9 +40,10 @@ module.exports = function () {
     await sleep(sleepTime)
   });
 
-  this.Then(/^click (\d+) rating for that move$/, async function (rating7) {
+  this.Then(/^click (\d+) rating for that movie$/, async function (rating7) {
     await driver.findElement(By.css('.star-rating-button')).click();
     await driver.findElement(By.css('.star-rating-stars a[title="Click to rate: ' + rating7 + '"]')).click();
+    await driver.wait(until.elementLocated(By.css('.star-rating-value')), 10000);
     await sleep(sleepTime)
   });
 
@@ -45,8 +52,9 @@ module.exports = function () {
     await sleep(sleepTime)
   });
 
-  this.Then(/^check name of first move in list$/, async function () {
+  this.Then(/^check name of first movie in list$/, async function () {
     let name = await driver.findElement(By.css('h3.lister-item-header > a')).getText();
+    await driver.wait(until.elementLocated(By.id('ratings-container')), 10000);
     expect(name,
       'The movie is not found on rating page'
     ).to.equal(movieName);
@@ -55,6 +63,7 @@ module.exports = function () {
 
   this.Then(/^that move should have (\d+) as a rating$/, async function (rating7) {
     let rating = await driver.findElement(By.css('.ipl-rating-star__rating')).getText();
+    await driver.wait(until.elementLocated(By.id('ratings-container')), 10000);
     expect(rating,
       'The rating of the movie is not right'
     ).to.equal(rating7);
