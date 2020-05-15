@@ -48,7 +48,7 @@ module.exports = function () {
     for (let i = 0; i < numberOfCeleb; i++) {
       await helpers.loadPage(wikipediaCeleb[i]);
       wikiBday[i] = await $(".bday");
-      await sleep(1000);
+      await sleep(0000);
       let str = await wikiBday[i].getAttribute("textContent");
       let str2 = str.slice(5, str.length);
       if (today.getMonth() < 9) //This might be wrong, should it be 10?
