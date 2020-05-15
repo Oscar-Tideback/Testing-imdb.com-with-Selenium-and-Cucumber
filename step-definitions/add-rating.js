@@ -40,7 +40,7 @@ module.exports = function () {
     await sleep(sleepTime)
   });
 
-  this.Then(/^click (\d+) rating for that move$/, async function (rating7) {
+  this.Then(/^click (\d+) rating for that movie$/, async function (rating7) {
     await driver.findElement(By.css('.star-rating-button')).click();
     await driver.findElement(By.css('.star-rating-stars a[title="Click to rate: ' + rating7 + '"]')).click();
     await driver.wait(until.elementLocated(By.css('.star-rating-value')), 10000);
@@ -52,7 +52,7 @@ module.exports = function () {
     await sleep(sleepTime)
   });
 
-  this.Then(/^check name of first move in list$/, async function () {
+  this.Then(/^check name of first movie in list$/, async function () {
     let name = await driver.findElement(By.css('h3.lister-item-header > a')).getText();
     await driver.wait(until.elementLocated(By.id('ratings-container')), 10000);
     expect(name,
