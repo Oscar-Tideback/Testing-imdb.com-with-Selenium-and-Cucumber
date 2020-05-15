@@ -270,7 +270,7 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">cucumber-template</div>
           <div class="label-container">
-            <span class="label label-success" title=scenarios>Passed: 5</span>
+            <span class="label label-success" title=scenarios>Passed: 2</span>
             <span class="label label-danger" title=scenarios>Failed: 0</span>
           </div>
         </div>
@@ -279,7 +279,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Thu May 14 2020 17:04:33 GMT+0200 (Central European Summer Time)</div>
+      <div class="generated-on">Fri May 15 2020 11:57:21 GMT+0200 (centraleuropeisk sommartid)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -303,10 +303,10 @@ pre {
                     <a data-toggle="collapse" href="#collapseFeaturecucumber_template0">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>See the page to the top 5 actors born on August 5th
+                        <b>Feature:</b>As an user I want to search for a movie called "How to lose a guy in 10 days"
                         <span class="label-container">
               <span class="label label-success"
-                                                         title="5 Scenarios Passed">5</span>
+                                                         title="2 Scenarios Passed">2</span>
               
               
               
@@ -318,8 +318,6 @@ pre {
             </div>
             <div id="collapseFeaturecucumber_template0" class="panel-collapse collapse">
                 <div class="panel-body">
-                    
-                    <div class="description">  As a user I want to see the page of the top 5 actors that are born on<br/>  August 5th when clicked.</div>
                     
                     
                     <div class="panel panel-default">
@@ -337,12 +335,12 @@ pre {
                                         <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Test celebrity home pages from birthdaysite
+                                            <b>Scenario:</b>Search by a keyword
                                         </div>
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
+                                                               title="4 Steps Passed">4</span>
                               
                               
                               
@@ -370,11 +368,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> that I am on the Birth Month Day of August 5th</span>
+                          <span> that I am on the IMDB site</span>
                             
                           
                               <span class="step-duration">
-                               7s 868ms
+                               6s 658ms
                               </span>
                             
                          
@@ -406,11 +404,47 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> I click on a headline with the name &quot;Janet McTeer&quot;</span>
+                          <span> I enter the search text &quot;How to lose a guy in 10 Days&quot;</span>
                             
                           
                               <span class="step-duration">
-                               3s 601ms
+                               15ms
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> I click on the search button</span>
+                            
+                          
+                              <span class="step-duration">
+                               2s 822ms
                               </span>
                             
                          
@@ -442,11 +476,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> I should be taken to a page about the actor &quot;Janet McTeer&quot;</span>
+                          <span> the first search result should contain the word &quot;How to Lose a Guy in 10 Days&quot;</span>
                             
                           
                               <span class="step-duration">
-                               3s 157ms
+                               50ms
                               </span>
                             
                          
@@ -488,7 +522,7 @@ pre {
                                         <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Test celebrity home pages from birthdaysite
+                                            <b>Scenario:</b>When a keyword is entered in the search field
                                         </div>
                                         <div>
                             <span class="label-container">
@@ -521,11 +555,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> that I am on the Birth Month Day of August 5th</span>
+                          <span> that I am on the IMDB site</span>
                             
                           
                               <span class="step-duration">
-                               7s 523ms
+                               6s 701ms
                               </span>
                             
                          
@@ -557,11 +591,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> I click on a headline with the name &quot;Mark Strong&quot;</span>
+                          <span> I enter the search text &quot;How to lose a guy in 10 Days&quot; + ENTER</span>
                             
                           
                               <span class="step-duration">
-                               4s 913ms
+                               136ms
                               </span>
                             
                          
@@ -593,464 +627,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> I should be taken to a page about the actor &quot;Mark Strong&quot;</span>
+                          <span> the first search result should contain the word &quot;How to Lose a Guy in 10 Days&quot;</span>
                             
                           
                               <span class="step-duration">
-                               3s 165ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <div class="tags">
-                                </div>
-                                
-                                <a data-toggle="collapse"
-                                   href="#collapseScenariocucumber_template0_2">
-                                    <div>
-
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Test celebrity home pages from birthdaysite
-                                        </div>
-                                        <div>
-                            <span class="label-container">
-                              <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
-                              
-                              
-                              
-                              
-                              
-                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariocucumber_template0_2"
-                             class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> that I am on the Birth Month Day of August 5th</span>
-                            
-                          
-                              <span class="step-duration">
-                               6s 795ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> I click on a headline with the name &quot;Jesse Williams&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               5s 715ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span> I should be taken to a page about the actor &quot;Jesse Williams&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               3s 146ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <div class="tags">
-                                </div>
-                                
-                                <a data-toggle="collapse"
-                                   href="#collapseScenariocucumber_template0_3">
-                                    <div>
-
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Test celebrity home pages from birthdaysite
-                                        </div>
-                                        <div>
-                            <span class="label-container">
-                              <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
-                              
-                              
-                              
-                              
-                              
-                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariocucumber_template0_3"
-                             class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> that I am on the Birth Month Day of August 5th</span>
-                            
-                          
-                              <span class="step-duration">
-                               7s 453ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> I click on a headline with the name &quot;Stephanie Szostak&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               4s 543ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span> I should be taken to a page about the actor &quot;Stephanie Szostak&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               3s 200ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <div class="tags">
-                                </div>
-                                
-                                <a data-toggle="collapse"
-                                   href="#collapseScenariocucumber_template0_4">
-                                    <div>
-
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Test celebrity home pages from birthdaysite
-                                        </div>
-                                        <div>
-                            <span class="label-container">
-                              <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
-                              
-                              
-                              
-                              
-                              
-                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariocucumber_template0_4"
-                             class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> that I am on the Birth Month Day of August 5th</span>
-                            
-                          
-                              <span class="step-duration">
-                               6s 881ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> I click on a headline with the name &quot;James Gunn&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               4s 687ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span> I should be taken to a page about the actor &quot;James Gunn&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               3s 180ms
+                               661ms
                               </span>
                             
                          
@@ -1120,7 +701,7 @@ pre {
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
                                                             "failed" : 0,
-                                                            "passed" : 5,
+                                                            "passed" : 2,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
