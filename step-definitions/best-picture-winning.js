@@ -13,7 +13,7 @@ module.exports = function () {
 
     //step 1: call the page
     await helpers.loadPage('https://www.imdb.com/search/title/?count=100&groups=oscar_best_picture_winners&sort=year%2Cdesc&ref_=nv_ch_osc');
-    await sleep(2000);
+    //await sleep(2000);
   });
 
   this.Given(/^I have clicked User Rating$/, async function () {
@@ -29,7 +29,7 @@ module.exports = function () {
     }
     //step 4: click on the User Ratings link
     await clickRated.click();
-    await sleep(2000);
+    //await sleep(2000);
   });
 
   this.Then(/^I should see Best Picture\-winner and their rating\.$/, async function () {
