@@ -1,63 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" tests="3" failures="0" skipped="0">
+    <testsuite name="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" tests="6" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/search-celebrity-birthday.feature">
+            <property name="URI" value="/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/check-birthday.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the Birth Month Day of August 5th" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="7.528198304">
+        <testcase name="When I browse to Birth Month Day of todays" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="11.150064186">
         </testcase>
-        <testcase name="When I click on a headline with the name &quot;Janet McTeer&quot;" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="3.90649589">
+        <testcase name="Then the first 5 names should be saved to a list" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.058771224">
         </testcase>
-        <testcase name="Then I should be taken to a page about the actor &quot;Janet McTeer&quot;" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="0.070724738">
+        <testcase name="And if the list contains white space replace that with _" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.075670014">
         </testcase>
-    </testsuite>
-    <testsuite name="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" tests="3" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/search-celebrity-birthday.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the Birth Month Day of August 5th" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="6.350956903">
+        <testcase name="And add &quot;https://en.wikipedia.org/wiki/&quot; before the name" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.000227986">
         </testcase>
-        <testcase name="When I click on a headline with the name &quot;Mark Strong&quot;" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="5.97237819">
+        <testcase name="And browse to that page" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="0.000168979">
         </testcase>
-        <testcase name="Then I should be taken to a page about the actor &quot;Mark Strong&quot;" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="0.073668168">
-        </testcase>
-    </testsuite>
-    <testsuite name="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" tests="3" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/search-celebrity-birthday.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the Birth Month Day of August 5th" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="6.256553544">
-        </testcase>
-        <testcase name="When I click on a headline with the name &quot;Jesse Williams&quot;" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="6.141811023">
-        </testcase>
-        <testcase name="Then I should be taken to a page about the actor &quot;Jesse Williams&quot;" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="0.0879909">
-        </testcase>
-    </testsuite>
-    <testsuite name="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" tests="3" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/search-celebrity-birthday.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the Birth Month Day of August 5th" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="5.723043085">
-        </testcase>
-        <testcase name="When I click on a headline with the name &quot;Stephanie Szostak&quot;" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="3.714791263">
-        </testcase>
-        <testcase name="Then I should be taken to a page about the actor &quot;Stephanie Szostak&quot;" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="0.072735952">
-        </testcase>
-    </testsuite>
-    <testsuite name="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" tests="3" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/search-celebrity-birthday.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the Birth Month Day of August 5th" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="6.425877941">
-        </testcase>
-        <testcase name="When I click on a headline with the name &quot;James Gunn&quot;" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="5.924565601">
-        </testcase>
-        <testcase name="Then I should be taken to a page about the actor &quot;James Gunn&quot;" classname="see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite" time="0.079561289">
+        <testcase name="And find birthday on that page and check if it is today" classname="check-if-todays-5-first-birthdays-are-the-same-as-on-everipedia-in-celeb---born-today;cross-check-our-date-of-birth-with-the-celebertys-everipedia-pages" time="3.638042081">
         </testcase>
     </testsuite>
 </testsuites>

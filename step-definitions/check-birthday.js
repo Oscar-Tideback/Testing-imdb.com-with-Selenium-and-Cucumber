@@ -14,6 +14,7 @@ module.exports = function () {
 
   this.Then(/^the first (\d+) names should be saved to a list$/, async function (value) {
     names = await $("h3.lister-item-header > a");
+    await driver.wait(until.elementLocated(By.css('h3.lister-item-header > a')), 10000);
     expect(names,
       'There is no celebrity in the list today'
     ).to.not.be.empty;
