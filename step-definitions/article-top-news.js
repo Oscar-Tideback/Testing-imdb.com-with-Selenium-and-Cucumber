@@ -3,7 +3,7 @@ const { username, password } = require('./credentials.json');
 module.exports = function () {
 
   let text;
-  //No senario description
+  //Test article headlines in Top News
   this.Given(/^that I am on the IMBd Celebrity news link page$/, async function () {
     await helpers.loadPage('https://www.imdb.com/news/celebrity/?ref_=nv_cel_nw');
     await sleep(0);
@@ -17,7 +17,8 @@ module.exports = function () {
 
   this.Then(/^the page should display the articles ingress$/, async function () {
     let text2 = await driver.findElement(By.css('h2.news-article__title')).getText();
-    expect(text).to.include(text2); //No error message
+    expect(text, 'The page does not display the ingress of article'
+    ).to.include(text2);
   });
 
 }

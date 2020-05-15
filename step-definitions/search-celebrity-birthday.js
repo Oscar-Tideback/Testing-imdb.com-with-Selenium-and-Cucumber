@@ -28,19 +28,7 @@ module.exports = function () {
     expect(titleText,
       'The actors name,' + actor + ', was not in the page title.'
     ).to.include(actor)
-    await sleep(1000);
+    await sleep(0);
   });
 
-
 }
-
-
-  //await driver.findElement(By.css('a[class="' + actors + '"]'));
-    // console.log(actors);
-    // await driver.findElement(By.linkText(actors)).click();
-    // let actorToBeTested = await driver.findElement(By.linkText(actors)).getText();
-    // await driver.findElement(By.linkText(actors)).click();
-    // let foundActorsPage = await driver.findElement(By.css('h1.header')).getText();
-    // expect(actorToBeTested,
-    //   'The actor does not have a page'
-    // ).to.equal(foundActorsPage);
