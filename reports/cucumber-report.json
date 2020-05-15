@@ -14,7 +14,7 @@
             "name": "that I am on the Birth Month Day of August 5th",
             "result": {
               "status": "passed",
-              "duration": 7868833119
+              "duration": 7528198304
             },
             "line": 6,
             "match": {
@@ -27,7 +27,7 @@
             "name": "I click on a headline with the name \"Janet McTeer\"",
             "result": {
               "status": "passed",
-              "duration": 3601900516
+              "duration": 3906495890
             },
             "line": 7,
             "match": {
@@ -40,11 +40,11 @@
             "name": "I should be taken to a page about the actor \"Janet McTeer\"",
             "result": {
               "status": "passed",
-              "duration": 3157834189
+              "duration": 70724738
             },
             "line": 8,
             "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:19"
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
             }
           },
           {
@@ -52,7 +52,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3038829063
+              "duration": 2102474381
             },
             "hidden": true,
             "match": {
@@ -75,7 +75,7 @@
             "name": "that I am on the Birth Month Day of August 5th",
             "result": {
               "status": "passed",
-              "duration": 7523661609
+              "duration": 6350956903
             },
             "line": 6,
             "match": {
@@ -88,7 +88,7 @@
             "name": "I click on a headline with the name \"Mark Strong\"",
             "result": {
               "status": "passed",
-              "duration": 4913928466
+              "duration": 5972378190
             },
             "line": 7,
             "match": {
@@ -101,11 +101,11 @@
             "name": "I should be taken to a page about the actor \"Mark Strong\"",
             "result": {
               "status": "passed",
-              "duration": 3165536540
+              "duration": 73668168
             },
             "line": 8,
             "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:19"
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
             }
           },
           {
@@ -113,7 +113,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2948591065
+              "duration": 1825295889
             },
             "hidden": true,
             "match": {
@@ -136,7 +136,7 @@
             "name": "that I am on the Birth Month Day of August 5th",
             "result": {
               "status": "passed",
-              "duration": 6795684754
+              "duration": 6256553544
             },
             "line": 6,
             "match": {
@@ -149,7 +149,7 @@
             "name": "I click on a headline with the name \"Jesse Williams\"",
             "result": {
               "status": "passed",
-              "duration": 5715322695
+              "duration": 6141811023
             },
             "line": 7,
             "match": {
@@ -162,11 +162,11 @@
             "name": "I should be taken to a page about the actor \"Jesse Williams\"",
             "result": {
               "status": "passed",
-              "duration": 3146794174
+              "duration": 87990900
             },
             "line": 8,
             "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:19"
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
             }
           },
           {
@@ -174,7 +174,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2069902003
+              "duration": 2920673712
             },
             "hidden": true,
             "match": {
@@ -197,7 +197,7 @@
             "name": "that I am on the Birth Month Day of August 5th",
             "result": {
               "status": "passed",
-              "duration": 7453234276
+              "duration": 5723043085
             },
             "line": 6,
             "match": {
@@ -210,7 +210,7 @@
             "name": "I click on a headline with the name \"Stephanie Szostak\"",
             "result": {
               "status": "passed",
-              "duration": 4543700703
+              "duration": 3714791263
             },
             "line": 7,
             "match": {
@@ -223,11 +223,11 @@
             "name": "I should be taken to a page about the actor \"Stephanie Szostak\"",
             "result": {
               "status": "passed",
-              "duration": 3200624917
+              "duration": 72735952
             },
             "line": 8,
             "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:19"
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
             }
           },
           {
@@ -235,7 +235,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 1948308484
+              "duration": 2017551488
             },
             "hidden": true,
             "match": {
@@ -258,7 +258,7 @@
             "name": "that I am on the Birth Month Day of August 5th",
             "result": {
               "status": "passed",
-              "duration": 6881363824
+              "duration": 6425877941
             },
             "line": 6,
             "match": {
@@ -271,7 +271,7 @@
             "name": "I click on a headline with the name \"James Gunn\"",
             "result": {
               "status": "passed",
-              "duration": 4687851190
+              "duration": 5924565601
             },
             "line": 7,
             "match": {
@@ -284,11 +284,11 @@
             "name": "I should be taken to a page about the actor \"James Gunn\"",
             "result": {
               "status": "passed",
-              "duration": 3180832211
+              "duration": 79561289
             },
             "line": 8,
             "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:19"
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
             }
           },
           {
@@ -296,7 +296,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 1889475273
+              "duration": 1853091606
             },
             "hidden": true,
             "match": {
