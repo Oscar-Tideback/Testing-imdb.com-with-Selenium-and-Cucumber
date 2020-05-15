@@ -1,6 +1,6 @@
 Feature:As a user I would like to be able to add random film to my watchlist so I can save them for later
 
-  Scenario:When I would like to add i random film to whatchlist
+  Scenario:When I would like to add a random film to whatchlist
     Given There are no movies in my watchlist and I have a random film
     When I have signed in to the page
     Then I search IMDb for my random film and save the title

@@ -5,7 +5,7 @@ module.exports = function () {
 
   let movieName, randomMovie;
 
-  //Scenario: 2 When I have signed in, I would like to add tom my watchlist
+  //Scenario:When I would like to add a random film to whatchlist
   this.Given(/^There are no movies in my watchlist and I have a random film$/, async function () {
     await helpers.loadPage('https://www.randomlists.com/random-movies');
     randomMovie = await driver.findElement(By.css('.rand_medium')).getText();
