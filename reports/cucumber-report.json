@@ -1,62 +1,50 @@
 [
   {
+    "description": "  As a user I want to see the page of the top 5 actors that are born on\n  August 5th when clicked.",
     "elements": [
       {
-        "id": "as-an-user-i-want-to-search-for-a-movie-called-\"how-to-lose-a-guy-in-10-days\";search-by-a-keyword",
+        "id": "see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Search by a keyword",
+        "line": 12,
+        "name": "Test celebrity home pages from birthdaysite",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that I am on the IMDB site",
+            "name": "that I am on the Birth Month Day of August 5th",
             "result": {
               "status": "passed",
-              "duration": 6658573600
+              "duration": 7528198304
             },
-            "line": 4,
+            "line": 6,
             "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:8"
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:6"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I enter the search text \"How to lose a guy in 10 Days\"",
+            "name": "I click on a headline with the name \"Janet McTeer\"",
             "result": {
               "status": "passed",
-              "duration": 15598900
+              "duration": 3906495890
             },
-            "line": 5,
+            "line": 7,
             "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:13"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on the search button",
-            "result": {
-              "status": "passed",
-              "duration": 2822584399
-            },
-            "line": 6,
-            "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:20"
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:10"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "the first search result should contain the word \"How to Lose a Guy in 10 Days\"",
+            "name": "I should be taken to a page about the actor \"Janet McTeer\"",
             "result": {
               "status": "passed",
-              "duration": 50323201
+              "duration": 70724738
             },
-            "line": 7,
+            "line": 8,
             "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:26"
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
             }
           },
           {
@@ -64,11 +52,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 988676100
+              "duration": 2102474381
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
             }
           }
         ],
@@ -76,48 +64,48 @@
         "type": "scenario"
       },
       {
-        "id": "as-an-user-i-want-to-search-for-a-movie-called-\"how-to-lose-a-guy-in-10-days\";when-a-keyword-is-entered-in-the-search-field",
+        "id": "see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite",
         "keyword": "Scenario",
-        "line": 9,
-        "name": "When a keyword is entered in the search field",
+        "line": 13,
+        "name": "Test celebrity home pages from birthdaysite",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that I am on the IMDB site",
+            "name": "that I am on the Birth Month Day of August 5th",
             "result": {
               "status": "passed",
-              "duration": 6701288500
+              "duration": 6350956903
             },
-            "line": 10,
+            "line": 6,
             "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:8"
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:6"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I enter the search text \"How to lose a guy in 10 Days\" + ENTER",
+            "name": "I click on a headline with the name \"Mark Strong\"",
             "result": {
               "status": "passed",
-              "duration": 136604300
+              "duration": 5972378190
             },
-            "line": 11,
+            "line": 7,
             "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:40"
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:10"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "the first search result should contain the word \"How to Lose a Guy in 10 Days\"",
+            "name": "I should be taken to a page about the actor \"Mark Strong\"",
             "result": {
               "status": "passed",
-              "duration": 661671000
+              "duration": 73668168
             },
-            "line": 12,
+            "line": 8,
             "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\step-definitions\\search-movie.js:26"
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
             }
           },
           {
@@ -125,11 +113,194 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 1235766000
+              "duration": 1825295889
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Test celebrity home pages from birthdaysite",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that I am on the Birth Month Day of August 5th",
+            "result": {
+              "status": "passed",
+              "duration": 6256553544
+            },
+            "line": 6,
+            "match": {
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on a headline with the name \"Jesse Williams\"",
+            "result": {
+              "status": "passed",
+              "duration": 6141811023
+            },
+            "line": 7,
+            "match": {
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:10"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should be taken to a page about the actor \"Jesse Williams\"",
+            "result": {
+              "status": "passed",
+              "duration": 87990900
+            },
+            "line": 8,
+            "match": {
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 2920673712
+            },
+            "hidden": true,
+            "match": {
+              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Test celebrity home pages from birthdaysite",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that I am on the Birth Month Day of August 5th",
+            "result": {
+              "status": "passed",
+              "duration": 5723043085
+            },
+            "line": 6,
+            "match": {
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on a headline with the name \"Stephanie Szostak\"",
+            "result": {
+              "status": "passed",
+              "duration": 3714791263
+            },
+            "line": 7,
+            "match": {
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:10"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should be taken to a page about the actor \"Stephanie Szostak\"",
+            "result": {
+              "status": "passed",
+              "duration": 72735952
+            },
+            "line": 8,
+            "match": {
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 2017551488
+            },
+            "hidden": true,
+            "match": {
+              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Test celebrity home pages from birthdaysite",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that I am on the Birth Month Day of August 5th",
+            "result": {
+              "status": "passed",
+              "duration": 6425877941
+            },
+            "line": 6,
+            "match": {
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on a headline with the name \"James Gunn\"",
+            "result": {
+              "status": "passed",
+              "duration": 5924565601
+            },
+            "line": 7,
+            "match": {
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:10"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should be taken to a page about the actor \"James Gunn\"",
+            "result": {
+              "status": "passed",
+              "duration": 79561289
+            },
+            "line": 8,
+            "match": {
+              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 1853091606
+            },
+            "hidden": true,
+            "match": {
+              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
             }
           }
         ],
@@ -137,11 +308,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-an-user-i-want-to-search-for-a-movie-called-\"how-to-lose-a-guy-in-10-days\"",
+    "id": "see-the-page-to-the-top-5-actors-born-on-august-5th",
     "keyword": "Feature",
     "line": 1,
-    "name": "As an user I want to search for a movie called \"How to lose a guy in 10 days\"",
+    "name": "See the page to the top 5 actors born on August 5th",
     "tags": [],
-    "uri": "C:\\Users\\LadyQuinn\\Desktop\\testporjekt\\IJJO\\features\\search-movie.feature"
+    "uri": "/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/search-celebrity-birthday.feature"
   }
 ]
