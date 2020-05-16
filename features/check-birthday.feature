@@ -1,6 +1,6 @@
-Feature:Check if todays 5 first birthdays are the same as on everipedia in celeb - Born today
+Feature:Check if todays 1-50 first birthdays are the same as on wikipedia on celebrities page - Born today
 
-  Scenario: Cross-check our date of birth with the celebertys everipedia pages
+  Scenario: Cross-check our date of birth with the celebrities wikipedia pages
     When I browse to Birth Month Day of todays
     Then the first 5 names should be saved to a list
     And if the list contains white space replace that with _

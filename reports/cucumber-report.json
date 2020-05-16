@@ -1,50 +1,114 @@
 [
   {
-    "description": "  As a user I want to see the page of the top 5 actors that are born on\n  August 5th when clicked.",
     "elements": [
       {
-        "id": "see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite",
+        "id": "2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist",
         "keyword": "Scenario",
-        "line": 12,
-        "name": "Test celebrity home pages from birthdaysite",
+        "line": 3,
+        "name": "When I would like to add i random film to whatchlist",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that I am on the Birth Month Day of August 5th",
+            "name": "There are no movies in my watchlist and I have a random film",
             "result": {
               "status": "passed",
-              "duration": 7528198304
+              "duration": 9869557255
             },
-            "line": 6,
+            "line": 4,
             "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:6"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:9"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click on a headline with the name \"Janet McTeer\"",
+            "name": "I have signed in to the page",
             "result": {
               "status": "passed",
-              "duration": 3906495890
+              "duration": 9453001164
             },
-            "line": 7,
+            "line": 5,
             "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:10"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:14"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I should be taken to a page about the actor \"Janet McTeer\"",
+            "name": "I search IMDb for my random film and save the title",
             "result": {
               "status": "passed",
-              "duration": 70724738
+              "duration": 65372720
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:22"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on my search result",
+            "result": {
+              "status": "passed",
+              "duration": 5181262660
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:28"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "save that movie title",
+            "result": {
+              "status": "passed",
+              "duration": 120934134
             },
             "line": 8,
             "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:33"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "add it to my watchlist",
+            "result": {
+              "status": "passed",
+              "duration": 276932717
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:40"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "browse to my watchlist page",
+            "result": {
+              "status": "passed",
+              "duration": 2814737528
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:46"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the same movie title should be present",
+            "result": {
+              "status": "passed",
+              "duration": 607242429
+            },
+            "line": 11,
+            "match": {
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:50"
             }
           },
           {
@@ -52,255 +116,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2102474381
+              "duration": 4236411761
             },
             "hidden": true,
             "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "Test celebrity home pages from birthdaysite",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am on the Birth Month Day of August 5th",
-            "result": {
-              "status": "passed",
-              "duration": 6350956903
-            },
-            "line": 6,
-            "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:6"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on a headline with the name \"Mark Strong\"",
-            "result": {
-              "status": "passed",
-              "duration": 5972378190
-            },
-            "line": 7,
-            "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:10"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should be taken to a page about the actor \"Mark Strong\"",
-            "result": {
-              "status": "passed",
-              "duration": 73668168
-            },
-            "line": 8,
-            "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 1825295889
-            },
-            "hidden": true,
-            "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Test celebrity home pages from birthdaysite",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am on the Birth Month Day of August 5th",
-            "result": {
-              "status": "passed",
-              "duration": 6256553544
-            },
-            "line": 6,
-            "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:6"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on a headline with the name \"Jesse Williams\"",
-            "result": {
-              "status": "passed",
-              "duration": 6141811023
-            },
-            "line": 7,
-            "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:10"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should be taken to a page about the actor \"Jesse Williams\"",
-            "result": {
-              "status": "passed",
-              "duration": 87990900
-            },
-            "line": 8,
-            "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 2920673712
-            },
-            "hidden": true,
-            "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Test celebrity home pages from birthdaysite",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am on the Birth Month Day of August 5th",
-            "result": {
-              "status": "passed",
-              "duration": 5723043085
-            },
-            "line": 6,
-            "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:6"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on a headline with the name \"Stephanie Szostak\"",
-            "result": {
-              "status": "passed",
-              "duration": 3714791263
-            },
-            "line": 7,
-            "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:10"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should be taken to a page about the actor \"Stephanie Szostak\"",
-            "result": {
-              "status": "passed",
-              "duration": 72735952
-            },
-            "line": 8,
-            "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 2017551488
-            },
-            "hidden": true,
-            "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "see-the-page-to-the-top-5-actors-born-on-august-5th;test-celebrity-home-pages-from-birthdaysite",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "Test celebrity home pages from birthdaysite",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I am on the Birth Month Day of August 5th",
-            "result": {
-              "status": "passed",
-              "duration": 6425877941
-            },
-            "line": 6,
-            "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:6"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on a headline with the name \"James Gunn\"",
-            "result": {
-              "status": "passed",
-              "duration": 5924565601
-            },
-            "line": 7,
-            "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:10"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should be taken to a page about the actor \"James Gunn\"",
-            "result": {
-              "status": "passed",
-              "duration": 79561289
-            },
-            "line": 8,
-            "match": {
-              "location": "folder/IJJO/step-definitions/search-celebrity-birthday.js:21"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 1853091606
-            },
-            "hidden": true,
-            "match": {
-              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
             }
           }
         ],
@@ -308,11 +128,11 @@
         "type": "scenario"
       }
     ],
-    "id": "see-the-page-to-the-top-5-actors-born-on-august-5th",
+    "id": "2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later",
     "keyword": "Feature",
     "line": 1,
-    "name": "See the page to the top 5 actors born on August 5th",
+    "name": "2 As a user I would like to be able to add random film to my watchlist so I can save them for later",
     "tags": [],
-    "uri": "/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/search-celebrity-birthday.feature"
+    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist2.feature"
   }
 ]
