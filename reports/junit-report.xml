@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" tests="8" failures="0" skipped="0">
+    <testsuite name="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" tests="6" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist2.feature">
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/cast-crew.feature">
             </property>
         </properties>
-        <testcase name="Given There are no movies in my watchlist and I have a random film" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="9.869557255">
+        <testcase name="Given that I am on the Suits page" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="22.832218247">
         </testcase>
-        <testcase name="When I have signed in to the page" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="9.453001164">
+        <testcase name="And that I have clicked the Edit button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="7.349048271">
         </testcase>
-        <testcase name="Then I search IMDb for my random film and save the title" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="0.06537272">
+        <testcase name="And that I haved chosen wanted Cast in Cast&amp;Crew and clicked on the continue button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="13.470303708">
         </testcase>
-        <testcase name="And I click on my search result" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="5.18126266">
+        <testcase name="When I add data in Gabriel Macht,Episode Errors and Omissions (#1.2),Harvey Specter and click button check these updates" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+            <skipped message="">
+            </skipped>
         </testcase>
-        <testcase name="And save that movie title" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="0.120934134">
+        <testcase name="And I click the button Submit these updates" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+            <skipped message="">
+            </skipped>
         </testcase>
-        <testcase name="And add it to my watchlist" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="0.276932717">
-        </testcase>
-        <testcase name="And browse to my watchlist page" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="2.814737528">
-        </testcase>
-        <testcase name="And the same movie title should be present" classname="2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist" time="0.607242429">
+        <testcase name="Then the data I have submitted in Gabriel Macht, Episode Errors and Omissions (#1.2), Harvey Specter should be sent" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+            <skipped message="">
+            </skipped>
         </testcase>
     </testsuite>
 </testsuites>

@@ -38,7 +38,8 @@ module.exports = function () {
     await sleep(2000);
 
 
-
+    await button.click;
+    await sleep(5000);
   });
 
   /*this.When(/^I add data in Gabriel Macht,Episode Errors and Omissions \(\#(\d+)\.(\d+)\),Harvey Specter and click button check these updates$/, function (arg1, arg2, callback) {

@@ -1,126 +1,89 @@
 [
   {
+    "description": "  As a contributor I want to be able to add data to the Cast&Crew section\n  of Suits.",
     "elements": [
       {
-        "id": "2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist",
+        "id": "can-i-as-a-contributor-add-cast&crew-information-to-suits;add-data-to-suits-cast&crew-section",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "When I would like to add i random film to whatchlist",
+        "line": 16,
+        "name": "Add data to Suits Cast&Crew section",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "There are no movies in my watchlist and I have a random film",
+            "name": "that I am on the Suits page",
             "result": {
               "status": "passed",
-              "duration": 9869557255
+              "duration": 22832218247
             },
-            "line": 4,
+            "line": 6,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:9"
+              "location": "folder/IJJO/step-definitions/cast-crew.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that I have clicked the Edit button",
+            "result": {
+              "status": "passed",
+              "duration": 7349048271
+            },
+            "line": 7,
+            "match": {
+              "location": "folder/IJJO/step-definitions/cast-crew.js:20"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that I haved chosen wanted Cast in Cast&Crew and clicked on the continue button",
+            "result": {
+              "status": "passed",
+              "duration": 13470303708
+            },
+            "line": 8,
+            "match": {
+              "location": "folder/IJJO/step-definitions/cast-crew.js:34"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I have signed in to the page",
+            "name": "I add data in Gabriel Macht,Episode Errors and Omissions (#1.2),Harvey Specter and click button check these updates",
             "result": {
-              "status": "passed",
-              "duration": 9453001164
+              "status": "undefined"
             },
-            "line": 5,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:14"
-            }
+            "line": 9
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click the button Submit these updates",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I search IMDb for my random film and save the title",
+            "name": "the data I have submitted in Gabriel Macht, Episode Errors and Omissions (#1.2), Harvey Specter should be sent",
             "result": {
-              "status": "passed",
-              "duration": 65372720
+              "status": "undefined"
             },
-            "line": 6,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:22"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on my search result",
-            "result": {
-              "status": "passed",
-              "duration": 5181262660
-            },
-            "line": 7,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:28"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "save that movie title",
-            "result": {
-              "status": "passed",
-              "duration": 120934134
-            },
-            "line": 8,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:33"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "add it to my watchlist",
-            "result": {
-              "status": "passed",
-              "duration": 276932717
-            },
-            "line": 9,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:40"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "browse to my watchlist page",
-            "result": {
-              "status": "passed",
-              "duration": 2814737528
-            },
-            "line": 10,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:46"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the same movie title should be present",
-            "result": {
-              "status": "passed",
-              "duration": 607242429
-            },
-            "line": 11,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:50"
-            }
+            "line": 11
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 4236411761
+              "duration": 2323817778
             },
             "hidden": true,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
             }
           }
         ],
@@ -128,11 +91,11 @@
         "type": "scenario"
       }
     ],
-    "id": "2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later",
+    "id": "can-i-as-a-contributor-add-cast&crew-information-to-suits",
     "keyword": "Feature",
     "line": 1,
-    "name": "2 As a user I would like to be able to add random film to my watchlist so I can save them for later",
+    "name": "Can I as a contributor add Cast&Crew information to Suits",
     "tags": [],
-    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist2.feature"
+    "uri": "/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/cast-crew.feature"
   }
 ]
