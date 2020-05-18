@@ -65,9 +65,6 @@ module.exports = function () {
     let defaultButton = await driver.findElement(By.xpath("//input[@value='unknown']"));
     await defaultButton.click();
     await sleep(2000);
-
-
-
   });
 
   /*

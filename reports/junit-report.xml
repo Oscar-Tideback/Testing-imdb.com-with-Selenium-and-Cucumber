@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" tests="6" failures="0" skipped="2">
+    <testsuite name="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" tests="4" failures="1" skipped="0">
         <properties>
-            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/cast-crew.feature">
+            <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/popular-horror-movies.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the Suits page" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="24.401878181">
+        <testcase name="Given that I am on the IMDB site" classname="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" time="9.525428058">
         </testcase>
-        <testcase name="And that I have clicked the Edit button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="3.311280849">
+        <testcase name="And I have clicked on the Menu button" classname="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" time="1.366372248">
         </testcase>
-        <testcase name="And that I haved chosen to add a credit in the Cast&amp;Crew section and clicked on the continue button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="5.043167049">
+        <testcase name="When I have clicked on Most popular movies" classname="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" time="1.014648692">
         </testcase>
-        <testcase name="When I add data in &quot;Gabriel Macht&quot;,&quot;Episode Errors and Omissions (#1.2)&quot;, &quot;Harvey Specter&quot; and click button check these updates" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="11.999199649">
-        </testcase>
-        <testcase name="And I click the button Submit these updates" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then the data I have submitted should be sent" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
-            <skipped message="">
-            </skipped>
+        <testcase name="Then I click on horror link text to see a list of Top 50 Horror Movies" classname="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" time="5.140940347">
+            <failure message="AssertionError: Top 50 Horror Movies and TV Shows could not be found: expected &apos;Top 50 Horror Movies and TV Shows - IMDb&apos; to include &apos;Top 30 Horror Movies&apos;">AssertionError: Top 50 Horror Movies and TV Shows could not be found: expected &apos;Top 50 Horror Movies and TV Shows - IMDb&apos; to include &apos;Top 30 Horror Movies&apos;
+    at createWorld.&lt;anonymous&gt; (/Users/jasminkasravi/Desktop/untitled folder/IJJO/step-definitions/popular-horror-movies.js:27:10)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
         </testcase>
     </testsuite>
 </testsuites>
