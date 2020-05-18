@@ -18,6 +18,11 @@ module.exports = function () {
   this.Then(/^I should see a list of popular shows by clicking on the link Most Popular Shows$/, async function () {
     let link4 = await driver.findElement(By.css("a[href*='tvmeter']"));
     link4.click();
+    let title = await driver.findElement(By.xpath("/html/head/title"));
+    let titleText = await title.getAttribute("textContent");
+    expect(titleText,
+      'Most Popular TV shows could not be found'
+    ).to.include('Most Popular TV')
     await sleep(sleepTime);
   });
 }
