@@ -26,21 +26,20 @@ module.exports = function () {
   });
 
   this.Then(/^I click on my search result$/, async function () {
-    await driver.wait(until.elementLocated(By.css('td.result_text')), 10000);
+    await driver.wait(until.elementLocated(By.css('td.result_text > a')), 10000);
     await driver.findElement(By.css('td.result_text > a')).click();
   });
 
   this.Then(/^save that movie title$/, async function () {
-    movieName = await driver.findElement(By.css('div.title_wrapper > h1')).getText();
     await driver.wait(until.elementLocated(By.css('div.title_wrapper > h1')));
-    let words = movieName.split(' (');
-    movieName = words[0];
+    movieName = await driver.findElement(By.css('div.title_wrapper > h1')).getText();
+    let name = movieName.split(' (');//Removing the year of release from moviename.
+    movieName = name[0];
   });
 
   this.Then(/^add it to my watchlist$/, async function () {
     await driver.wait(until.elementLocated(By.css('.wl-ribbon')), 10000);
-    let button = await driver.findElement(By.css('.wl-ribbon'));
-    await button.click();
+    await driver.findElement(By.css('.wl-ribbon')).click();
   });
 
   this.Then(/^browse to my watchlist page$/, async function () {

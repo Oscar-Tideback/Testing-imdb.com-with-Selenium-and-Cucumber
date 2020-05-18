@@ -27,11 +27,11 @@ module.exports = function () {
     await sleep(2000);
     //step 4: select categories
     await selectOption('select.choose', 'Add 1 credit');
-    await sleep(4000);
-
+    await sleep(2000);
   });
 
   this.Given(/^that I haved chosen wanted Cast in Cast&Crew and clicked on the continue button$/, async function () {
+    //step 5: select 
     let editButton = await $('.btn.primary');
     //assert(searchButton, 'Could not find the search button');
     await editButton.click();
@@ -47,16 +47,23 @@ module.exports = function () {
     callback(null, 'pending');
   });
 
-
-  this.When(/^I click the button Submit these updates$/, function (callback) {
+  this.When(/^I add data in "([^"]*)","([^"]*)", "([^"]*)" and click button check these updates$/, async function (arg1, arg2, arg3) {
     // Write code here that turns the phrase above into concrete actions
-    callback(null, 'pending');
+    let input1 = await $('.a-input-text.a-spacing-none.ice-search-box');
+    await input1.sendKeys(arg1);
+    await sleep(3000);
   });
 
-
-  this.Then(/^the data I have submitted in Gabriel Macht, Episode Errors and Omissions \(\#(\d+)\.(\d+)\), Harvey Specter should be sent$/, function (arg1, arg2, callback) {
-    // Write code here that turns the phrase above into concrete actions
-    callback(null, 'pending');
-  });
-*/
+  /*
+    this.When(/^I click the button Submit these updates$/, function (callback) {
+      // Write code here that turns the phrase above into concrete actions
+      callback(null, 'pending');
+    });
+  
+  
+    this.Then(/^the data I have submitted in Gabriel Macht, Episode Errors and Omissions \(\#(\d+)\.(\d+)\), Harvey Specter should be sent$/, function (arg1, arg2, callback) {
+      // Write code here that turns the phrase above into concrete actions
+      callback(null, 'pending');
+    });
+  */
 }

@@ -3,5 +3,5 @@ Feature: As an user I want to see a list of upcoming releases for Austria so tha
   Scenario: View upcoming releases for Austria
     Given that I am on the IMDB site
     And I have clicked on the Menu button
-    When I have clicked on Release Calender
+    When I have clicked on Release Calendar
     Then I should see a list of upcoming releases for Austria by clicking on Austria
