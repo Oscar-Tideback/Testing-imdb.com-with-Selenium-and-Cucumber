@@ -1,9 +1,9 @@
 let { $, sleep } = require('./funcs');
 const { username, password } = require('./credentials.json');
 
-
-
 module.exports = function () {
+
+  let input = [];
 
   this.Given(/^that I am on the Suits page$/, async function () {
     //step 1: log in as a user
@@ -25,36 +25,61 @@ module.exports = function () {
     );
     await editButton.click();
     await sleep(2000);
+  });
+
+  this.Given(/^that I haved chosen to add a credit in the Cast&Crew section and clicked on the continue button$/, async function () {
     //step 4: select categories
     await selectOption('select.choose', 'Add 1 credit');
     await sleep(2000);
-  });
 
-  this.Given(/^that I haved chosen wanted Cast in Cast&Crew and clicked on the continue button$/, async function () {
-    //step 5: select 
+    //step 5: select
     let editButton = await $('.btn.primary');
     //assert(searchButton, 'Could not find the search button');
     await editButton.click();
     await sleep(2000);
   });
 
-  this.When(/^I add data in "([^"]*)","([^"]*)", "([^"]*)" and click button check these updates$/, async function (arg1, arg2, arg3) {
+  this.When(/^I add data in "([^"]*)","([^"]*)", "([^"]*)" and click button check these updates$/, async function (input1, input2, input3) {
     // Write code here that turns the phrase above into concrete actions
-    let input1 = await $('.a-input-text.a-spacing-none.ice-search-box');
-    await input1.sendKeys(arg1);
-    await sleep(3000);
+
+    input[0] = await $('.a-input-text.a-spacing-none.ice-search-box');
+    await input[0].sendKeys(input1);
+    await sleep(2000);
+
+    input[1] = await $('.has-fieldbrowser.series');
+    await input[1].sendKeys(input2);
+    await sleep(2000);
+
+    //$('input.o.1.cast.new.1.edit.char');
+    input[2] = await driver.findElement(By.name('o.1.cast.new.1.edit.char'));
+    await input[2].sendKeys(input3);
+    await sleep(2000);
+
+    let uppdateButton = await $('.btn.primary');
+    //assert(searchButton, 'Could not find the search button');
+    await uppdateButton.click();
+    await sleep(2000);
+
+    //findElement(By.name('o.1.cast.new.1.error.name_exists.2.fix'));
+
+    let defaultButton = await driver.findElement(By.xpath("//input[@value='unknown']"));
+    await defaultButton.click();
+    await sleep(2000);
+
+
+
   });
 
   /*
     this.When(/^I click the button Submit these updates$/, function (callback) {
-      // Write code here that turns the phrase above into concrete actions
-      callback(null, 'pending');
-    });
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });
   
   
-    this.Then(/^the data I have submitted in Gabriel Macht, Episode Errors and Omissions \(\#(\d+)\.(\d+)\), Harvey Specter should be sent$/, function (arg1, arg2, callback) {
-      // Write code here that turns the phrase above into concrete actions
-      callback(null, 'pending');
-    });
+   this.Then(/^the data I have submitted should be sent$/, function (callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });
   */
 }

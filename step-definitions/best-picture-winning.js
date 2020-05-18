@@ -44,12 +44,12 @@ module.exports = function () {
     ratingList = await $('.inline-block.ratings-imdb-rating');
     let listLenght = ratingList.length;
 
-    assert.equal(listLenght, 50,
+    assert.equal(listLenght, 93,
       'missing object on site');
 
     //test 2
-    for (let i = 0; i < winnerList.length; i++) {
-      rate = ratingList[i];
+    for (let i = 0; i < listLenght.length; i++) {
+      rate = listLenght[i];
       let rateString = await rate.getText();
 
       assert.notEqual(rateString, '0,0',
