@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" tests="6" failures="0" skipped="3">
+    <testsuite name="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" tests="6" failures="0" skipped="2">
         <properties>
             <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/cast-crew.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the Suits page" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="22.832218247">
+        <testcase name="Given that I am on the Suits page" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="24.401878181">
         </testcase>
-        <testcase name="And that I have clicked the Edit button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="7.349048271">
+        <testcase name="And that I have clicked the Edit button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="3.311280849">
         </testcase>
-        <testcase name="And that I haved chosen wanted Cast in Cast&amp;Crew and clicked on the continue button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="13.470303708">
+        <testcase name="And that I haved chosen to add a credit in the Cast&amp;Crew section and clicked on the continue button" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="5.043167049">
         </testcase>
-        <testcase name="When I add data in Gabriel Macht,Episode Errors and Omissions (#1.2),Harvey Specter and click button check these updates" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I add data in &quot;Gabriel Macht&quot;,&quot;Episode Errors and Omissions (#1.2)&quot;, &quot;Harvey Specter&quot; and click button check these updates" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section" time="11.999199649">
         </testcase>
         <testcase name="And I click the button Submit these updates" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="Then the data I have submitted in Gabriel Macht, Episode Errors and Omissions (#1.2), Harvey Specter should be sent" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
+        <testcase name="Then the data I have submitted should be sent" classname="can-i-as-a-contributor-add-cast&amp;crew-information-to-suits;add-data-to-suits-cast&amp;crew-section">
             <skipped message="">
             </skipped>
         </testcase>

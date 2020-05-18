@@ -14,11 +14,11 @@
             "name": "that I am on the Suits page",
             "result": {
               "status": "passed",
-              "duration": 22832218247
+              "duration": 24401878181
             },
             "line": 6,
             "match": {
-              "location": "folder/IJJO/step-definitions/cast-crew.js:8"
+              "location": "folder/IJJO/step-definitions/cast-crew.js:10"
             }
           },
           {
@@ -27,34 +27,38 @@
             "name": "that I have clicked the Edit button",
             "result": {
               "status": "passed",
-              "duration": 7349048271
+              "duration": 3311280849
             },
             "line": 7,
             "match": {
-              "location": "folder/IJJO/step-definitions/cast-crew.js:20"
+              "location": "folder/IJJO/step-definitions/cast-crew.js:22"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "that I haved chosen wanted Cast in Cast&Crew and clicked on the continue button",
+            "name": "that I haved chosen to add a credit in the Cast&Crew section and clicked on the continue button",
             "result": {
               "status": "passed",
-              "duration": 13470303708
+              "duration": 5043167049
             },
             "line": 8,
             "match": {
-              "location": "folder/IJJO/step-definitions/cast-crew.js:34"
+              "location": "folder/IJJO/step-definitions/cast-crew.js:33"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I add data in Gabriel Macht,Episode Errors and Omissions (#1.2),Harvey Specter and click button check these updates",
+            "name": "I add data in \"Gabriel Macht\",\"Episode Errors and Omissions (#1.2)\", \"Harvey Specter\" and click button check these updates",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 11999199649
             },
-            "line": 9
+            "line": 9,
+            "match": {
+              "location": "folder/IJJO/step-definitions/cast-crew.js:46"
+            }
           },
           {
             "arguments": [],
@@ -68,7 +72,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "the data I have submitted in Gabriel Macht, Episode Errors and Omissions (#1.2), Harvey Specter should be sent",
+            "name": "the data I have submitted should be sent",
             "result": {
               "status": "undefined"
             },
@@ -79,7 +83,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2323817778
+              "duration": 2367368677
             },
             "hidden": true,
             "match": {

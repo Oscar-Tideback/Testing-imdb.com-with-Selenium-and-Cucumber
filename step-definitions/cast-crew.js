@@ -1,8 +1,6 @@
 let { $, sleep } = require('./funcs');
 const { username, password } = require('./credentials.json');
 
-
-
 module.exports = function () {
 
   let input = [];
@@ -27,7 +25,6 @@ module.exports = function () {
     );
     await editButton.click();
     await sleep(2000);
-
   });
 
   this.Given(/^that I haved chosen to add a credit in the Cast&Crew section and clicked on the continue button$/, async function () {
@@ -40,7 +37,6 @@ module.exports = function () {
     //assert(searchButton, 'Could not find the search button');
     await editButton.click();
     await sleep(2000);
-
   });
 
   this.When(/^I add data in "([^"]*)","([^"]*)", "([^"]*)" and click button check these updates$/, async function (input1, input2, input3) {
