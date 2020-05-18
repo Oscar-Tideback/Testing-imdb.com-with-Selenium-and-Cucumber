@@ -1,6 +1,6 @@
-Feature:We would like to check footer for missing images or broken links on frontpage
+Feature:We would like to check footer for missing images, links, text on frontpage
 
-  Scenario:Check footer for broken links or missing images
+  Scenario:Check footer for missing links or images and text
     When I browse the statpage
     Then the footer should contain the information
       | Link               |
