@@ -4,4 +4,4 @@ Feature: As an user I want to browse through popular horror movies and tv shows 
     Given that I am on the IMDB site
     And I have clicked on the Menu button
     When I have clicked on Most popular movies
-    Then I click on horror link text to see a list of popular movies and tv shows.
+    Then I click on horror link text to see a list of Top 50 Horror Movies

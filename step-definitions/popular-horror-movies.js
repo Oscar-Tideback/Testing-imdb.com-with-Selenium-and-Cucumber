@@ -15,7 +15,7 @@ module.exports = function () {
     await sleep(sleepTime);
   });
 
-  this.Then(/^I click on horror link text to see a list of popular movies and tv shows\.$/, async function () {
+  this.Then(/^I click on horror link text to see a list of Top (\d+) Horror Movies$/, async function (linkMovie) {
     let linkMovie = await driver.findElement(By.css("a[href*='genre/horror']"));
     linkMovie.click();
 
@@ -24,7 +24,7 @@ module.exports = function () {
     let titleText = await title.getAttribute("textContent");
     expect(titleText,
       'Top 50 Horror Movies and TV Shows could not be found'
-    ).to.include('Top 50 Horror Movies and TV Shows')
+    ).to.include('Top 50 Horror Movies');
     await sleep(sleepTime);
   });
 }
