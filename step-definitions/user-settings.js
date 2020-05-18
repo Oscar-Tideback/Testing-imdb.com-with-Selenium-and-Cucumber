@@ -2,15 +2,24 @@ let { $, sleep } = require('./funcs');
 const { username, password } = require('./credentials.json');
 
 module.exports = function () {
+
+  let newPassword = "123qwe098Q";
   //Scenario: When loggin to page
   this.Given(/^an account is premade$/, async function () {
-    await helpers.loadPage('https://www.imdb.com/registration/signin?ref=nv_generic_lgin&u=%2F');
+    await helpers.loadPage('https://www.imdb.com/');
   });
 
   this.When(/^I click the button to sign in$/, async function () {
+    await driver.findElement(By.css('._3cMNCrSVkxQhCkVs1JLIib')).click();
   });
 
   this.Then(/^I should be redirected to a page were I can select sign in method$/, async function () {
+    await driver.wait(until.elementLocated(By.css('title')));
+    let title = await driver.findElement(By.xpath("/html/head/title"));
+    let titleText = await title.getAttribute("textContent");
+    expect(titleText,
+      'Did not redirect to the right page. '
+    ).to.equal('Sign in with IMDb - IMDb');
   });
 
   this.Then(/^click the first loggin method "([^"]*)"$/, async function (sign) {
@@ -18,6 +27,12 @@ module.exports = function () {
   });
 
   this.Then(/^I should be redirected the signin page$/, async function () {
+    await driver.wait(until.elementLocated(By.css('title')));
+    let title = await driver.findElement(By.xpath("/html/head/title"));
+    let titleText = await title.getAttribute("textContent");
+    expect(titleText,
+      'Did not redirect to the right page. '
+    ).to.equal('IMDb Sign-In');
   });
 
   this.Then(/^type in username and tab to next$/, async function () {
@@ -41,6 +56,13 @@ module.exports = function () {
   this.Then(/^clicked the user menu to account settings$/, async function () {
     await driver.findElement(By.css('span.imdb-header__account-toggle--logged-in')).click();
     await driver.findElement(By.linkText("Account settings")).click();
+    await driver.wait(until.elementLocated(By.css('title')));
+    let title = await driver.findElement(By.xpath("/html/head/title"));
+    let titleText = await title.getAttribute("textContent");
+    expect(titleText,
+      'Did not redirect to the right page. '
+    ).to.equal('Account Settings - IMDb');
+
   });
 
   this.Then(/^clicked on Login and security$/, async function () {
@@ -53,30 +75,23 @@ module.exports = function () {
 
   this.Then(/^type the current password in current password field$/, async function () {
     await driver.findElement(By.id('ap_password')).sendKeys(password);
-    let newPassword = "123qwe098Q";
-    await driver.findElement(By.id('ap_password_new')).sendKeys(newPassword);
-    await driver.findElement(By.id('ap_password_new_check')).sendKeys(newPassword);
-
-    await driver.findElement(By.id('cnep_1D_submit_button')).click();
-    await sleep(2000);
   });
 
   this.Then(/^typed a new password in the new password field$/, async function () {
+    await driver.findElement(By.id('ap_password_new')).sendKeys(newPassword);
   });
 
   this.Then(/^reenter the new password in the reenter password field$/, async function () {
+    await driver.findElement(By.id('ap_password_new_check')).sendKeys(newPassword);
+    await driver.findElement(By.id('cnep_1D_submit_button')).click();
   });
 
   this.Then(/^reset to old password$/, async function () {
     await driver.findElement(By.id('auth-cnep-edit-password-button')).click();
-    let newPassword = "123qwe098Q";
     await driver.findElement(By.id('ap_password')).sendKeys(newPassword);
-
     await driver.findElement(By.id('ap_password_new')).sendKeys(password);
     await driver.findElement(By.id('ap_password_new_check')).sendKeys(password);
-
     await driver.findElement(By.id('cnep_1D_submit_button')).click();
-    await sleep(2000);
   });
 
   this.Then(/^I clicked the edit button to change user ID$/, async function () {
@@ -128,19 +143,15 @@ module.exports = function () {
     await driver.findElement(By.css('span.imdb-header__account-toggle--logged-in')).click();
     await driver.findElement(By.linkText("Account settings")).click();
     await driver.findElement(By.linkText("Edit profile")).click();
+    await driver.findElement(By.css('.multiline')).clear();
     await driver.findElement(By.css('.multiline')).sendKeys(newBio);
     await driver.findElement(By.css('div[data-userbio-save]')).click();
-    await sleep(3000);
-    //await driver.findElement(By.id('ap_password')).sendKeys(password);
-    //await driver.findElement(By.id('signInSubmit')).click();
-    //await driver.findElement(By.css('span.imdb-header__account-toggle--logged-in')).click();
-    //await driver.findElement(By.linkText("Account settings")).click();
+    await driver.wait(until.elementLocated(By.css('.article h2')), 10000);
     await driver.findElement(By.linkText("Edit profile")).click();
     let bioText = await driver.findElement(By.css('.multiline')).getText();
     expect(bioText).to.equal(newBio);
     await driver.findElement(By.css('.multiline')).clear();
     await driver.findElement(By.css('div[data-userbio-save]')).click();
-    await sleep(3000);
   });
 
 }
