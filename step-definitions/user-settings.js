@@ -143,6 +143,13 @@ module.exports = function () {
     await driver.findElement(By.linkText("Edit profile")).click();
     await driver.findElement(By.css('.multiline')).sendKeys(newBio);
     await driver.findElement(By.css('div[data-userbio-save]')).click();
+    await driver.findElement(By.css('span.imdb-header__account-toggle--logged-in')).click();
+    await driver.findElement(By.linkText("Account settings")).click();
+    await driver.findElement(By.linkText("Edit profile")).click();
+    let bioText = await driver.findElement(By.css('.multiline')).getText();
+    expect(bioText).to.equal(newBio);
+    await driver.findElement(By.css('.multiline')).clear();
+    await driver.findElement(By.css('div[data-userbio-save]')).click();
     await sleep(3000);
   });
 
