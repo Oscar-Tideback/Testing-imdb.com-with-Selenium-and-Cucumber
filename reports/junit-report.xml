@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" tests="4" failures="1" skipped="0">
+    <testsuite name="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" tests="4" failures="0" skipped="0">
         <properties>
             <property name="URI" value="/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/popular-horror-movies.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the IMDB site" classname="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" time="9.525428058">
+        <testcase name="Given that I am on the IMDB site" classname="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" time="7.226820713">
         </testcase>
-        <testcase name="And I have clicked on the Menu button" classname="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" time="1.366372248">
+        <testcase name="And I have clicked on the Menu button" classname="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" time="0.306346849">
         </testcase>
-        <testcase name="When I have clicked on Most popular movies" classname="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" time="1.014648692">
+        <testcase name="When I have clicked on Most popular movies" classname="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" time="0.026566174">
         </testcase>
-        <testcase name="Then I click on horror link text to see a list of Top 50 Horror Movies" classname="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" time="5.140940347">
-            <failure message="AssertionError: Top 50 Horror Movies and TV Shows could not be found: expected &apos;Top 50 Horror Movies and TV Shows - IMDb&apos; to include &apos;Top 30 Horror Movies&apos;">AssertionError: Top 50 Horror Movies and TV Shows could not be found: expected &apos;Top 50 Horror Movies and TV Shows - IMDb&apos; to include &apos;Top 30 Horror Movies&apos;
-    at createWorld.&lt;anonymous&gt; (/Users/jasminkasravi/Desktop/untitled folder/IJJO/step-definitions/popular-horror-movies.js:27:10)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+        <testcase name="Then I click on horror link text to see a list of Top 50 Horror Movies" classname="as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies" time="5.655131099">
         </testcase>
     </testsuite>
 </testsuites>

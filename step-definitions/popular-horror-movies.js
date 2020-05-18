@@ -15,11 +15,11 @@ module.exports = function () {
     //await sleep(sleepTime);
   });
 
-  this.Then(/^I click on horror link text to see a list of Top (\d+) Horror Movies$/, async function (link) {
+  this.Then(/^I click on horror link text to see a list of Top (\d+) Horror Movies$/, async function (horror) {
     let linkMovie = await driver.findElement(By.css("a[href*='genre/horror']"));
     linkMovie.click();
 
-    await sleep(sleepTime);
+    //await sleep(sleepTime);
     let title = await driver.findElement(By.xpath("/html/head/title"));
     let titleText = await title.getAttribute("textContent");
     expect(titleText,
