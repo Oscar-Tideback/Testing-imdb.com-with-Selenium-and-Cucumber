@@ -29,7 +29,7 @@ module.exports = function () {
 
     //step 3: select categories
 
-    let chooseButton = await selectOption('select.choose', '2.');
+    let chooseButton = await selectOption('[select.choose]', '[2]');
     await chooseButton.click();
     await sleep(2000);
 
