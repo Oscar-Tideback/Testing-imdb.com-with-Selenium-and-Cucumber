@@ -18,8 +18,6 @@ module.exports = function () {
   });
 
   this.Then(/^I should be redirected the signin page$/, async function () {
-
-
   });
 
   this.Then(/^type in username and tab to next$/, async function () {
@@ -51,9 +49,6 @@ module.exports = function () {
 
   this.Then(/^I clicked the edit button to change password$/, async function () {
     await driver.findElement(By.id('auth-cnep-edit-password-button')).click();
-
-
-
   });
 
   this.Then(/^type the current password in current password field$/, async function () {
@@ -64,18 +59,12 @@ module.exports = function () {
 
     await driver.findElement(By.id('cnep_1D_submit_button')).click();
     await sleep(2000);
-
-
   });
 
   this.Then(/^typed a new password in the new password field$/, async function () {
-
-
   });
 
   this.Then(/^reenter the new password in the reenter password field$/, async function () {
-
-
   });
 
   this.Then(/^reset to old password$/, async function () {
@@ -88,8 +77,6 @@ module.exports = function () {
 
     await driver.findElement(By.id('cnep_1D_submit_button')).click();
     await sleep(2000);
-
-
   });
 
   this.Then(/^I clicked the edit button to change user ID$/, async function () {
@@ -143,8 +130,11 @@ module.exports = function () {
     await driver.findElement(By.linkText("Edit profile")).click();
     await driver.findElement(By.css('.multiline')).sendKeys(newBio);
     await driver.findElement(By.css('div[data-userbio-save]')).click();
-    await driver.findElement(By.css('span.imdb-header__account-toggle--logged-in')).click();
-    await driver.findElement(By.linkText("Account settings")).click();
+    await sleep(3000);
+    //await driver.findElement(By.id('ap_password')).sendKeys(password);
+    //await driver.findElement(By.id('signInSubmit')).click();
+    //await driver.findElement(By.css('span.imdb-header__account-toggle--logged-in')).click();
+    //await driver.findElement(By.linkText("Account settings")).click();
     await driver.findElement(By.linkText("Edit profile")).click();
     let bioText = await driver.findElement(By.css('.multiline')).getText();
     expect(bioText).to.equal(newBio);
