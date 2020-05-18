@@ -61,20 +61,19 @@ module.exports = function () {
     expect(titleText,
       'Did not redirect to the right page. '
     ).to.equal('Account Settings - IMDb');
-
   });
 
   this.Then(/^clicked on Login and security$/, async function () {
     await driver.findElement(By.linkText("Login and security")).click();
-  });
-
-  this.Then(/^I clicked the edit button to change password$/, async function () {
     await driver.wait(until.elementLocated(By.css('title')));
     let title = await driver.findElement(By.xpath("/html/head/title"));
     let titleText = await title.getAttribute("textContent");
     expect(titleText,
       'Did not redirect to the right page. '
     ).to.equal('IMDb Change Name, E-mail, Password');
+  });
+
+  this.Then(/^I clicked the edit button to change password$/, async function () {
     await driver.findElement(By.id('auth-cnep-edit-password-button')).click();
   });
 
@@ -138,6 +137,7 @@ module.exports = function () {
     expect(titleText,
       'Did not redirect to the right page. '
     ).to.equal('Edit profile - IMDb');
+
     await driver.findElement(By.css('.auth-input-right-side')).click();
     await driver.findElement(By.css('.auth-input--input')).sendKeys("_new");
     await driver.findElement(By.css('.auth-input--input')).sendKeys(selenium.Key.TAB);
@@ -146,6 +146,7 @@ module.exports = function () {
     expect(success,
       'User ID was not changed'
     ).to.exist;
+
     await driver.findElement(By.css('span.imdb-header__account-toggle--logged-in')).click();
     await driver.findElement(By.linkText("Account settings")).click();
     await driver.findElement(By.linkText("Edit profile")).click();
@@ -170,8 +171,10 @@ module.exports = function () {
     expect(bioText,
       'New bio is not right. '
     ).to.equal(newBio);
+
     await driver.findElement(By.css('.multiline')).clear();
     await driver.findElement(By.css('div[data-userbio-save]')).click();
+    await driver.quit();
   });
 
 }
