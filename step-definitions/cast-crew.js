@@ -25,24 +25,40 @@ module.exports = function () {
     );
     await editButton.click();
     await sleep(2000);
-    //step 4: select categories
-    await selectOption('select.choose', 'Add 1 credit');
-    await sleep(2000);
+
   });
 
   this.Given(/^that I haved chosen wanted Cast in Cast&Crew and clicked on the continue button$/, async function () {
-    //step 5: select 
+
+    //step 4: select categories
+    await selectOption('select.choose', 'Add 1 credit');
+    await sleep(2000);
+
+    //step 5: select
     let editButton = await $('.btn.primary');
     //assert(searchButton, 'Could not find the search button');
     await editButton.click();
     await sleep(2000);
   });
 
-  this.When(/^I add data in "([^"]*)","([^"]*)", "([^"]*)" and click button check these updates$/, async function (arg1, arg2, arg3) {
+  this.When(/^I add data in "([^"]*)","([^"]*)", "([^"]*)" and click button check these updates$/, async function (input1, input2, input3) {
     // Write code here that turns the phrase above into concrete actions
-    let input1 = await $('.a-input-text.a-spacing-none.ice-search-box');
-    await input1.sendKeys(arg1);
-    await sleep(3000);
+    let input = await $('.a-input-text.a-spacing-none.ice-search-box');
+    await input.sendKeys(input1);
+    await sleep(2000);
+
+    input = await $('.has-fieldbrowser.series');
+    await input.sendKeys(input2);
+    await sleep(2000);
+
+    //$('input.o.1.cast.new.1.edit.char');
+    input = await driver.findElement(By.name('o.1.cast.new.1.edit.char'));
+    await input.sendKeys(input3);
+    await sleep(2000);
+
+
+
+
   });
 
   /*
