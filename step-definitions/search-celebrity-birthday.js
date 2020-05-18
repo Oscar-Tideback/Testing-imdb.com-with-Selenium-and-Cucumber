@@ -28,7 +28,7 @@ module.exports = function () {
     expect(titleText,
       'The actors name,' + actor + ', was not in the page title.'
     ).to.include(actor)
-    await sleep(0);
+    //await sleep(0);
   });
 
 }

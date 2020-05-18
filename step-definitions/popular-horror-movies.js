@@ -18,6 +18,13 @@ module.exports = function () {
   this.Then(/^I click on horror link text to see a list of popular movies and tv shows\.$/, async function () {
     let linkMovie = await driver.findElement(By.css("a[href*='genre/horror']"));
     linkMovie.click();
+
+    await sleep(sleepTime);
+    let title = await driver.findElement(By.xpath("/html/head/title"));
+    let titleText = await title.getAttribute("textContent");
+    expect(titleText,
+      'Top 50 Horror Movies and TV Shows could not be found'
+    ).to.include('Top 50 Horror Movies and TV Shows')
     await sleep(sleepTime);
   });
 }
