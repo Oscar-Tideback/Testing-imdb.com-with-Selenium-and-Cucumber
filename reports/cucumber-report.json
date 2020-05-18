@@ -2,113 +2,61 @@
   {
     "elements": [
       {
-        "id": "2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later;when-i-would-like-to-add-i-random-film-to-whatchlist",
+        "id": "as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies",
         "keyword": "Scenario",
         "line": 3,
-        "name": "When I would like to add i random film to whatchlist",
+        "name": "Browse through popular horror movies",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "There are no movies in my watchlist and I have a random film",
+            "name": "that I am on the IMDB site",
             "result": {
               "status": "passed",
-              "duration": 9869557255
+              "duration": 7226820713
             },
             "line": 4,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:9"
+              "location": "folder/IJJO/step-definitions/search-movie.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I have clicked on the Menu button",
+            "result": {
+              "status": "passed",
+              "duration": 306346849
+            },
+            "line": 5,
+            "match": {
+              "location": "folder/IJJO/step-definitions/popular-horror-movies.js:7"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I have signed in to the page",
+            "name": "I have clicked on Most popular movies",
             "result": {
               "status": "passed",
-              "duration": 9453001164
+              "duration": 26566174
             },
-            "line": 5,
+            "line": 6,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:14"
+              "location": "folder/IJJO/step-definitions/popular-horror-movies.js:12"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I search IMDb for my random film and save the title",
+            "name": "I click on horror link text to see a list of Top 50 Horror Movies",
             "result": {
               "status": "passed",
-              "duration": 65372720
-            },
-            "line": 6,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:22"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on my search result",
-            "result": {
-              "status": "passed",
-              "duration": 5181262660
+              "duration": 5655131099
             },
             "line": 7,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:28"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "save that movie title",
-            "result": {
-              "status": "passed",
-              "duration": 120934134
-            },
-            "line": 8,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:33"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "add it to my watchlist",
-            "result": {
-              "status": "passed",
-              "duration": 276932717
-            },
-            "line": 9,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:40"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "browse to my watchlist page",
-            "result": {
-              "status": "passed",
-              "duration": 2814737528
-            },
-            "line": 10,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:46"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the same movie title should be present",
-            "result": {
-              "status": "passed",
-              "duration": 607242429
-            },
-            "line": 11,
-            "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/step-definitions/add-to-watchlist2.js:50"
+              "location": "folder/IJJO/step-definitions/popular-horror-movies.js:18"
             }
           },
           {
@@ -116,11 +64,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 4236411761
+              "duration": 2021822344
             },
             "hidden": true,
             "match": {
-              "location": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
+              "location": "folder/IJJO/node_modules/selenium-cucumber-js/runtime/world.js:250"
             }
           }
         ],
@@ -128,11 +76,11 @@
         "type": "scenario"
       }
     ],
-    "id": "2-as-a-user-i-would-like-to-be-able-to-add-random-film-to-my-watchlist-so-i-can-save-them-for-later",
+    "id": "as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular",
     "keyword": "Feature",
     "line": 1,
-    "name": "2 As a user I would like to be able to add random film to my watchlist so I can save them for later",
+    "name": "As an user I want to browse through popular horror movies and tv shows so that I can see what horror movies are popular",
     "tags": [],
-    "uri": "/Users/oscartideback/Documents/code/VStudio/imdbTest/IJJO/features/add-to-watchlist2.feature"
+    "uri": "/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/popular-horror-movies.feature"
   }
 ]
