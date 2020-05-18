@@ -18,21 +18,16 @@ module.exports = function () {
   });
 
   this.Given(/^that I have clicked the Edit button$/, async function () {
-
     //step 3: click the edit button on the Suits page
     let editButton = await $('.btn.primary.large');
     assert(editButton,
       'Could not find the search button'
     );
     await editButton.click();
-    //await sleep(2000);
-
-    //step 3: select categories
-
-    let chooseButton = await selectOption('[select.choose]', '[2]');
-    await chooseButton.click();
     await sleep(2000);
-
+    //step 4: select categories
+    await selectOption('select.choose', 'Add 1 credit');
+    await sleep(4000);
 
   });
 
@@ -41,6 +36,9 @@ module.exports = function () {
     //assert(searchButton, 'Could not find the search button');
     await editButton.click();
     await sleep(2000);
+
+
+
   });
 
   /*this.When(/^I add data in Gabriel Macht,Episode Errors and Omissions \(\#(\d+)\.(\d+)\),Harvey Specter and click button check these updates$/, function (arg1, arg2, callback) {
