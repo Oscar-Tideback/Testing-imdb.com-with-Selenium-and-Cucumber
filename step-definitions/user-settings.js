@@ -2,7 +2,7 @@ let { $, sleep } = require('./funcs');
 const { username, password } = require('./credentials.json');
 
 module.exports = function () {
-  let newPassword = "123qwe098Q";
+  let newPassword = '123qwe098Q';
   //Scenario: When loggin to page
   this.Given(/^an account is premade$/, async function () {
     await helpers.loadPage('https://www.imdb.com/');
@@ -14,8 +14,8 @@ module.exports = function () {
 
   this.Then(/^I should be redirected to a page were I can select sign in method$/, async function () {
     await driver.wait(until.elementLocated(By.css('title')));
-    let title = await driver.findElement(By.xpath("/html/head/title"));
-    let titleText = await title.getAttribute("textContent");
+    let title = await driver.findElement(By.xpath('/html/head/title'));
+    let titleText = await title.getAttribute('textContent');
     expect(titleText,
       'Did not redirect to the right page. '
     ).to.equal('Sign in with IMDb - IMDb');
@@ -27,8 +27,8 @@ module.exports = function () {
 
   this.Then(/^I should be redirected the signin page$/, async function () {
     await driver.wait(until.elementLocated(By.css('title')));
-    let title = await driver.findElement(By.xpath("/html/head/title"));
-    let titleText = await title.getAttribute("textContent");
+    let title = await driver.findElement(By.xpath('/html/head/title'));
+    let titleText = await title.getAttribute('textContent');
     expect(titleText,
       'Did not redirect to the right page. '
     ).to.equal('IMDb Sign-In');
@@ -46,7 +46,7 @@ module.exports = function () {
   //Scenario: When I enter my username and password and would like to change the password and user ID
   this.Given(/^that I have logged in to my account$/, async function () {
     await helpers.loadPage('https://www.imdb.com/registration/signin?ref=nv_generic_lgin&u=%2F');
-    await driver.findElement(By.linkText("Sign in with IMDb")).click();
+    await driver.findElement(By.linkText('Sign in with IMDb')).click();
     await driver.findElement(By.id('ap_email')).sendKeys(username);
     await driver.findElement(By.id('ap_password')).sendKeys(password);
     await driver.findElement(By.id('signInSubmit')).click();
@@ -54,19 +54,19 @@ module.exports = function () {
 
   this.Then(/^clicked the user menu to account settings$/, async function () {
     await driver.findElement(By.css('span.imdb-header__account-toggle--logged-in')).click();
-    await driver.findElement(By.linkText("Account settings")).click();
+    await driver.findElement(By.linkText('Account settings')).click();
     await driver.wait(until.elementLocated(By.css('title')));
-    let title = await driver.findElement(By.xpath("/html/head/title"));
-    let titleText = await title.getAttribute("textContent");
+    let title = await driver.findElement(By.xpath('/html/head/title'));
+    let titleText = await title.getAttribute('textContent');
     expect(titleText,
       'Did not redirect to the right page. '
     ).to.equal('Account Settings - IMDb');
   });
 
   this.Then(/^clicked on Login and security$/, async function () {
-    await driver.findElement(By.linkText("Login and security")).click();
+    await driver.findElement(By.linkText('Login and security')).click();
     await driver.wait(until.elementLocated(By.css('title')));
-    let title = await driver.findElement(By.xpath("/html/head/title"));
+    let title = await driver.findElement(By.xpath('/html/head/title'));
     let titleText = await title.getAttribute("textContent");
     expect(titleText,
       'Did not redirect to the right page. '
@@ -111,7 +111,7 @@ module.exports = function () {
   });
 
   this.Then(/^typed a new user ID in the new user ID field$/, async function () {
-    await driver.findElement(By.id('ap_customer_name')).sendKeys("_new");
+    await driver.findElement(By.id('ap_customer_name')).sendKeys('_new');
     await driver.findElement(By.id('cnep_1C_submit_button')).click();
   });
 
@@ -121,7 +121,7 @@ module.exports = function () {
 
   this.Then(/^reset to old user ID$/, async function () {
     await driver.findElement(By.id('ap_customer_name')).clear();
-    await driver.findElement(By.id('ap_customer_name')).sendKeys("test1618");
+    await driver.findElement(By.id('ap_customer_name')).sendKeys('test1618');
     await driver.findElement(By.id('ap_customer_name')).sendKeys(selenium.Key.TAB);
     await driver.findElement(By.id('cnep_1C_submit_button')).click();
     await driver.wait(until.elementLocated(By.id('auth-cnep-done-button')), 10000);
@@ -130,10 +130,10 @@ module.exports = function () {
   });
 
   this.Then(/^I clicked the add to BIO button to change my bio and save$/, async function () {
-    let userId = "test-80520";
-    await driver.findElement(By.linkText("Edit profile")).click();
-    let title = await driver.findElement(By.xpath("/html/head/title"));
-    let titleText = await title.getAttribute("textContent");
+    let userId = 'test-80520';
+    await driver.findElement(By.linkText('Edit profile')).click();
+    let title = await driver.findElement(By.xpath('/html/head/title'));
+    let titleText = await title.getAttribute('textContent');
     expect(titleText,
       'Did not redirect to the right page. '
     ).to.equal('Edit profile - IMDb');
@@ -148,8 +148,8 @@ module.exports = function () {
     ).to.exist;
 
     await driver.findElement(By.css('span.imdb-header__account-toggle--logged-in')).click();
-    await driver.findElement(By.linkText("Account settings")).click();
-    await driver.findElement(By.linkText("Edit profile")).click();
+    await driver.findElement(By.linkText('Account settings')).click();
+    await driver.findElement(By.linkText('Edit profile')).click();
     await driver.findElement(By.css('.auth-input-right-side')).click();
     await driver.findElement(By.css('.auth-input--input')).clear();
     await driver.findElement(By.css('.auth-input--input')).sendKeys(userId);
@@ -160,8 +160,8 @@ module.exports = function () {
   this.Then(/^check if new BIO is accurate$/, async function () {
     let newBio = "New bio blah blah...";
     await driver.findElement(By.css('span.imdb-header__account-toggle--logged-in')).click();
-    await driver.findElement(By.linkText("Account settings")).click();
-    await driver.findElement(By.linkText("Edit profile")).click();
+    await driver.findElement(By.linkText('Account settings')).click();
+    await driver.findElement(By.linkText('Edit profile')).click();
     await driver.findElement(By.css('.multiline')).clear();
     await driver.findElement(By.css('.multiline')).sendKeys(newBio);
     await driver.findElement(By.css('div[data-userbio-save]')).click();
@@ -174,7 +174,6 @@ module.exports = function () {
 
     await driver.findElement(By.css('.multiline')).clear();
     await driver.findElement(By.css('div[data-userbio-save]')).click();
-    await driver.quit();
   });
 
 }

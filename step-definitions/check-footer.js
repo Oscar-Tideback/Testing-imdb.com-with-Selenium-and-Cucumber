@@ -27,8 +27,8 @@ module.exports = function () {
     let linkText = await $('._27Hr-itnXHPpOoaB59daSz ul._1W6LtHiV5M-NUnes6xN1az li');
     let i = 0;
     for (let result of linkText) {
-      let linkText = await $('.ipc-inline-list__item [aria-label="' + data[i + 1][0] + '"]');
-      let text = await linkText.getAttribute("title");
+      let tempText = await $('.ipc-inline-list__item [aria-label="' + data[i + 1][0] + '"]');//WTF
+      let text = await tempText.getAttribute("title");
       i++;
       expect(text,
         'The link icon did not match the title text '
