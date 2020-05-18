@@ -2,7 +2,6 @@ let { $, sleep } = require('./funcs');
 const { username, password } = require('./credentials.json');
 
 module.exports = function () {
-
   let newPassword = "123qwe098Q";
   //Scenario: When loggin to page
   this.Given(/^an account is premade$/, async function () {
@@ -70,6 +69,12 @@ module.exports = function () {
   });
 
   this.Then(/^I clicked the edit button to change password$/, async function () {
+    await driver.wait(until.elementLocated(By.css('title')));
+    let title = await driver.findElement(By.xpath("/html/head/title"));
+    let titleText = await title.getAttribute("textContent");
+    expect(titleText,
+      'Did not redirect to the right page. '
+    ).to.equal('IMDb Change Name, E-mail, Password');
     await driver.findElement(By.id('auth-cnep-edit-password-button')).click();
   });
 
@@ -84,6 +89,10 @@ module.exports = function () {
   this.Then(/^reenter the new password in the reenter password field$/, async function () {
     await driver.findElement(By.id('ap_password_new_check')).sendKeys(newPassword);
     await driver.findElement(By.id('cnep_1D_submit_button')).click();
+    let success = await driver.findElement(By.id('auth-success-message-box'));
+    expect(success,
+      'Password was not changed'
+    ).to.exist;
   });
 
   this.Then(/^reset to old password$/, async function () {
@@ -116,7 +125,7 @@ module.exports = function () {
     await driver.findElement(By.id('ap_customer_name')).sendKeys("test1618");
     await driver.findElement(By.id('ap_customer_name')).sendKeys(selenium.Key.TAB);
     await driver.findElement(By.id('cnep_1C_submit_button')).click();
-    await sleep(2000);
+    await driver.wait(until.elementLocated(By.id('auth-cnep-done-button')), 10000);
     await driver.findElement(By.id('auth-cnep-done-button')).click();
 
   });
@@ -124,10 +133,19 @@ module.exports = function () {
   this.Then(/^I clicked the add to BIO button to change my bio and save$/, async function () {
     let userId = "test-80520";
     await driver.findElement(By.linkText("Edit profile")).click();
+    let title = await driver.findElement(By.xpath("/html/head/title"));
+    let titleText = await title.getAttribute("textContent");
+    expect(titleText,
+      'Did not redirect to the right page. '
+    ).to.equal('Edit profile - IMDb');
     await driver.findElement(By.css('.auth-input-right-side')).click();
     await driver.findElement(By.css('.auth-input--input')).sendKeys("_new");
     await driver.findElement(By.css('.auth-input--input')).sendKeys(selenium.Key.TAB);
-    await driver.findElement(By.css(".pretty_btn")).click();
+    await driver.findElement(By.css('.pretty_btn')).click();
+    let success = await driver.findElement(By.css('.success'));
+    expect(success,
+      'User ID was not changed'
+    ).to.exist;
     await driver.findElement(By.css('span.imdb-header__account-toggle--logged-in')).click();
     await driver.findElement(By.linkText("Account settings")).click();
     await driver.findElement(By.linkText("Edit profile")).click();
@@ -149,7 +167,9 @@ module.exports = function () {
     await driver.wait(until.elementLocated(By.css('.article h2')), 10000);
     await driver.findElement(By.linkText("Edit profile")).click();
     let bioText = await driver.findElement(By.css('.multiline')).getText();
-    expect(bioText).to.equal(newBio);
+    expect(bioText,
+      'New bio is not right. '
+    ).to.equal(newBio);
     await driver.findElement(By.css('.multiline')).clear();
     await driver.findElement(By.css('div[data-userbio-save]')).click();
   });
