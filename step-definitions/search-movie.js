@@ -1,5 +1,4 @@
 let { $, sleep } = require('./funcs');
-const { username, password } = require('./credentials.json');
 
 module.exports = function () {
 
@@ -11,10 +10,10 @@ module.exports = function () {
   });
 
   this.When(/^I enter the search text "([^"]*)" \+ ENTER$/, async function (searchText) {
-    let searchField = await $('input[placeholder= "Search IMDb"]');
-    assert(searchField, 'Can not find the search field on the page');
-    searchField.sendKeys(searchText);
-    await searchField.sendKeys(selenium.Key.ENTER);
+    let searchKey = await $('input[placeholder= "Search IMDb"]');
+    assert(searchKey, 'Can not find the search field on the page');
+    searchKey.sendKeys(searchText);
+    await searchKey.sendKeys(selenium.Key.ENTER);
     //await sleep(sleepTime);
   });
 
