@@ -11,7 +11,7 @@ module.exports = function () {
   });
 
   this.When(/^I click on the Menu button$/, async function () {
-    let menuButton = await driver.findElement(By.css('.ipc-button')).click();
+    await driver.findElement(By.css('.ipc-button')).click();
     //await sleep(sleepTime);
   });
 

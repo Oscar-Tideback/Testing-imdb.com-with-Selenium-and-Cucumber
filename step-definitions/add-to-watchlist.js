@@ -13,7 +13,7 @@ module.exports = function () {
 
   this.Given(/^I have signed in to the page$/, async function () {
     await helpers.loadPage('https://www.imdb.com/registration/signin?ref=nv_generic_lgin&u=%2F');
-    await driver.findElement(By.linkText("Sign in with IMDb")).click();
+    await driver.findElement(By.linkText('Sign in with IMDb')).click();
     await driver.findElement(By.id('ap_email')).sendKeys(username);
     await driver.findElement(By.id('ap_password')).sendKeys(password);
     await driver.findElement(By.id('signInSubmit')).click();

@@ -85,18 +85,30 @@ module.exports = function () {
     // Write code here that turns the phrase above into concrete actions
     let trackButton = await $('.trackbutton');
     //assert(searchButton, 'Could not find the search button');
-    await trackButton.click();
+    //await trackButton.click();
+    await helpers.loadPage('https://contribute.imdb.com/updates/history');
+
+
     await sleep(3000);
-    document.querySelectorAll('div.a-section.a-spacing-mini span')
+    //document.querySelectorAll('div.a-section.a-spacing-mini span')
 
-    let submitText = await $('div.a-section.a-spacing-mini.submission-item-display-new span');
+    //let submitText = await $('div.a-expander-content span');
+    //class="a-row a-expander-container a-expander-section-container a-section-expander-container"
+    //id="status_expander_200519-083342-818000_tt1632701_PENDING"
+    //await driver.findElement(By.css('div.a-row.a-expander-container')).click();
+    let ray = [];
+    ray = await driver.findElement(By.css('table tbody td'));
+    await sleep(3000);
 
-    console.log(submitText);
 
-    for (let prop of submitText) {
+
+
+    for (let prop of ray) {
       let text = prop.getText();
       console.log(text);
     }
+    console.log(ray.getText());
+
 
     // a - section a - spacing - mini submission - item - display - new
     //console.log(submitText);
