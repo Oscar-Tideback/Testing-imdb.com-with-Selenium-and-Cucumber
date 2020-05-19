@@ -66,20 +66,45 @@ module.exports = function () {
     await defaultButton.click();
     await sleep(2000);
 
-
-
+    let recheckButton = await $('.btn.primary');
+    //assert(searchButton, 'Could not find the search button');
+    await recheckButton.click();
+    await sleep(2000);
   });
 
-  /*
-    this.When(/^I click the button Submit these updates$/, function (callback) {
-         // Write code here that turns the phrase above into concrete actions
-         callback(null, 'pending');
-       });
-  
-  
-   this.Then(/^the data I have submitted should be sent$/, function (callback) {
-         // Write code here that turns the phrase above into concrete actions
-         callback(null, 'pending');
-       });
-  */
+  this.When(/^I click the button Submit these updates$/, async function () {
+
+    let submitButton = await driver.findElement(By.name('action__Submit'));
+    //assert(searchButton, 'Could not find the search button');
+    await submitButton.click();
+    await sleep(3000);
+  });
+
+
+  this.Then(/^the data I have submitted should be sent$/, async function () {
+    // Write code here that turns the phrase above into concrete actions
+    let trackButton = await $('.trackbutton');
+    //assert(searchButton, 'Could not find the search button');
+    await trackButton.click();
+    await sleep(3000);
+    document.querySelectorAll('div.a-section.a-spacing-mini span')
+
+    let submitText = await $('div.a-section.a-spacing-mini.submission-item-display-new span');
+
+    console.log(submitText);
+
+    for (let prop of submitText) {
+      let text = prop.getText();
+      console.log(text);
+    }
+
+    // a - section a - spacing - mini submission - item - display - new
+    //console.log(submitText);
+
+    /*for (let prop of submitText) {
+      let text = await prop.getText();
+      console.log(text);
+    }*/
+  });
+
 }
