@@ -32,7 +32,6 @@ module.exports = function () {
         'The link icon did not match the title text '
       ).to.equal(data[i][0]);
     }
-
   });
 
   this.Then(/^the text "([^"]*)"$/, async function (copyRightText) {

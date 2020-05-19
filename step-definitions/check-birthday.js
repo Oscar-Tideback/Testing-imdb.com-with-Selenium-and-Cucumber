@@ -8,6 +8,9 @@ module.exports = function () {
 
   //Scenario: Cross-check our date of birth with the celebertys wikipedia pages
   this.When(/^I browse to Birth Month Day of todays$/, async function () {
+    //Check Jessica Raine
+    //await helpers.loadPage('https://www.imdb.com/search/name/?birth_monthday=05-14&ref_=nv_cel_brn');
+
     await helpers.loadPage('https://www.imdb.com/feature/bornondate/?ref_=nv_cel_brn');
     await sleep(0);
   });
@@ -41,11 +44,11 @@ module.exports = function () {
   });
 
   this.Then(/^find birthday on that page and check if it is today$/, async function () {
-    let today = new Date();//BUG, Fix is. check what date IMDb is on right now
+    let today = new Date();
     ourDate = today.getMonth() + 1;
     ourDate += "-";
     ourDate += today.getDate();// Made string with todays date with format 01-13
-
+    //ourDate = '5-14'; //Check Jessica Raine
     for (let i = 0; i < numberOfCelebMax50; i++) {
       await helpers.loadPage(wikipediaCeleb[i]);
       wikiBday[i] = await $(".bday");
