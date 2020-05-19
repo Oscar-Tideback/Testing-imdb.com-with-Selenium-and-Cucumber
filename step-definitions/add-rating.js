@@ -1,16 +1,9 @@
-const {
-  username,
-  password
-} = require('./credentials.json');
-let {
-  $,
-  sleep
-} = require('./funcs');
+const { username, password } = require('./credentials.json');
+let { $, sleep } = require('./funcs');
 
 module.exports = function () {
 
   let sleepTime = 0;
-
   let movieName;
 
   //Scenario: When I have signed in I would lik to add rating on objects
