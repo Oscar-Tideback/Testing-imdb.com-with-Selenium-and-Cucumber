@@ -36,7 +36,7 @@ module.exports = function () {
   });
 
   this.Then(/^the text "([^"]*)"$/, async function (copyRightText) {
-    let copyRight = await $('p.imdb-footer__copyright._1qNTRY72M5RnFTeiT5Ho-6');
+    let copyRight = await $('p.imdb-footer__copyright');
     copyRight = await copyRight.getAttribute("innerText");
 
     expect(copyRight,
