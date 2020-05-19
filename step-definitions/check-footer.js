@@ -1,10 +1,10 @@
 let { $, sleep } = require('./funcs');
 
 module.exports = function () {
-  let mainWin;
+
+
   this.When(/^I browse the statpage$/, async function () {
     await helpers.loadPage('https://www.imdb.com/');
-
   });
 
   this.Then(/^the footer should contain the information$/, async function (table) {
@@ -38,7 +38,6 @@ module.exports = function () {
   this.Then(/^the text "([^"]*)"$/, async function (copyRightText) {
     let copyRight = await $('p.imdb-footer__copyright');
     copyRight = await copyRight.getAttribute("innerText");
-
     expect(copyRight,
       'The copyright text could not be found'
     ).to.equal(copyRightText);
