@@ -25,6 +25,7 @@ module.exports = function () {
     );
     let firstResult = results[0];
     let resultText = await firstResult.getText();
+
     assert.include(resultText, phrase, 'Could not find the phrase ' + phrase + ' in the first search result.');
     //await sleep(sleepTime);
   });

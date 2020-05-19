@@ -1,70 +1,89 @@
 [
   {
+    "description": "  As a contributor I want to be able to add data to the Cast&Crew section\n  of Suits.",
     "elements": [
       {
-        "id": "as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular;browse-through-popular-horror-movies",
+        "id": "can-i-as-a-contributor-add-cast&crew-information-to-suits;add-data-to-suits-cast&crew-section",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Browse through popular horror movies",
+        "line": 16,
+        "name": "Add data to Suits Cast&Crew section",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that I am on the IMDB site",
+            "name": "that I am on the Suits page",
             "result": {
               "status": "passed",
-              "duration": 7226820713
+              "duration": 24401878181
             },
-            "line": 4,
+            "line": 6,
             "match": {
-              "location": "folder/IJJO/step-definitions/search-movie.js:7"
+              "location": "folder/IJJO/step-definitions/cast-crew.js:10"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "I have clicked on the Menu button",
+            "name": "that I have clicked the Edit button",
             "result": {
               "status": "passed",
-              "duration": 306346849
+              "duration": 3311280849
             },
-            "line": 5,
+            "line": 7,
             "match": {
-              "location": "folder/IJJO/step-definitions/popular-horror-movies.js:7"
+              "location": "folder/IJJO/step-definitions/cast-crew.js:22"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that I haved chosen to add a credit in the Cast&Crew section and clicked on the continue button",
+            "result": {
+              "status": "passed",
+              "duration": 5043167049
+            },
+            "line": 8,
+            "match": {
+              "location": "folder/IJJO/step-definitions/cast-crew.js:33"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I have clicked on Most popular movies",
+            "name": "I add data in \"Gabriel Macht\",\"Episode Errors and Omissions (#1.2)\", \"Harvey Specter\" and click button check these updates",
             "result": {
               "status": "passed",
-              "duration": 26566174
+              "duration": 11999199649
             },
-            "line": 6,
+            "line": 9,
             "match": {
-              "location": "folder/IJJO/step-definitions/popular-horror-movies.js:12"
+              "location": "folder/IJJO/step-definitions/cast-crew.js:46"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "name": "I click on horror link text to see a list of Top 50 Horror Movies",
+            "keyword": "And ",
+            "name": "I click the button Submit these updates",
             "result": {
-              "status": "passed",
-              "duration": 5655131099
+              "status": "undefined"
             },
-            "line": 7,
-            "match": {
-              "location": "folder/IJJO/step-definitions/popular-horror-movies.js:18"
-            }
+            "line": 10
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the data I have submitted should be sent",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2021822344
+              "duration": 2367368677
             },
             "hidden": true,
             "match": {
@@ -76,11 +95,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-an-user-i-want-to-browse-through-popular-horror-movies-and-tv-shows-so-that-i-can-see-what-horror-movies-are-popular",
+    "id": "can-i-as-a-contributor-add-cast&crew-information-to-suits",
     "keyword": "Feature",
     "line": 1,
-    "name": "As an user I want to browse through popular horror movies and tv shows so that I can see what horror movies are popular",
+    "name": "Can I as a contributor add Cast&Crew information to Suits",
     "tags": [],
-    "uri": "/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/popular-horror-movies.feature"
+    "uri": "/Users/jasminkasravi/Desktop/untitled folder/IJJO/features/cast-crew.feature"
   }
 ]

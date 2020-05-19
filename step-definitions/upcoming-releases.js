@@ -16,6 +16,7 @@ module.exports = function () {
     linkReleases.click();
     let title = await $('title');
     let titleText = await title.getAttribute("textContent");
+
     expect(titleText,
       'Upcoming Releases for Austria could not be found'
     ).to.include('Upcoming Releases for Austria')

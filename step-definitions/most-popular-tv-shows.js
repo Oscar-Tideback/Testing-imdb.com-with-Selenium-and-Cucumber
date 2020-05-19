@@ -20,6 +20,7 @@ module.exports = function () {
     link4.click();
     let title = await driver.findElement(By.xpath("/html/head/title"));
     let titleText = await title.getAttribute("textContent");
+
     expect(titleText,
       'Most Popular TV shows could not be found'
     ).to.include('Most Popular TV')
