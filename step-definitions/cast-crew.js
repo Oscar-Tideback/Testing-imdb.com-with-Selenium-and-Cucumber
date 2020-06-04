@@ -88,20 +88,37 @@ module.exports = function () {
   this.Then(/^the data I have submitted should be sent$/, async function () {
     // Write code here that turns the phrase above into concrete actions
     let trackButton = await $('.trackbutton');
+<<<<<<< HEAD
     assert(trackButton,
       'Could not find the track button');
     await trackButton.click();
+=======
+    //assert(searchButton, 'Could not find the search button');
+    //await trackButton.click();
+    await helpers.loadPage('https://contribute.imdb.com/updates/history');
+
+
     await sleep(3000);
-    document.querySelectorAll('div.a-section.a-spacing-mini span')
+    //document.querySelectorAll('div.a-section.a-spacing-mini span')
 
-    let submitText = await $('div.a-section.a-spacing-mini.submission-item-display-new span');
+    //let submitText = await $('div.a-expander-content span');
+    //class="a-row a-expander-container a-expander-section-container a-section-expander-container"
+    //id="status_expander_200519-083342-818000_tt1632701_PENDING"
+    //await driver.findElement(By.css('div.a-row.a-expander-container')).click();
+    let ray = [];
+    ray = await driver.findElement(By.css('table tbody td'));
+>>>>>>> 9316decf75c72ae2a08a5f7eb3933222df2b8df4
+    await sleep(3000);
 
-    console.log(submitText);
 
-    for (let prop of submitText) {
+
+
+    for (let prop of ray) {
       let text = prop.getText();
       console.log(text);
     }
+    console.log(ray.getText());
+
 
     // a - section a - spacing - mini submission - item - display - new
     //console.log(submitText);

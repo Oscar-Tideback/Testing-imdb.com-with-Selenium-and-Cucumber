@@ -8,6 +8,8 @@ module.exports = function () {
 
   //Scenario: Cross-check our date of birth with the celebertys wikipedia pages
   this.When(/^I browse to Birth Month Day of todays$/, async function () {
+    //Check Jessica Raine
+    //await helpers.loadPage('https://www.imdb.com/search/name/?birth_monthday=05-14&ref_=nv_cel_brn');
     await helpers.loadPage('https://www.imdb.com/feature/bornondate/?ref_=nv_cel_brn');
     await sleep(0);
   });
@@ -25,7 +27,7 @@ module.exports = function () {
     names.slice(0, numberOfCelebMax50); //Reduce the list of names, just cleaning the list
     for (let i = 0; i < numberOfCelebMax50; i++) {
       let name = await names[i].getText();
-      let str = name.replace(" ", "_");//Finding " " between forename and lastname and replaces it with "_"
+      let str = name.replace(' ', '_');//Finding " " between forename and lastname and replaces it with "_"
       names[i] = str;
     }
   });
@@ -41,20 +43,22 @@ module.exports = function () {
   });
 
   this.Then(/^find birthday on that page and check if it is today$/, async function () {
-    let today = new Date();//BUG, Fix is. check what date IMDb is on right now
+    let today = new Date();
     ourDate = today.getMonth() + 1;
-    ourDate += "-";
+    ourDate += '-';
     ourDate += today.getDate();// Made string with todays date with format 01-13
-
+    //ourDate = '5-14'; //Check Jessica Raine
     for (let i = 0; i < numberOfCelebMax50; i++) {
       await helpers.loadPage(wikipediaCeleb[i]);
       wikiBday[i] = await $(".bday");
       await driver.wait(until.elementLocated(By.id('footer-copyrightico')), 10000);
       if ((wikiBday[i]) !== null) {//Check if wiki is missing birthday
-        let str = await wikiBday[i].getAttribute("textContent");
+        let str = await wikiBday[i].getAttribute('textContent');
         let str2 = str.slice(5, str.length);
-        if (today.getMonth() < 9) //This might be wrong, should it be 10?// Removes a 0 if month is 01-09 so 1-9
+        //console.log(str, i);
+        if (today.getMonth() < 9) {
           rightDate = str2.slice(1, str2.length);
+        }
 
         expect(ourDate,
           'Our birthday date for https://everipedia.org/wiki/lang_en/' + names[i] +

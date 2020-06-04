@@ -1,6 +1,6 @@
 Feature: Loggin to Internet move database and change password for my account
 
-  Scenario: When loggin to page
+  Background:When loggin to page
     Given an account is premade
     When I click the button to sign in
     Then I should be redirected to a page were I can select sign in method
@@ -10,7 +10,6 @@ Feature: Loggin to Internet move database and change password for my account
     And type password and press enter
 
   Scenario: When I enter my username and password and would like to change the password and user ID
-    Given that I have logged in to my account
     Then clicked the user menu to account settings
     And clicked on Login and security
     And I clicked the edit button to change password

@@ -2,8 +2,10 @@ let { $, sleep } = require('./funcs');
 const { username, password } = require('./credentials.json');
 
 module.exports = function () {
+
   let newPassword = '123qwe098Q';
-  //Scenario: When loggin to page
+
+  //Background: When loggin to page
   this.Given(/^an account is premade$/, async function () {
     await helpers.loadPage('https://www.imdb.com/');
   });
@@ -40,18 +42,10 @@ module.exports = function () {
 
   this.Then(/^type password and press enter$/, async function () {
     await driver.findElement(By.id('ap_password')).sendKeys(password);
-    await driver.findElement(By.id('signInSubmit')).sendKeys(selenium.Key.ENTER);
-  });
-
-  //Scenario: When I enter my username and password and would like to change the password and user ID
-  this.Given(/^that I have logged in to my account$/, async function () {
-    await helpers.loadPage('https://www.imdb.com/registration/signin?ref=nv_generic_lgin&u=%2F');
-    await driver.findElement(By.linkText('Sign in with IMDb')).click();
-    await driver.findElement(By.id('ap_email')).sendKeys(username);
-    await driver.findElement(By.id('ap_password')).sendKeys(password);
     await driver.findElement(By.id('signInSubmit')).click();
   });
 
+  //Scenario: When I enter my username and password and would like to change the password and user ID
   this.Then(/^clicked the user menu to account settings$/, async function () {
     await driver.findElement(By.css('span.imdb-header__account-toggle--logged-in')).click();
     await driver.findElement(By.linkText('Account settings')).click();

@@ -17,8 +17,8 @@ module.exports = function () {
 
   this.Then(/^I check that I'm on "([^"]*)"$/, async function (pageTitle) {
     await driver.wait(until.elementLocated(By.css('title')));
-    let title = await driver.findElement(By.xpath("/html/head/title"));
-    let titleText = await title.getAttribute("textContent");
+    let title = await driver.findElement(By.xpath('/html/head/title'));
+    let titleText = await title.getAttribute('textContent');
     let str = titleText.replace('\n', ' ');
     titleText = str.replace('|', '');
     expect(titleText,
