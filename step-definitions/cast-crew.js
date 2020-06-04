@@ -21,7 +21,7 @@ module.exports = function () {
     //step 3: click the edit button on the Suits page
     let editButton = await $('.btn.primary.large');
     assert(editButton,
-      'Could not find the search button'
+      'Could not find the Edit button'
     );
     await editButton.click();
     await sleep(2000);
@@ -34,7 +34,8 @@ module.exports = function () {
 
     //step 5: select
     let editButton = await $('.btn.primary');
-    //assert(searchButton, 'Could not find the search button');
+    assert(editButton,
+      'Could not find the search button');
     await editButton.click();
     await sleep(2000);
   });
@@ -56,7 +57,8 @@ module.exports = function () {
     await sleep(2000);
 
     let uppdateButton = await $('.btn.primary');
-    //assert(searchButton, 'Could not find the search button');
+    assert(uppdateButton,
+      'Could not find the update button');
     await uppdateButton.click();
     await sleep(2000);
 
@@ -67,7 +69,8 @@ module.exports = function () {
     await sleep(2000);
 
     let recheckButton = await $('.btn.primary');
-    //assert(searchButton, 'Could not find the search button');
+    assert(recheckButton,
+      'Could not find the recheck button');
     await recheckButton.click();
     await sleep(2000);
   });
@@ -75,7 +78,8 @@ module.exports = function () {
   this.When(/^I click the button Submit these updates$/, async function () {
 
     let submitButton = await driver.findElement(By.name('action__Submit'));
-    //assert(searchButton, 'Could not find the search button');
+    assert(submitButton,
+      'Could not find the submit button');
     await submitButton.click();
     await sleep(3000);
   });
@@ -84,7 +88,8 @@ module.exports = function () {
   this.Then(/^the data I have submitted should be sent$/, async function () {
     // Write code here that turns the phrase above into concrete actions
     let trackButton = await $('.trackbutton');
-    //assert(searchButton, 'Could not find the search button');
+    assert(trackButton,
+      'Could not find the track button');
     await trackButton.click();
     await sleep(3000);
     document.querySelectorAll('div.a-section.a-spacing-mini span')

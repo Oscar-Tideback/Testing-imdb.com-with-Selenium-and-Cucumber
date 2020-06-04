@@ -8,7 +8,7 @@ let ratingList = [];
 let rate;
 
 module.exports = function () {
-  //Scenario: Top ratedd picture winners
+  //Scenario: Top rated picture winners
   this.Given(/^that I am on the Best Picture\-winning site$/, async function () {
 
     //step 1: call the page
