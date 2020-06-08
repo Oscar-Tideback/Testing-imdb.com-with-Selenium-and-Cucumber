@@ -1,7 +1,7 @@
 let { $, sleep } = require('./funcs');
 
 module.exports = function () {
-
+  //Oscar T.
   //Scenario: Check all links in main menu
   this.When(/^we should beable to access all the main menues pages when I click the menu$/, async function () {
     await helpers.loadPage('https://www.imdb.com/');

@@ -2,7 +2,7 @@ let { $, sleep } = require('./funcs');
 
 module.exports = function () {
 
-
+  //Oscar T.
   this.When(/^I browse the statpage$/, async function () {
     await helpers.loadPage('https://www.imdb.com/');
   });

@@ -5,7 +5,7 @@ module.exports = function () {
 
   let sleepTime = 0;
   let movieName;
-
+  //Oscar T.
   //Scenario: When I have signed in I would lik to add rating on objects
   this.Given(/^that I have signed in to the page$/, async function () {
     await helpers.loadPage('https://www.imdb.com/registration/signin?ref=nv_generic_lgin&u=%2F');
